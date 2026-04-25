@@ -1,0 +1,2 @@
+hour,n_comments,mean_compound,median_compound,mean_pos,mean_neu,mean_neg,pct_positive,pct_negative,pct_neutral,total_words,mean_words
+2025-11-02 18:00:00,1,0.0,0.0,0.0,1.0,0.0,0.0,0.0,100.0,17,17.0
