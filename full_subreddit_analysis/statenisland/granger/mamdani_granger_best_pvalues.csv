@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+statenisland,mamdani,log_volume_change,log_comments_change,0.46350261882731947
+statenisland,mamdani,log_volume_change,mean_compound,0.5843045091084162
+statenisland,mamdani,log_volume_change,n_comments,0.49417223815227884
+statenisland,mamdani,log_volume_change,sentiment_change,0.711556936240149
+statenisland,mamdani,oi_change,log_comments_change,3.6486707409267406e-41
+statenisland,mamdani,oi_change,mean_compound,2.910790829062294e-68
+statenisland,mamdani,oi_change,n_comments,9.97106396807179e-14
+statenisland,mamdani,oi_change,sentiment_change,1.2199553514210951e-51
+statenisland,mamdani,price_change,log_comments_change,4.634333841805161e-10
+statenisland,mamdani,price_change,mean_compound,0.0018357066391424873
+statenisland,mamdani,price_change,n_comments,2.0413860249854294e-05
+statenisland,mamdani,price_change,sentiment_change,4.092078016998412e-05

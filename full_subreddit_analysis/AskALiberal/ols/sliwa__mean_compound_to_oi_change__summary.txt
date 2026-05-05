@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              oi_change   R-squared:                       0.143
+Model:                            OLS   Adj. R-squared:                  0.137
+Method:                 Least Squares   F-statistic:                     22.15
+Date:                Mon, 04 May 2026   Prob (F-statistic):           4.28e-89
+Time:                        22:56:27   Log-Likelihood:                -34086.
+No. Observations:                3200   AIC:                         6.822e+04
+Df Residuals:                    3175   BIC:                         6.837e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+const                 767.4331    199.974      3.838      0.000     375.343    1159.524
+oi_change_lag1          0.1563      0.018      8.873      0.000       0.122       0.191
+oi_change_lag2          0.1194      0.018      6.698      0.000       0.084       0.154
+oi_change_lag3          0.0127      0.018      0.709      0.479      -0.022       0.048
+oi_change_lag4          0.0793      0.018      4.414      0.000       0.044       0.115
+oi_change_lag5          0.0118      0.018      0.656      0.512      -0.024       0.047
+oi_change_lag6          0.0398      0.018      2.205      0.028       0.004       0.075
+oi_change_lag7          0.0063      0.018      0.352      0.725      -0.029       0.042
+oi_change_lag8          0.0086      0.018      0.477      0.634      -0.027       0.044
+oi_change_lag9          0.0242      0.018      1.349      0.177      -0.011       0.059
+oi_change_lag10         0.0563      0.018      3.131      0.002       0.021       0.091
+oi_change_lag11         0.0428      0.018      2.394      0.017       0.008       0.078
+oi_change_lag12         0.1264      0.018      7.186      0.000       0.092       0.161
+mean_compound_lag1   2.119e+04   4627.217      4.578      0.000    1.21e+04    3.03e+04
+mean_compound_lag2  -2476.0575   4613.584     -0.537      0.592   -1.15e+04    6569.850
+mean_compound_lag3  -3998.5426   4650.401     -0.860      0.390   -1.31e+04    5119.551
+mean_compound_lag4    975.8576   4686.177      0.208      0.835   -8212.384    1.02e+04
+mean_compound_lag5  -3503.0378   4743.239     -0.739      0.460   -1.28e+04    5797.084
+mean_compound_lag6  -1.185e+04   4784.349     -2.476      0.013   -2.12e+04   -2464.518
+mean_compound_lag7  -2220.2845   4790.435     -0.463      0.643   -1.16e+04    7172.377
+mean_compound_lag8   1997.1443   4780.994      0.418      0.676   -7377.006    1.14e+04
+mean_compound_lag9   5734.0600   4737.595      1.210      0.226   -3554.998     1.5e+04
+mean_compound_lag10  1.149e+04   4626.352      2.485      0.013    2423.408    2.06e+04
+mean_compound_lag11 -7895.3390   4504.627     -1.753      0.080   -1.67e+04     936.934
+mean_compound_lag12 -2916.5199   4523.165     -0.645      0.519   -1.18e+04    5952.101
+==============================================================================
+Omnibus:                     6188.044   Durbin-Watson:                   1.987
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         22379099.509
+Skew:                          14.637   Prob(JB):                         0.00
+Kurtosis:                     411.640   Cond. No.                     6.21e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.21e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

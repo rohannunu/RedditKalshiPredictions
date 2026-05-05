@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_volume_change   R-squared:                       0.308
+Model:                            OLS   Adj. R-squared:                  0.306
+Method:                 Least Squares   F-statistic:                     119.3
+Date:                Mon, 04 May 2026   Prob (F-statistic):          1.71e-246
+Time:                        22:56:34   Log-Likelihood:                -8316.0
+No. Observations:                3228   AIC:                         1.666e+04
+Df Residuals:                    3215   BIC:                         1.674e+04
+Df Model:                          12                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      -0.0016      0.056     -0.029      0.977      -0.112       0.108
+log_volume_change_lag1     -0.6568      0.018    -37.338      0.000      -0.691      -0.622
+log_volume_change_lag2     -0.4154      0.021    -19.840      0.000      -0.457      -0.374
+log_volume_change_lag3     -0.2789      0.022    -12.657      0.000      -0.322      -0.236
+log_volume_change_lag4     -0.2325      0.022    -10.375      0.000      -0.276      -0.189
+log_volume_change_lag5     -0.1719      0.023     -7.614      0.000      -0.216      -0.128
+log_volume_change_lag6     -0.1866      0.023     -8.252      0.000      -0.231      -0.142
+log_volume_change_lag7     -0.1524      0.023     -6.743      0.000      -0.197      -0.108
+log_volume_change_lag8     -0.1655      0.023     -7.340      0.000      -0.210      -0.121
+log_volume_change_lag9     -0.1358      0.022     -6.078      0.000      -0.180      -0.092
+log_volume_change_lag10    -0.1405      0.022     -6.404      0.000      -0.183      -0.097
+log_volume_change_lag11    -0.1233      0.021     -5.912      0.000      -0.164      -0.082
+log_volume_change_lag12    -0.0728      0.018     -4.150      0.000      -0.107      -0.038
+n_comments_lag1                  0          0        nan        nan           0           0
+n_comments_lag2                  0          0        nan        nan           0           0
+n_comments_lag3                  0          0        nan        nan           0           0
+n_comments_lag4                  0          0        nan        nan           0           0
+n_comments_lag5                  0          0        nan        nan           0           0
+n_comments_lag6                  0          0        nan        nan           0           0
+n_comments_lag7                  0          0        nan        nan           0           0
+n_comments_lag8                  0          0        nan        nan           0           0
+n_comments_lag9                  0          0        nan        nan           0           0
+n_comments_lag10                 0          0        nan        nan           0           0
+n_comments_lag11                 0          0        nan        nan           0           0
+n_comments_lag12                 0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                        2.413   Durbin-Watson:                   2.009
+Prob(Omnibus):                  0.299   Jarque-Bera (JB):                2.395
+Skew:                           0.042   Prob(JB):                        0.302
+Kurtosis:                       2.896   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

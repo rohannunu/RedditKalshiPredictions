@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              oi_change   R-squared:                       0.340
+Model:                            OLS   Adj. R-squared:                  0.335
+Method:                 Least Squares   F-statistic:                     67.54
+Date:                Mon, 04 May 2026   Prob (F-statistic):          3.97e-262
+Time:                        22:56:32   Log-Likelihood:                -37869.
+No. Observations:                3168   AIC:                         7.579e+04
+Df Residuals:                    3143   BIC:                         7.594e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const             1631.1169    689.148      2.367      0.018     279.892    2982.342
+oi_change_lag1       0.0811      0.018      4.529      0.000       0.046       0.116
+oi_change_lag2       0.4337      0.018     24.198      0.000       0.399       0.469
+oi_change_lag3       0.1021      0.019      5.271      0.000       0.064       0.140
+oi_change_lag4      -0.0292      0.019     -1.520      0.129      -0.067       0.008
+oi_change_lag5      -0.0171      0.019     -0.892      0.373      -0.055       0.020
+oi_change_lag6       0.0219      0.019      1.148      0.251      -0.016       0.059
+oi_change_lag7       0.0724      0.019      3.783      0.000       0.035       0.110
+oi_change_lag8       0.0923      0.019      4.805      0.000       0.055       0.130
+oi_change_lag9       0.1788      0.019      9.273      0.000       0.141       0.217
+oi_change_lag10     -0.1440      0.019     -7.399      0.000      -0.182      -0.106
+oi_change_lag11     -0.0641      0.018     -3.553      0.000      -0.099      -0.029
+oi_change_lag12      0.0374      0.018      2.070      0.039       0.002       0.073
+n_comments_lag1  -1.568e+04   3.78e+04     -0.415      0.678   -8.97e+04    5.84e+04
+n_comments_lag2   3672.7045   3.78e+04      0.097      0.923   -7.04e+04    7.77e+04
+n_comments_lag3   1.546e+04   3.78e+04      0.409      0.682   -5.86e+04    8.95e+04
+n_comments_lag4  -1.178e+04   3.78e+04     -0.312      0.755   -8.58e+04    6.23e+04
+n_comments_lag5  -3092.0642   3.78e+04     -0.082      0.935   -7.71e+04    7.09e+04
+n_comments_lag6  -5000.6920   3.78e+04     -0.132      0.895    -7.9e+04     6.9e+04
+n_comments_lag7   1875.8070   3.78e+04      0.050      0.960   -7.22e+04    7.59e+04
+n_comments_lag8   1.988e+04   3.78e+04      0.527      0.599   -5.42e+04    9.39e+04
+n_comments_lag9  -4724.2227   3.78e+04     -0.125      0.900   -7.88e+04    6.93e+04
+n_comments_lag10 -8792.4491   3.78e+04     -0.233      0.816   -8.28e+04    6.52e+04
+n_comments_lag11  4332.0454   3.78e+04      0.115      0.909   -6.97e+04    7.84e+04
+n_comments_lag12 -2057.8417   3.78e+04     -0.055      0.957   -7.61e+04     7.2e+04
+==============================================================================
+Omnibus:                     5758.861   Durbin-Watson:                   1.992
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         13725011.894
+Skew:                          12.861   Prob(JB):                         0.00
+Kurtosis:                     324.428   Cond. No.                     5.54e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.54e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.

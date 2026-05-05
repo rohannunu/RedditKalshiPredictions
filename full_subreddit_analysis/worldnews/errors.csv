@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,n,error
+worldnews,mamdani,price_change,mean_compound,99,Not enough rows (< 100)
+worldnews,mamdani,price_change,sentiment_change,99,Not enough rows (< 100)
+worldnews,mamdani,price_change,n_comments,99,Not enough rows (< 100)
+worldnews,mamdani,price_change,log_comments_change,99,Not enough rows (< 100)
+worldnews,mamdani,log_volume_change,mean_compound,99,Not enough rows (< 100)
+worldnews,mamdani,log_volume_change,sentiment_change,99,Not enough rows (< 100)
+worldnews,mamdani,log_volume_change,n_comments,99,Not enough rows (< 100)
+worldnews,mamdani,log_volume_change,log_comments_change,99,Not enough rows (< 100)
+worldnews,mamdani,oi_change,mean_compound,99,Not enough rows (< 100)
+worldnews,mamdani,oi_change,sentiment_change,99,Not enough rows (< 100)
+worldnews,mamdani,oi_change,n_comments,99,Not enough rows (< 100)
+worldnews,mamdani,oi_change,log_comments_change,99,Not enough rows (< 100)

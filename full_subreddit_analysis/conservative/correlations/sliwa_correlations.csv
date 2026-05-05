@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+conservative,sliwa,mean_compound,price_change,3267,-0.003640276981416974,-0.024681497550789543
+conservative,sliwa,mean_compound,log_volume_change,3267,0.026747862055677387,0.022737662275271405
+conservative,sliwa,mean_compound,oi_change,3267,0.13564726542597752,0.07287263661613351
+conservative,sliwa,sentiment_change,price_change,3267,-0.018573122704288167,-0.05886979849492619
+conservative,sliwa,sentiment_change,log_volume_change,3267,0.03368853505053944,0.032606823688441755
+conservative,sliwa,sentiment_change,oi_change,3267,0.043180243160296485,0.019431407947230004
+conservative,sliwa,n_comments,price_change,3267,0.017189135171675165,0.025613043684626736
+conservative,sliwa,n_comments,log_volume_change,3267,0.008239467016085454,-0.005465339523798395
+conservative,sliwa,n_comments,oi_change,3267,0.2649020755806882,0.1165086020987733
+conservative,sliwa,log_comments_change,price_change,3267,0.036899065294476716,0.02052287492576128
+conservative,sliwa,log_comments_change,log_volume_change,3267,0.011836370818115147,0.005653376309521449
+conservative,sliwa,log_comments_change,oi_change,3267,0.06086083550207451,-0.0040210429437234395

@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+Manhattan,cuomo,log_volume_change,log_comments_change,0.4824956450734955
+Manhattan,cuomo,log_volume_change,mean_compound,0.48137312347568595
+Manhattan,cuomo,log_volume_change,n_comments,0.48137312347568595
+Manhattan,cuomo,log_volume_change,sentiment_change,0.4824956450734955
+Manhattan,cuomo,oi_change,log_comments_change,0.6875750419705643
+Manhattan,cuomo,oi_change,mean_compound,0.8006924092636638
+Manhattan,cuomo,oi_change,n_comments,0.8006924092636638
+Manhattan,cuomo,oi_change,sentiment_change,0.6875750419705643
+Manhattan,cuomo,price_change,log_comments_change,1.7739435230977003e-63
+Manhattan,cuomo,price_change,mean_compound,6.288935865788188e-66
+Manhattan,cuomo,price_change,n_comments,6.288935865788188e-66
+Manhattan,cuomo,price_change,sentiment_change,1.773943523098406e-63

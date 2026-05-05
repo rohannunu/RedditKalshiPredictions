@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+newyork,cuomo,mean_compound,price_change,3091,-0.01543306827971796,-0.00042064449803575946
+newyork,cuomo,mean_compound,log_volume_change,3091,0.007635893191225271,0.01591980619921816
+newyork,cuomo,mean_compound,oi_change,3091,0.03756961079439394,0.047330228539240314
+newyork,cuomo,sentiment_change,price_change,3091,-0.0394054585347137,-0.029110951425140894
+newyork,cuomo,sentiment_change,log_volume_change,3091,0.022135936295634193,0.02589538689013815
+newyork,cuomo,sentiment_change,oi_change,3091,-0.019265271788866112,-0.00949661875751859
+newyork,cuomo,n_comments,price_change,3091,-0.0031441724297077605,-0.005272205595503565
+newyork,cuomo,n_comments,log_volume_change,3091,0.01861078770790429,0.02623640774692939
+newyork,cuomo,n_comments,oi_change,3091,0.0915086941326808,0.14647607854480169
+newyork,cuomo,log_comments_change,price_change,3091,-0.01569703691474005,-0.0031500749818402693
+newyork,cuomo,log_comments_change,log_volume_change,3091,0.022658726549936656,0.029577694343443522
+newyork,cuomo,log_comments_change,oi_change,3091,-0.034631089891326086,-0.014447093276835654

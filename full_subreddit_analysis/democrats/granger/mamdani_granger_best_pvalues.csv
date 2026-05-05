@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+democrats,mamdani,log_volume_change,log_comments_change,0.26803351612408033
+democrats,mamdani,log_volume_change,mean_compound,0.22462843102043994
+democrats,mamdani,log_volume_change,n_comments,0.22331609471788222
+democrats,mamdani,log_volume_change,sentiment_change,0.029267189142000875
+democrats,mamdani,oi_change,log_comments_change,0.9390851145220359
+democrats,mamdani,oi_change,mean_compound,0.8312164534254904
+democrats,mamdani,oi_change,n_comments,0.765809129301902
+democrats,mamdani,oi_change,sentiment_change,0.6258687157010252
+democrats,mamdani,price_change,log_comments_change,1.7320002613270393e-14
+democrats,mamdani,price_change,mean_compound,3.2587441934896874e-12
+democrats,mamdani,price_change,n_comments,1.4463338272387451e-13
+democrats,mamdani,price_change,sentiment_change,1.4657548398871132e-29

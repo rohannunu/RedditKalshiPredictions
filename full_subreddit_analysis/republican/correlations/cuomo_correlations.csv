@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+republican,cuomo,mean_compound,price_change,3208,-0.06111498313237368,-0.050065043591297834
+republican,cuomo,mean_compound,log_volume_change,3208,-0.0033461566032376966,0.012605127782524688
+republican,cuomo,mean_compound,oi_change,3208,0.07459351031882068,-0.009076336986698822
+republican,cuomo,sentiment_change,price_change,3208,-0.017690517138355476,-0.018413153973622344
+republican,cuomo,sentiment_change,log_volume_change,3208,0.006605900034281076,0.01740078367528513
+republican,cuomo,sentiment_change,oi_change,3208,-0.06297660153354985,-0.015613435770504185
+republican,cuomo,n_comments,price_change,3208,0.00399392599755975,4.0108014280653526e-05
+republican,cuomo,n_comments,log_volume_change,3208,0.011710798689685166,0.03169524664287116
+republican,cuomo,n_comments,oi_change,3208,0.038630200102117034,0.05436553616239794
+republican,cuomo,log_comments_change,price_change,3208,0.027360489550300356,0.01824388194650909
+republican,cuomo,log_comments_change,log_volume_change,3208,0.02263587429037203,0.02756448636134153
+republican,cuomo,log_comments_change,oi_change,3208,-0.0628983137962426,-0.0011064794154694727

@@ -1,0 +1,48 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           price_change   R-squared:                       0.034
+Model:                            OLS   Adj. R-squared:                  0.027
+Method:                 Least Squares   F-statistic:                     4.817
+Date:                Mon, 04 May 2026   Prob (F-statistic):           1.13e-13
+Time:                        22:56:51   Log-Likelihood:                 13858.
+No. Observations:                3262   AIC:                        -2.767e+04
+Df Residuals:                    3237   BIC:                        -2.751e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                      6.079e-05   6.09e-05      0.999      0.318   -5.86e-05       0.000
+price_change_lag1            -0.0635      0.018     -3.618      0.000      -0.098      -0.029
+price_change_lag2            -0.0050      0.018     -0.287      0.774      -0.039       0.029
+price_change_lag3            -0.0391      0.018     -2.231      0.026      -0.074      -0.005
+price_change_lag4             0.0095      0.017      0.546      0.585      -0.025       0.044
+price_change_lag5             0.0170      0.017      0.973      0.331      -0.017       0.051
+price_change_lag6             0.0186      0.017      1.070      0.285      -0.015       0.053
+price_change_lag7             0.0220      0.017      1.266      0.206      -0.012       0.056
+price_change_lag8             0.0085      0.017      0.493      0.622      -0.025       0.042
+price_change_lag9            -0.0117      0.017     -0.678      0.498      -0.045       0.022
+price_change_lag10           -0.0178      0.017     -1.034      0.301      -0.052       0.016
+price_change_lag11            0.0138      0.017      0.804      0.422      -0.020       0.048
+price_change_lag12            0.0239      0.017      1.394      0.163      -0.010       0.057
+log_comments_change_lag1      0.0004      0.000      1.031      0.303      -0.000       0.001
+log_comments_change_lag2     -0.0017      0.000     -4.547      0.000      -0.002      -0.001
+log_comments_change_lag3     -0.0003      0.000     -0.778      0.437      -0.001       0.000
+log_comments_change_lag4      0.0002      0.000      0.499      0.618      -0.001       0.001
+log_comments_change_lag5     -0.0019      0.000     -4.942      0.000      -0.003      -0.001
+log_comments_change_lag6     -0.0012      0.000     -2.978      0.003      -0.002      -0.000
+log_comments_change_lag7     -0.0014      0.000     -3.691      0.000      -0.002      -0.001
+log_comments_change_lag8     -0.0005      0.000     -1.356      0.175      -0.001       0.000
+log_comments_change_lag9     -0.0010      0.000     -2.639      0.008      -0.002      -0.000
+log_comments_change_lag10     0.0007      0.000      1.769      0.077   -7.22e-05       0.001
+log_comments_change_lag11     0.0009      0.000      2.389      0.017       0.000       0.002
+log_comments_change_lag12     0.0005      0.000      1.413      0.158      -0.000       0.001
+==============================================================================
+Omnibus:                     1408.150   Durbin-Watson:                   2.001
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           146724.927
+Skew:                          -1.083   Prob(JB):                         0.00
+Kurtosis:                      35.785   Cond. No.                         313.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_volume_change   R-squared:                       0.310
+Model:                            OLS   Adj. R-squared:                  0.305
+Method:                 Least Squares   F-statistic:                     58.95
+Date:                Mon, 04 May 2026   Prob (F-statistic):          2.17e-232
+Time:                        22:56:32   Log-Likelihood:                -8165.1
+No. Observations:                3168   AIC:                         1.638e+04
+Df Residuals:                    3143   BIC:                         1.653e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                       0.0059      0.057      0.103      0.918      -0.106       0.117
+log_volume_change_lag1     -0.6597      0.018    -37.078      0.000      -0.695      -0.625
+log_volume_change_lag2     -0.4176      0.021    -19.695      0.000      -0.459      -0.376
+log_volume_change_lag3     -0.2807      0.022    -12.576      0.000      -0.324      -0.237
+log_volume_change_lag4     -0.2366      0.023    -10.418      0.000      -0.281      -0.192
+log_volume_change_lag5     -0.1749      0.023     -7.633      0.000      -0.220      -0.130
+log_volume_change_lag6     -0.1884      0.023     -8.205      0.000      -0.233      -0.143
+log_volume_change_lag7     -0.1550      0.023     -6.749      0.000      -0.200      -0.110
+log_volume_change_lag8     -0.1656      0.023     -7.226      0.000      -0.211      -0.121
+log_volume_change_lag9     -0.1398      0.023     -6.157      0.000      -0.184      -0.095
+log_volume_change_lag10    -0.1452      0.022     -6.510      0.000      -0.189      -0.101
+log_volume_change_lag11    -0.1265      0.021     -5.967      0.000      -0.168      -0.085
+log_volume_change_lag12    -0.0715      0.018     -4.020      0.000      -0.106      -0.037
+sentiment_change_lag1      -5.2950      6.352     -0.834      0.405     -17.750       7.160
+sentiment_change_lag2      -3.2179      8.617     -0.373      0.709     -20.113      13.677
+sentiment_change_lag3      -1.0360     10.069     -0.103      0.918     -20.778      18.706
+sentiment_change_lag4      -3.2338     11.020     -0.293      0.769     -24.841      18.374
+sentiment_change_lag5       0.1273     11.607      0.011      0.991     -22.631      22.886
+sentiment_change_lag6       2.9301     11.880      0.247      0.805     -20.363      26.223
+sentiment_change_lag7       8.6250     11.868      0.727      0.467     -14.644      31.894
+sentiment_change_lag8       9.2888     11.574      0.803      0.422     -13.405      31.983
+sentiment_change_lag9       6.6289     10.975      0.604      0.546     -14.890      28.148
+sentiment_change_lag10      3.4603     10.016      0.345      0.730     -16.178      23.098
+sentiment_change_lag11      2.9337      8.575      0.342      0.732     -13.879      19.746
+sentiment_change_lag12      0.4520      6.332      0.071      0.943     -11.963      12.867
+==============================================================================
+Omnibus:                        2.926   Durbin-Watson:                   2.009
+Prob(Omnibus):                  0.232   Jarque-Bera (JB):                2.875
+Skew:                           0.047   Prob(JB):                        0.237
+Kurtosis:                       2.887   Cond. No.                     2.62e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.62e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+bronx,cuomo,mean_compound,price_change,3228,0.03964718210784977,0.0318722378241994
+bronx,cuomo,mean_compound,log_volume_change,3228,-0.009657735816864332,-0.0020839401002034773
+bronx,cuomo,mean_compound,oi_change,3228,0.11641733332149666,0.01604616380067284
+bronx,cuomo,sentiment_change,price_change,3228,-0.00300537515123941,0.02542150315100037
+bronx,cuomo,sentiment_change,log_volume_change,3228,-0.0038006486126220453,0.023763777434350382
+bronx,cuomo,sentiment_change,oi_change,3228,0.1598073393913937,-0.011709648141319634
+bronx,cuomo,n_comments,price_change,3228,-0.025968822859221353,0.0003684433294031996
+bronx,cuomo,n_comments,log_volume_change,3228,0.016841548745291042,0.006574118746725279
+bronx,cuomo,n_comments,oi_change,3228,0.22358124886819997,0.1227417166617374
+bronx,cuomo,log_comments_change,price_change,3228,-0.011392179173161899,-0.03462834160787261
+bronx,cuomo,log_comments_change,log_volume_change,3228,0.03020297554165548,0.04839508815430592
+bronx,cuomo,log_comments_change,oi_change,3228,0.16316632029740244,0.010356728743167138

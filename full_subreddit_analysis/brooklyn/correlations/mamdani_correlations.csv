@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+brooklyn,mamdani,mean_compound,price_change,3286,0.05253435076933909,0.016690868543146782
+brooklyn,mamdani,mean_compound,log_volume_change,3286,-0.003639046114987647,-0.003978405910158246
+brooklyn,mamdani,mean_compound,oi_change,3286,0.10674494334872195,0.044039287085477864
+brooklyn,mamdani,sentiment_change,price_change,3286,0.09910321191078592,0.04172627552820768
+brooklyn,mamdani,sentiment_change,log_volume_change,3286,-0.024462572543839975,-0.030992395027170102
+brooklyn,mamdani,sentiment_change,oi_change,3286,-0.00402416420709127,-0.02880743340711258
+brooklyn,mamdani,n_comments,price_change,3286,0.024256261662097097,-0.005486355417542058
+brooklyn,mamdani,n_comments,log_volume_change,3286,0.004227850633123567,0.008151298291804051
+brooklyn,mamdani,n_comments,oi_change,3286,0.22092217275216894,0.0655719123676814
+brooklyn,mamdani,log_comments_change,price_change,3286,-0.018320730014849816,-0.006182824315427936
+brooklyn,mamdani,log_comments_change,log_volume_change,3286,0.012482694678505239,0.009592119751783692
+brooklyn,mamdani,log_comments_change,oi_change,3286,0.06763930387332687,-0.01375927160435725

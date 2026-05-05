@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+republican,cuomo,log_volume_change,log_comments_change,0.41652152580712937
+republican,cuomo,log_volume_change,mean_compound,0.3563984193365647
+republican,cuomo,log_volume_change,n_comments,0.1511325505248129
+republican,cuomo,log_volume_change,sentiment_change,0.3086430894907651
+republican,cuomo,oi_change,log_comments_change,1.192322529883985e-29
+republican,cuomo,oi_change,mean_compound,3.6434536970077835e-25
+republican,cuomo,oi_change,n_comments,1.6153672450592703e-11
+republican,cuomo,oi_change,sentiment_change,3.0254860611282776e-23
+republican,cuomo,price_change,log_comments_change,0.06868424242245263
+republican,cuomo,price_change,mean_compound,0.034635602625629765
+republican,cuomo,price_change,n_comments,0.17953606126006902
+republican,cuomo,price_change,sentiment_change,0.11317679220028434

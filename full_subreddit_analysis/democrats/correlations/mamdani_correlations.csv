@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+democrats,mamdani,mean_compound,price_change,3162,-0.0004118603484967574,-0.0008641790951904407
+democrats,mamdani,mean_compound,log_volume_change,3162,-0.0016251817191549492,-0.004641389964412552
+democrats,mamdani,mean_compound,oi_change,3162,0.03562510509046707,0.0452923664529836
+democrats,mamdani,sentiment_change,price_change,3162,-0.046683690237699034,-0.029462491076278415
+democrats,mamdani,sentiment_change,log_volume_change,3162,-0.00786939507716505,-0.017707232076106937
+democrats,mamdani,sentiment_change,oi_change,3162,0.0016914168451377227,-0.01180663062158267
+democrats,mamdani,n_comments,price_change,3162,0.00411395895737964,0.032165347501520905
+democrats,mamdani,n_comments,log_volume_change,3162,0.0014274103596664276,0.0024196691030894052
+democrats,mamdani,n_comments,oi_change,3162,0.011645442449598581,0.05394211904492009
+democrats,mamdani,log_comments_change,price_change,3162,-0.006776046775664114,-0.02706063483823096
+democrats,mamdani,log_comments_change,log_volume_change,3162,-0.0025825772686122223,-0.007161452510496068
+democrats,mamdani,log_comments_change,oi_change,3162,0.013669565077040053,-0.0026204012468260497

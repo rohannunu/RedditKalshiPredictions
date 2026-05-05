@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+republican,mamdani,mean_compound,price_change,3196,-0.006079047026280593,-0.008439730091771394
+republican,mamdani,mean_compound,log_volume_change,3196,-0.0026725783487169053,-0.008738771081511882
+republican,mamdani,mean_compound,oi_change,3196,0.022599150976309875,-0.017262976187418917
+republican,mamdani,sentiment_change,price_change,3196,-0.027651959450028605,-0.021749377849175473
+republican,mamdani,sentiment_change,log_volume_change,3196,-0.007518970391408204,-0.011417985072552782
+republican,mamdani,sentiment_change,oi_change,3196,-0.00949136986230448,-0.016315010001533535
+republican,mamdani,n_comments,price_change,3196,-0.00907349909426722,-0.019614216849218123
+republican,mamdani,n_comments,log_volume_change,3196,-0.005943062235211806,-0.006527524494744101
+republican,mamdani,n_comments,oi_change,3196,0.033935224832362394,0.06821282318270669
+republican,mamdani,log_comments_change,price_change,3196,-0.042084852552488033,-0.02784745694550384
+republican,mamdani,log_comments_change,log_volume_change,3196,-0.00882361321238025,-0.004586753538473156
+republican,mamdani,log_comments_change,oi_change,3196,-0.013328056987234623,0.002812628262885879

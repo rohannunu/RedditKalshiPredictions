@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+statenisland,cuomo,log_volume_change,log_comments_change,0.2004245998860205
+statenisland,cuomo,log_volume_change,mean_compound,0.024885546593343525
+statenisland,cuomo,log_volume_change,n_comments,0.21515476027782823
+statenisland,cuomo,log_volume_change,sentiment_change,0.2505743858903884
+statenisland,cuomo,oi_change,log_comments_change,4.720235930260301e-27
+statenisland,cuomo,oi_change,mean_compound,7.603758124966184e-30
+statenisland,cuomo,oi_change,n_comments,0.010595466370615939
+statenisland,cuomo,oi_change,sentiment_change,2.9443007995964164e-26
+statenisland,cuomo,price_change,log_comments_change,5.068058988987892e-36
+statenisland,cuomo,price_change,mean_compound,1.172513567657938e-56
+statenisland,cuomo,price_change,n_comments,1.2572207958297125e-37
+statenisland,cuomo,price_change,sentiment_change,1.1850397498904517e-57

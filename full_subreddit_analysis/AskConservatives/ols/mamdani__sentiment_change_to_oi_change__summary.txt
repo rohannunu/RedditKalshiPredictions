@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              oi_change   R-squared:                       0.122
+Model:                            OLS   Adj. R-squared:                  0.116
+Method:                 Least Squares   F-statistic:                     18.54
+Date:                Mon, 04 May 2026   Prob (F-statistic):           1.51e-73
+Time:                        22:56:28   Log-Likelihood:                -40024.
+No. Observations:                3224   AIC:                         8.010e+04
+Df Residuals:                    3199   BIC:                         8.025e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                   3260.3395   1092.148      2.985      0.003    1118.958    5401.721
+oi_change_lag1             0.2371      0.018     13.460      0.000       0.203       0.272
+oi_change_lag2            -0.0143      0.018     -0.788      0.431      -0.050       0.021
+oi_change_lag3             0.0479      0.018      2.622      0.009       0.012       0.084
+oi_change_lag4             0.0275      0.018      1.509      0.131      -0.008       0.063
+oi_change_lag5             0.0141      0.018      0.770      0.441      -0.022       0.050
+oi_change_lag6             0.1224      0.018      6.643      0.000       0.086       0.158
+oi_change_lag7            -0.0068      0.019     -0.366      0.714      -0.043       0.030
+oi_change_lag8             0.0769      0.020      3.898      0.000       0.038       0.116
+oi_change_lag9             0.0779      0.020      3.912      0.000       0.039       0.117
+oi_change_lag10            0.0172      0.020      0.867      0.386      -0.022       0.056
+oi_change_lag11            0.0054      0.020      0.274      0.784      -0.033       0.044
+oi_change_lag12           -0.0334      0.020     -1.711      0.087      -0.072       0.005
+sentiment_change_lag1    739.9860    2.2e+04      0.034      0.973   -4.25e+04     4.4e+04
+sentiment_change_lag2   3686.7727    2.9e+04      0.127      0.899   -5.31e+04    6.05e+04
+sentiment_change_lag3   1.264e+04   3.32e+04      0.381      0.703   -5.24e+04    7.77e+04
+sentiment_change_lag4   -6.63e+04   3.47e+04     -1.909      0.056   -1.34e+05    1798.165
+sentiment_change_lag5   -1.29e+05   3.53e+04     -3.650      0.000   -1.98e+05   -5.97e+04
+sentiment_change_lag6  -1.308e+05   3.39e+04     -3.863      0.000   -1.97e+05   -6.44e+04
+sentiment_change_lag7   -8.67e+04   3.25e+04     -2.665      0.008    -1.5e+05   -2.29e+04
+sentiment_change_lag8  -7.361e+04   3.16e+04     -2.331      0.020   -1.36e+05   -1.17e+04
+sentiment_change_lag9   -1.13e+05   3.01e+04     -3.749      0.000   -1.72e+05   -5.39e+04
+sentiment_change_lag10  -4.83e+04   2.82e+04     -1.711      0.087   -1.04e+05    7061.531
+sentiment_change_lag11 -8.834e+04   2.45e+04     -3.599      0.000   -1.36e+05   -4.02e+04
+sentiment_change_lag12 -9.265e+04   1.88e+04     -4.941      0.000   -1.29e+05   -5.59e+04
+==============================================================================
+Omnibus:                     7895.552   Durbin-Watson:                   1.999
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        121145397.961
+Skew:                          25.277   Prob(JB):                         0.00
+Kurtosis:                     951.299   Cond. No.                     7.43e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.43e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.

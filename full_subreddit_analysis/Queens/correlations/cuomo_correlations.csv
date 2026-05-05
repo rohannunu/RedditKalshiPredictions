@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+Queens,cuomo,mean_compound,price_change,3240,,
+Queens,cuomo,mean_compound,log_volume_change,3240,,
+Queens,cuomo,mean_compound,oi_change,3240,,
+Queens,cuomo,sentiment_change,price_change,3240,,
+Queens,cuomo,sentiment_change,log_volume_change,3240,,
+Queens,cuomo,sentiment_change,oi_change,3240,,
+Queens,cuomo,n_comments,price_change,3240,,
+Queens,cuomo,n_comments,log_volume_change,3240,,
+Queens,cuomo,n_comments,oi_change,3240,,
+Queens,cuomo,log_comments_change,price_change,3240,,
+Queens,cuomo,log_comments_change,log_volume_change,3240,,
+Queens,cuomo,log_comments_change,oi_change,3240,,

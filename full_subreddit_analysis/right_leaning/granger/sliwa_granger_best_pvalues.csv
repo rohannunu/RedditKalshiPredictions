@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+right_leaning,sliwa,log_volume_change,log_comments_change,0.00013532460267485388
+right_leaning,sliwa,log_volume_change,mean_compound,0.011237406382510924
+right_leaning,sliwa,log_volume_change,n_comments,0.00035197459320271727
+right_leaning,sliwa,log_volume_change,sentiment_change,0.04711099870775461
+right_leaning,sliwa,oi_change,log_comments_change,2.4235193547172098e-23
+right_leaning,sliwa,oi_change,mean_compound,2.1015541496119784e-12
+right_leaning,sliwa,oi_change,n_comments,1.0741547516952166e-79
+right_leaning,sliwa,oi_change,sentiment_change,2.4309690225901263e-12
+right_leaning,sliwa,price_change,log_comments_change,0.003724893677244913
+right_leaning,sliwa,price_change,mean_compound,0.08252734353891497
+right_leaning,sliwa,price_change,n_comments,0.12179007821841943
+right_leaning,sliwa,price_change,sentiment_change,0.02785699722044436

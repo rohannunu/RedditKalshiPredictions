@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+AskALiberal,cuomo,mean_compound,price_change,3234,0.06734918460493985,0.049129478787900936
+AskALiberal,cuomo,mean_compound,log_volume_change,3234,0.0048896959695052715,0.0036590654990398953
+AskALiberal,cuomo,mean_compound,oi_change,3234,-0.011386326858180338,0.021198572723250948
+AskALiberal,cuomo,sentiment_change,price_change,3234,0.09487786345699376,0.037077228256570276
+AskALiberal,cuomo,sentiment_change,log_volume_change,3234,-0.0048076547417273225,-0.010643087752004522
+AskALiberal,cuomo,sentiment_change,oi_change,3234,-0.0069906698221694746,-0.0011082294422898238
+AskALiberal,cuomo,n_comments,price_change,3234,0.050173517979434666,-0.015249098782032506
+AskALiberal,cuomo,n_comments,log_volume_change,3234,0.01091846978722945,0.015179419375837408
+AskALiberal,cuomo,n_comments,oi_change,3234,0.07649928993488635,0.12859238784000337
+AskALiberal,cuomo,log_comments_change,price_change,3234,0.05087146266627795,0.000587489204150447
+AskALiberal,cuomo,log_comments_change,log_volume_change,3234,0.011141770781736584,0.015172675240223013
+AskALiberal,cuomo,log_comments_change,oi_change,3234,-0.006806341740765979,0.010381155279777374

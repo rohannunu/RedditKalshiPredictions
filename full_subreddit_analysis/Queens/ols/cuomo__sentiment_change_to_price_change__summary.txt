@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           price_change   R-squared:                       0.010
+Model:                            OLS   Adj. R-squared:                  0.006
+Method:                 Least Squares   F-statistic:                     2.694
+Date:                Mon, 04 May 2026   Prob (F-statistic):            0.00128
+Time:                        22:56:34   Log-Likelihood:                 13562.
+No. Observations:                3228   AIC:                        -2.710e+04
+Df Residuals:                    3215   BIC:                        -2.702e+04
+Df Model:                          12                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                  -1.224e-05   6.39e-05     -0.192      0.848      -0.000       0.000
+price_change_lag1         -0.0224      0.018     -1.270      0.204      -0.057       0.012
+price_change_lag2         -0.0310      0.018     -1.759      0.079      -0.065       0.004
+price_change_lag3         -0.0185      0.018     -1.051      0.294      -0.053       0.016
+price_change_lag4         -0.0093      0.018     -0.531      0.596      -0.044       0.025
+price_change_lag5         -0.0044      0.018     -0.252      0.801      -0.039       0.030
+price_change_lag6         -0.0333      0.018     -1.900      0.058      -0.068       0.001
+price_change_lag7          0.0120      0.018      0.686      0.493      -0.022       0.046
+price_change_lag8          0.0761      0.018      4.334      0.000       0.042       0.110
+price_change_lag9          0.0150      0.018      0.854      0.393      -0.019       0.050
+price_change_lag10         0.0258      0.018      1.463      0.144      -0.009       0.060
+price_change_lag11         0.0111      0.018      0.629      0.529      -0.023       0.046
+price_change_lag12        -0.0133      0.017     -0.764      0.445      -0.047       0.021
+sentiment_change_lag1           0          0        nan        nan           0           0
+sentiment_change_lag2           0          0        nan        nan           0           0
+sentiment_change_lag3           0          0        nan        nan           0           0
+sentiment_change_lag4           0          0        nan        nan           0           0
+sentiment_change_lag5           0          0        nan        nan           0           0
+sentiment_change_lag6           0          0        nan        nan           0           0
+sentiment_change_lag7           0          0        nan        nan           0           0
+sentiment_change_lag8           0          0        nan        nan           0           0
+sentiment_change_lag9           0          0        nan        nan           0           0
+sentiment_change_lag10          0          0        nan        nan           0           0
+sentiment_change_lag11          0          0        nan        nan           0           0
+sentiment_change_lag12          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                     1127.982   Durbin-Watson:                   1.999
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           399553.196
+Skew:                           0.143   Prob(JB):                         0.00
+Kurtosis:                      57.503   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

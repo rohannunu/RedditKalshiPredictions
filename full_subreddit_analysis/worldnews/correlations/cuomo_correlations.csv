@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+worldnews,cuomo,mean_compound,price_change,3235,0.05201916494486994,-0.0001578373325440252
+worldnews,cuomo,mean_compound,log_volume_change,3235,0.0001551691470773339,0.007868401399885948
+worldnews,cuomo,mean_compound,oi_change,3235,-0.21574218700257017,0.003857489261937194
+worldnews,cuomo,sentiment_change,price_change,3235,0.019352501660880636,-0.0006820754004062918
+worldnews,cuomo,sentiment_change,log_volume_change,3235,-0.010271439583317462,-0.00712791737151816
+worldnews,cuomo,sentiment_change,oi_change,3235,-0.14803984398075565,-0.022628740203051566
+worldnews,cuomo,n_comments,price_change,3235,0.0007251786647652118,0.0011597388368813494
+worldnews,cuomo,n_comments,log_volume_change,3235,0.0026852596489124417,0.004721019124412805
+worldnews,cuomo,n_comments,oi_change,3235,0.023868402627490758,0.18321587592714753
+worldnews,cuomo,log_comments_change,price_change,3235,-0.025987976374323252,-0.03901279195172126
+worldnews,cuomo,log_comments_change,log_volume_change,3235,0.012396725884863395,0.0260656428985544
+worldnews,cuomo,log_comments_change,oi_change,3235,0.05999911218451069,-0.046351986910302824

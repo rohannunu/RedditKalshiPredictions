@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           price_change   R-squared:                       0.079
+Model:                            OLS   Adj. R-squared:                  0.072
+Method:                 Least Squares   F-statistic:                     11.36
+Date:                Mon, 04 May 2026   Prob (F-statistic):           5.64e-42
+Time:                        22:57:02   Log-Likelihood:                 17048.
+No. Observations:                3217   AIC:                        -3.405e+04
+Df Residuals:                    3192   BIC:                        -3.389e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                  -1.764e-05   2.14e-05     -0.823      0.410   -5.97e-05    2.44e-05
+price_change_lag1         -0.1659      0.018     -9.391      0.000      -0.201      -0.131
+price_change_lag2         -0.0812      0.017     -4.679      0.000      -0.115      -0.047
+price_change_lag3         -0.0951      0.017     -5.522      0.000      -0.129      -0.061
+price_change_lag4         -0.0210      0.017     -1.217      0.224      -0.055       0.013
+price_change_lag5         -0.1114      0.017     -6.439      0.000      -0.145      -0.077
+price_change_lag6         -0.0292      0.017     -1.679      0.093      -0.063       0.005
+price_change_lag7          0.0294      0.017      1.691      0.091      -0.005       0.063
+price_change_lag8          0.0179      0.017      1.036      0.300      -0.016       0.052
+price_change_lag9         -0.0312      0.017     -1.806      0.071      -0.065       0.003
+price_change_lag10        -0.0593      0.017     -3.449      0.001      -0.093      -0.026
+price_change_lag11         0.0133      0.017      0.774      0.439      -0.020       0.047
+price_change_lag12        -0.0392      0.017     -2.316      0.021      -0.072      -0.006
+sentiment_change_lag1     -0.0020      0.001     -3.880      0.000      -0.003      -0.001
+sentiment_change_lag2     -0.0005      0.001     -0.815      0.415      -0.002       0.001
+sentiment_change_lag3     -0.0018      0.001     -2.229      0.026      -0.003      -0.000
+sentiment_change_lag4     -0.0006      0.001     -0.653      0.514      -0.002       0.001
+sentiment_change_lag5     -0.0021      0.001     -2.308      0.021      -0.004      -0.000
+sentiment_change_lag6     -0.0023      0.001     -2.427      0.015      -0.004      -0.000
+sentiment_change_lag7     -0.0020      0.001     -2.105      0.035      -0.004      -0.000
+sentiment_change_lag8     -0.0007      0.001     -0.774      0.439      -0.002       0.001
+sentiment_change_lag9     -0.0030      0.001     -3.424      0.001      -0.005      -0.001
+sentiment_change_lag10    -0.0019      0.001     -2.271      0.023      -0.003      -0.000
+sentiment_change_lag11    -0.0002      0.001     -0.224      0.822      -0.002       0.001
+sentiment_change_lag12    -0.0006      0.001     -1.033      0.302      -0.002       0.001
+==============================================================================
+Omnibus:                     1161.158   Durbin-Watson:                   1.997
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           404769.563
+Skew:                          -0.296   Prob(JB):                         0.00
+Kurtosis:                      57.949   Cond. No.                     1.09e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.09e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

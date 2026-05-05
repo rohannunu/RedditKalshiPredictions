@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+news,sliwa,log_volume_change,log_comments_change,0.07175183998637236
+news,sliwa,log_volume_change,mean_compound,0.009008763501170473
+news,sliwa,log_volume_change,n_comments,0.01845050175516854
+news,sliwa,log_volume_change,sentiment_change,0.1526660339019888
+news,sliwa,oi_change,log_comments_change,0.32339973680923484
+news,sliwa,oi_change,mean_compound,3.2071672934405062e-12
+news,sliwa,oi_change,n_comments,0.2533211685586558
+news,sliwa,oi_change,sentiment_change,0.00026091327852825297
+news,sliwa,price_change,log_comments_change,5.727258185791121e-35
+news,sliwa,price_change,mean_compound,1.0816728987724643e-11
+news,sliwa,price_change,n_comments,4.3216987317429085e-57
+news,sliwa,price_change,sentiment_change,1.2817843474608947e-15

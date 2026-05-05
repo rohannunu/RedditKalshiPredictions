@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+AskALiberal,mamdani,mean_compound,price_change,3271,-0.015407725127952486,-0.03111583796596222
+AskALiberal,mamdani,mean_compound,log_volume_change,3271,-0.010362242493085216,0.0015314408832705643
+AskALiberal,mamdani,mean_compound,oi_change,3271,0.06651232894516816,0.06608466805414147
+AskALiberal,mamdani,sentiment_change,price_change,3271,-0.057782243768484884,-0.06752592570806226
+AskALiberal,mamdani,sentiment_change,log_volume_change,3271,-0.012286345526812275,-0.010845996525431143
+AskALiberal,mamdani,sentiment_change,oi_change,3271,-0.003917035051740095,0.004324747817782062
+AskALiberal,mamdani,n_comments,price_change,3271,-0.09652651985258069,-0.006768056170095423
+AskALiberal,mamdani,n_comments,log_volume_change,3271,0.004528218621380758,-0.0003897353389903894
+AskALiberal,mamdani,n_comments,oi_change,3271,0.062104783219402736,0.15917903113929877
+AskALiberal,mamdani,log_comments_change,price_change,3271,-0.0372993471796737,-0.004960384746314369
+AskALiberal,mamdani,log_comments_change,log_volume_change,3271,-0.0026858828663176675,0.0035766215329860484
+AskALiberal,mamdani,log_comments_change,oi_change,3271,0.03050802401280634,-0.008375706905957053

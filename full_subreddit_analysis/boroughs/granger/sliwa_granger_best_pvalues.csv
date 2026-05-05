@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+boroughs,sliwa,log_volume_change,log_comments_change,0.49741611810477293
+boroughs,sliwa,log_volume_change,mean_compound,0.29770219737607523
+boroughs,sliwa,log_volume_change,n_comments,0.9031169488059986
+boroughs,sliwa,log_volume_change,sentiment_change,0.18778127817865795
+boroughs,sliwa,oi_change,log_comments_change,8.805048164862527e-21
+boroughs,sliwa,oi_change,mean_compound,3.16584815222031e-11
+boroughs,sliwa,oi_change,n_comments,4.2101555300067805e-33
+boroughs,sliwa,oi_change,sentiment_change,1.602695981719301e-11
+boroughs,sliwa,price_change,log_comments_change,0.04648167621758604
+boroughs,sliwa,price_change,mean_compound,0.5313379185122691
+boroughs,sliwa,price_change,n_comments,0.9792994306261635
+boroughs,sliwa,price_change,sentiment_change,0.10543886853438286

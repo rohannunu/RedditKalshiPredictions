@@ -1,0 +1,13 @@
+subreddit,candidate,x,y,n,pearson_corr,spearman_corr
+democrats,sliwa,mean_compound,price_change,0,,
+democrats,sliwa,mean_compound,log_volume_change,0,,
+democrats,sliwa,mean_compound,oi_change,0,,
+democrats,sliwa,sentiment_change,price_change,0,,
+democrats,sliwa,sentiment_change,log_volume_change,0,,
+democrats,sliwa,sentiment_change,oi_change,0,,
+democrats,sliwa,n_comments,price_change,0,,
+democrats,sliwa,n_comments,log_volume_change,0,,
+democrats,sliwa,n_comments,oi_change,0,,
+democrats,sliwa,log_comments_change,price_change,0,,
+democrats,sliwa,log_comments_change,log_volume_change,0,,
+democrats,sliwa,log_comments_change,oi_change,0,,

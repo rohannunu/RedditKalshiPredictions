@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,best_p_value
+politics,mamdani,log_volume_change,log_comments_change,0.11848816116420574
+politics,mamdani,log_volume_change,mean_compound,0.47548057654272047
+politics,mamdani,log_volume_change,n_comments,0.20487818361503712
+politics,mamdani,log_volume_change,sentiment_change,0.24484166114092087
+politics,mamdani,oi_change,log_comments_change,2.042819222814103e-14
+politics,mamdani,oi_change,mean_compound,0.0004066079250028676
+politics,mamdani,oi_change,n_comments,0.0
+politics,mamdani,oi_change,sentiment_change,0.0024794867341499742
+politics,mamdani,price_change,log_comments_change,1.4755655026349025e-05
+politics,mamdani,price_change,mean_compound,1.937324461454377e-05
+politics,mamdani,price_change,n_comments,0.000716253745229261
+politics,mamdani,price_change,sentiment_change,1.119425351966616e-06

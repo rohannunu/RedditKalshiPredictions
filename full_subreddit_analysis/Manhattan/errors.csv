@@ -1,0 +1,13 @@
+subreddit,candidate,y,x,n,error
+Manhattan,sliwa,price_change,mean_compound,8696,One series has no variation
+Manhattan,sliwa,price_change,sentiment_change,8696,One series has no variation
+Manhattan,sliwa,price_change,n_comments,8696,One series has no variation
+Manhattan,sliwa,price_change,log_comments_change,8696,One series has no variation
+Manhattan,sliwa,log_volume_change,mean_compound,8696,One series has no variation
+Manhattan,sliwa,log_volume_change,sentiment_change,8696,One series has no variation
+Manhattan,sliwa,log_volume_change,n_comments,8696,One series has no variation
+Manhattan,sliwa,log_volume_change,log_comments_change,8696,One series has no variation
+Manhattan,sliwa,oi_change,mean_compound,8696,One series has no variation
+Manhattan,sliwa,oi_change,sentiment_change,8696,One series has no variation
+Manhattan,sliwa,oi_change,n_comments,8696,One series has no variation
+Manhattan,sliwa,oi_change,log_comments_change,8696,One series has no variation

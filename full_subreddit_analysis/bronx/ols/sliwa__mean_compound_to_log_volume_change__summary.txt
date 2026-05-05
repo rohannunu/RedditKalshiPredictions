@@ -1,0 +1,48 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_volume_change   R-squared:                       0.386
+Model:                            OLS   Adj. R-squared:                  0.381
+Method:                 Least Squares   F-statistic:                     83.75
+Date:                Mon, 04 May 2026   Prob (F-statistic):          2.92e-316
+Time:                        22:56:47   Log-Likelihood:                -8416.6
+No. Observations:                3222   AIC:                         1.688e+04
+Df Residuals:                    3197   BIC:                         1.704e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      -0.0028      0.059     -0.047      0.962      -0.118       0.112
+log_volume_change_lag1     -0.7831      0.018    -44.464      0.000      -0.818      -0.749
+log_volume_change_lag2     -0.5794      0.022    -26.004      0.000      -0.623      -0.536
+log_volume_change_lag3     -0.4415      0.024    -18.106      0.000      -0.489      -0.394
+log_volume_change_lag4     -0.3650      0.025    -14.346      0.000      -0.415      -0.315
+log_volume_change_lag5     -0.3207      0.026    -12.333      0.000      -0.372      -0.270
+log_volume_change_lag6     -0.2877      0.026    -10.960      0.000      -0.339      -0.236
+log_volume_change_lag7     -0.2493      0.026     -9.499      0.000      -0.301      -0.198
+log_volume_change_lag8     -0.2026      0.026     -7.806      0.000      -0.253      -0.152
+log_volume_change_lag9     -0.1533      0.025     -6.041      0.000      -0.203      -0.104
+log_volume_change_lag10    -0.1329      0.024     -5.465      0.000      -0.181      -0.085
+log_volume_change_lag11    -0.1324      0.022     -5.955      0.000      -0.176      -0.089
+log_volume_change_lag12    -0.0924      0.018     -5.254      0.000      -0.127      -0.058
+mean_compound_lag1          1.1327      1.055      1.073      0.283      -0.936       3.202
+mean_compound_lag2         -0.5206      1.056     -0.493      0.622      -2.591       1.550
+mean_compound_lag3          0.3737      1.057      0.353      0.724      -1.700       2.447
+mean_compound_lag4          0.7276      1.062      0.685      0.493      -1.354       2.809
+mean_compound_lag5         -0.9317      1.060     -0.879      0.380      -3.011       1.147
+mean_compound_lag6         -0.3281      1.100     -0.298      0.765      -2.484       1.828
+mean_compound_lag7         -1.3083      1.100     -1.189      0.234      -3.465       0.849
+mean_compound_lag8         -1.2082      1.095     -1.104      0.270      -3.355       0.938
+mean_compound_lag9          0.5035      1.090      0.462      0.644      -1.633       2.640
+mean_compound_lag10         0.5087      1.135      0.448      0.654      -1.716       2.734
+mean_compound_lag11        -0.5568      1.136     -0.490      0.624      -2.783       1.670
+mean_compound_lag12         0.3331      1.134      0.294      0.769      -1.891       2.557
+==============================================================================
+Omnibus:                      133.525   Durbin-Watson:                   2.009
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              149.636
+Skew:                           0.525   Prob(JB):                     3.21e-33
+Kurtosis:                       3.111   Cond. No.                         147.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

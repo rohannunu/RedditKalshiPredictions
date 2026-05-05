@@ -1,0 +1,48 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_volume_change   R-squared:                       0.309
+Model:                            OLS   Adj. R-squared:                  0.304
+Method:                 Least Squares   F-statistic:                     59.55
+Date:                Mon, 04 May 2026   Prob (F-statistic):          3.73e-235
+Time:                        22:57:25   Log-Likelihood:                -8289.7
+No. Observations:                3218   AIC:                         1.663e+04
+Df Residuals:                    3193   BIC:                         1.678e+04
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                        -0.0014      0.056     -0.025      0.980      -0.112       0.109
+log_volume_change_lag1       -0.6565      0.018    -37.181      0.000      -0.691      -0.622
+log_volume_change_lag2       -0.4164      0.021    -19.812      0.000      -0.458      -0.375
+log_volume_change_lag3       -0.2806      0.022    -12.680      0.000      -0.324      -0.237
+log_volume_change_lag4       -0.2340      0.023    -10.387      0.000      -0.278      -0.190
+log_volume_change_lag5       -0.1738      0.023     -7.649      0.000      -0.218      -0.129
+log_volume_change_lag6       -0.1899      0.023     -8.348      0.000      -0.235      -0.145
+log_volume_change_lag7       -0.1547      0.023     -6.803      0.000      -0.199      -0.110
+log_volume_change_lag8       -0.1661      0.023     -7.319      0.000      -0.211      -0.122
+log_volume_change_lag9       -0.1365      0.022     -6.070      0.000      -0.181      -0.092
+log_volume_change_lag10      -0.1405      0.022     -6.366      0.000      -0.184      -0.097
+log_volume_change_lag11      -0.1235      0.021     -5.880      0.000      -0.165      -0.082
+log_volume_change_lag12      -0.0714      0.018     -4.045      0.000      -0.106      -0.037
+log_comments_change_lag1      0.2651      0.385      0.688      0.491      -0.490       1.020
+log_comments_change_lag2     -0.0273      0.414     -0.066      0.947      -0.839       0.785
+log_comments_change_lag3      0.3371      0.425      0.793      0.428      -0.496       1.170
+log_comments_change_lag4      0.2304      0.438      0.526      0.599      -0.628       1.089
+log_comments_change_lag5      0.2775      0.446      0.622      0.534      -0.597       1.152
+log_comments_change_lag6      0.6279      0.441      1.422      0.155      -0.238       1.494
+log_comments_change_lag7      0.6398      0.427      1.497      0.135      -0.198       1.478
+log_comments_change_lag8     -0.0344      0.426     -0.081      0.936      -0.870       0.801
+log_comments_change_lag9      0.5173      0.416      1.243      0.214      -0.299       1.333
+log_comments_change_lag10     0.2557      0.405      0.632      0.527      -0.538       1.049
+log_comments_change_lag11     0.1163      0.395      0.294      0.769      -0.659       0.892
+log_comments_change_lag12     0.3726      0.373      1.000      0.317      -0.358       1.103
+==============================================================================
+Omnibus:                        3.112   Durbin-Watson:                   2.010
+Prob(Omnibus):                  0.211   Jarque-Bera (JB):                3.025
+Skew:                           0.045   Prob(JB):                        0.220
+Kurtosis:                       2.880   Cond. No.                         76.6
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
