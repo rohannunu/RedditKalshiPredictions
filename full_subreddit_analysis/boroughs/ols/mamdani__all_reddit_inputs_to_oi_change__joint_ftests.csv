@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+boroughs,mamdani,oi_change,oi_change_autoregressive_lags,66.2747292301088,5.557310524942064e-54
+boroughs,mamdani,oi_change,mean_compound,14.015688920345086,2.4278590147844104e-11
+boroughs,mamdani,oi_change,sentiment_change,8.653291845694781,6.049184999169011e-07
+boroughs,mamdani,oi_change,n_comments,20.70167271440318,7.241666965485272e-17
+boroughs,mamdani,oi_change,log_comments_change,26.10913863620535,2.453499264035015e-21

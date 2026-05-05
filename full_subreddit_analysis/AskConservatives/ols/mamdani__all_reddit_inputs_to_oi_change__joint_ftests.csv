@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskConservatives,mamdani,oi_change,oi_change_autoregressive_lags,58.053300443485966,2.251376298504317e-47
+AskConservatives,mamdani,oi_change,mean_compound,5.942374255718828,9.218005659996361e-05
+AskConservatives,mamdani,oi_change,sentiment_change,5.971962726391151,8.731727399732588e-05
+AskConservatives,mamdani,oi_change,n_comments,4.810539785600883,0.0007209373394269906
+AskConservatives,mamdani,oi_change,log_comments_change,8.493371514040973,8.167895998770728e-07

@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+left_leaning,cuomo,oi_change,oi_change_autoregressive_lags,330.23565944383046,2.5471200968729914e-238
+left_leaning,cuomo,oi_change,mean_compound,15.156423349372547,2.7916443850228676e-12
+left_leaning,cuomo,oi_change,sentiment_change,22.953494500206716,1.0040198386927686e-18
+left_leaning,cuomo,oi_change,n_comments,2.78450303500926,0.025224385543071284
+left_leaning,cuomo,oi_change,log_comments_change,27.724270147411765,1.154949733566557e-22

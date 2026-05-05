@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+bronx,mamdani,price_change,price_change_autoregressive_lags,2.1214097448667677,0.07558182851389161
+bronx,mamdani,price_change,mean_compound,1.6455060905177188,0.15997907230681593
+bronx,mamdani,price_change,sentiment_change,5.717011259692292,0.00013914657395517436
+bronx,mamdani,price_change,n_comments,2.4196295703296227,0.0464245866397018
+bronx,mamdani,price_change,log_comments_change,22.151306929029104,4.591996803994223e-18
+bronx,mamdani,log_volume_change,log_volume_change_autoregressive_lags,145.75686543372686,8.96103956329327e-115
+bronx,mamdani,log_volume_change,mean_compound,0.7856064278577718,0.5343701957849296
+bronx,mamdani,log_volume_change,sentiment_change,0.7249781841875098,0.5747803200786867
+bronx,mamdani,log_volume_change,n_comments,0.061106252932009865,0.9931099331259453
+bronx,mamdani,log_volume_change,log_comments_change,0.6851178823138895,0.6022057579368378
+bronx,mamdani,oi_change,oi_change_autoregressive_lags,55.68121607557873,1.7524954886448918e-45
+bronx,mamdani,oi_change,mean_compound,10.344490498998061,2.527097053988067e-08
+bronx,mamdani,oi_change,sentiment_change,3.121521791658941,0.014202435846494598
+bronx,mamdani,oi_change,n_comments,3.1119120883173057,0.01443872688466271
+bronx,mamdani,oi_change,log_comments_change,22.299855310221243,3.460765628370336e-18

@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+news,mamdani,log_volume_change,log_volume_change_autoregressive_lags,145.18230688547953,2.5388111312725885e-114
+news,mamdani,log_volume_change,mean_compound,0.25507037964755297,0.9066815847638611
+news,mamdani,log_volume_change,sentiment_change,0.3197391580289529,0.8649115940852703
+news,mamdani,log_volume_change,n_comments,1.4091292916644544,0.22825371594794916
+news,mamdani,log_volume_change,log_comments_change,0.5503391136342144,0.698793481756199

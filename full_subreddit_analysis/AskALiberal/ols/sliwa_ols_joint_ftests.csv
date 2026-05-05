@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskALiberal,sliwa,price_change,price_change_autoregressive_lags,31.33998003148423,1.222449507448465e-25
+AskALiberal,sliwa,price_change,mean_compound,1.7916824160540274,0.1276240735711405
+AskALiberal,sliwa,price_change,sentiment_change,2.8538214958741213,0.022432463457490857
+AskALiberal,sliwa,price_change,n_comments,1.1225511646347113,0.3439187739939033
+AskALiberal,sliwa,price_change,log_comments_change,2.3157649986895636,0.05508810718650873
+AskALiberal,sliwa,log_volume_change,log_volume_change_autoregressive_lags,429.1613467266587,3.104717989462573e-296
+AskALiberal,sliwa,log_volume_change,mean_compound,0.13257166635044867,0.9704739598542946
+AskALiberal,sliwa,log_volume_change,sentiment_change,0.1621784038473945,0.9574835719135246
+AskALiberal,sliwa,log_volume_change,n_comments,1.8724498062073538,0.11244508313725926
+AskALiberal,sliwa,log_volume_change,log_comments_change,1.709257878872875,0.14504521279506158
+AskALiberal,sliwa,oi_change,oi_change_autoregressive_lags,82.23589000140208,1.5663607927223684e-66
+AskALiberal,sliwa,oi_change,mean_compound,4.122665266874068,0.0024674496277943625
+AskALiberal,sliwa,oi_change,sentiment_change,3.9274832478747306,0.003485770797949371
+AskALiberal,sliwa,oi_change,n_comments,0.40316708791463285,0.8064958446621256
+AskALiberal,sliwa,oi_change,log_comments_change,0.7417147361073245,0.5634623305232094

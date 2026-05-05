@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+politics,sliwa,price_change,price_change_autoregressive_lags,29.295134608107404,5.783923179609224e-24
+politics,sliwa,price_change,mean_compound,4.574200092641433,0.0011021340673952002
+politics,sliwa,price_change,sentiment_change,4.124379902427059,0.0024591622021309686
+politics,sliwa,price_change,n_comments,2.8670118266903923,0.021932998083573064
+politics,sliwa,price_change,log_comments_change,20.168223793738772,2.0033193839434267e-16
+politics,sliwa,log_volume_change,log_volume_change_autoregressive_lags,434.99997862133176,1.2564959671302277e-300
+politics,sliwa,log_volume_change,mean_compound,0.55428532310982,0.6959058598360313
+politics,sliwa,log_volume_change,sentiment_change,0.5981389611360987,0.6639990674257684
+politics,sliwa,log_volume_change,n_comments,1.0794722252490159,0.3648819835288052
+politics,sliwa,log_volume_change,log_comments_change,2.956705992985044,0.01882953922343857
+politics,sliwa,oi_change,oi_change_autoregressive_lags,74.3516174271732,2.1889718594761497e-60
+politics,sliwa,oi_change,mean_compound,7.345443077409094,6.925685331867522e-06
+politics,sliwa,oi_change,sentiment_change,6.221195001639883,5.524796319711453e-05
+politics,sliwa,oi_change,n_comments,1.2360259792420458,0.293314292983228
+politics,sliwa,oi_change,log_comments_change,6.6632586644847684,2.4478992947455634e-05

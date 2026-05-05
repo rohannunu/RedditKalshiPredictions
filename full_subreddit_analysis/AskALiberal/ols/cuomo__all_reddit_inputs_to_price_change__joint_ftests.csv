@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskALiberal,cuomo,price_change,price_change_autoregressive_lags,1.008957837475151,0.401349758137604
+AskALiberal,cuomo,price_change,mean_compound,5.3784392263936525,0.0002579662800436947
+AskALiberal,cuomo,price_change,sentiment_change,11.67110377621668,2.0697823601524746e-09
+AskALiberal,cuomo,price_change,n_comments,1.8151475398262147,0.12302749314079413
+AskALiberal,cuomo,price_change,log_comments_change,3.285656399976237,0.010704597268712025

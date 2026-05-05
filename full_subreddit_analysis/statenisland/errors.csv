@@ -1,25 +1,184 @@
-subreddit,candidate,y,x,n,error
-statenisland,sliwa,price_change,mean_compound,65,Not enough rows (< 100)
-statenisland,sliwa,price_change,sentiment_change,65,Not enough rows (< 100)
-statenisland,sliwa,price_change,n_comments,65,Not enough rows (< 100)
-statenisland,sliwa,price_change,log_comments_change,65,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,mean_compound,65,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,sentiment_change,65,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,n_comments,65,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,log_comments_change,65,Not enough rows (< 100)
-statenisland,sliwa,oi_change,mean_compound,65,Not enough rows (< 100)
-statenisland,sliwa,oi_change,sentiment_change,65,Not enough rows (< 100)
-statenisland,sliwa,oi_change,n_comments,65,Not enough rows (< 100)
-statenisland,sliwa,oi_change,log_comments_change,65,Not enough rows (< 100)
-statenisland,sliwa,price_change,mean_compound,77,Not enough rows (< 100)
-statenisland,sliwa,price_change,sentiment_change,77,Not enough rows (< 100)
-statenisland,sliwa,price_change,n_comments,77,Not enough rows (< 100)
-statenisland,sliwa,price_change,log_comments_change,77,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,mean_compound,77,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,sentiment_change,77,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,n_comments,77,Not enough rows (< 100)
-statenisland,sliwa,log_volume_change,log_comments_change,77,Not enough rows (< 100)
-statenisland,sliwa,oi_change,mean_compound,77,Not enough rows (< 100)
-statenisland,sliwa,oi_change,sentiment_change,77,Not enough rows (< 100)
-statenisland,sliwa,oi_change,n_comments,77,Not enough rows (< 100)
-statenisland,sliwa,oi_change,log_comments_change,77,Not enough rows (< 100)
+coef_table,summary_row,model_input,subreddit,candidate,y,x,n,error
+"      subreddit candidate             y                 term      coef    stderr     tstat        pvalue
+0  statenisland   mamdani  price_change                const  0.000077  0.000060  1.281363  2.001585e-01
+1  statenisland   mamdani  price_change        mean_compound -0.010170  0.002036 -4.994964  6.198947e-07
+2  statenisland   mamdani  price_change     sentiment_change  0.003474  0.001351  2.570567  1.019790e-02
+3  statenisland   mamdani  price_change           n_comments -0.000004  0.000083 -0.051593  9.588561e-01
+4  statenisland   mamdani  price_change  log_comments_change  0.000681  0.000481  1.414849  1.572098e-01","{'subreddit': 'statenisland', 'candidate': 'mamdani', 'y': 'price_change', 'n': 3216, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.009357548929259996), 'adj_r_squared': np.float64(0.0081234879500377), 'aic': np.float64(-27426.56834677773), 'bic': np.float64(-27396.188878626235)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-24 17:00:00          0.01         0.0000            0.9118         0.0            -0.693147
+2    2025-06-24 18:00:00          0.02         0.0000            0.0000         0.0             0.000000
+3    2025-06-24 19:00:00         -0.02         0.0000            0.0000         0.0             0.000000
+4    2025-06-24 20:00:00          0.01         0.0000            0.0000         0.0             0.000000
+5    2025-06-24 21:00:00         -0.01         0.0000            0.0000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3212 2025-11-05 12:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3213 2025-11-05 13:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3214 2025-11-05 14:00:00          0.00         0.4215            0.4215         1.0             0.693147
+3215 2025-11-05 15:00:00          0.00         0.0000           -0.4215         0.0            -0.693147
+3216 2025-11-05 16:00:00          0.00         0.7351            0.7351         1.0             0.693147
+
+[3216 rows x 6 columns]",,,,,,
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  statenisland   mamdani  log_volume_change                const  0.001912  0.050287  0.038031  0.969665
+1  statenisland   mamdani  log_volume_change        mean_compound -0.601931  1.702654 -0.353525  0.723718
+2  statenisland   mamdani  log_volume_change     sentiment_change -0.455513  1.130085 -0.403079  0.686917
+3  statenisland   mamdani  log_volume_change           n_comments  0.000117  0.069042  0.001699  0.998645
+4  statenisland   mamdani  log_volume_change  log_comments_change  0.073453  0.402428  0.182524  0.855183","{'subreddit': 'statenisland', 'candidate': 'mamdani', 'y': 'log_volume_change', 'n': 3216, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0003483136332366188), 'adj_r_squared': np.float64(-0.0008969703111629812), 'aic': np.float64(15853.649466377195), 'bic': np.float64(15884.02893452869)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-24 17:00:00           2.628465         0.0000            0.9118         0.0            -0.693147
+2    2025-06-24 18:00:00          -2.939868         0.0000            0.0000         0.0             0.000000
+3    2025-06-24 19:00:00           1.532299         0.0000            0.0000         0.0             0.000000
+4    2025-06-24 20:00:00           0.767942         0.0000            0.0000         0.0             0.000000
+5    2025-06-24 21:00:00          -2.126543         0.0000            0.0000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3212 2025-11-05 12:00:00           0.386091         0.0000            0.0000         0.0             0.000000
+3213 2025-11-05 13:00:00          -0.143104         0.0000            0.0000         0.0             0.000000
+3214 2025-11-05 14:00:00           1.963260         0.4215            0.4215         1.0             0.693147
+3215 2025-11-05 15:00:00          -1.267755         0.0000           -0.4215         0.0            -0.693147
+3216 2025-11-05 16:00:00           0.559345         0.7351            0.7351         1.0             0.693147
+
+[3216 rows x 6 columns]",,,,,,
+"      subreddit candidate          y                 term           coef        stderr      tstat        pvalue
+0  statenisland   mamdani  oi_change                const    7286.665127   1091.323374   6.676907  2.864231e-11
+1  statenisland   mamdani  oi_change        mean_compound -410222.917043  36950.879046 -11.101845  3.967371e-28
+2  statenisland   mamdani  oi_change     sentiment_change  302449.968699  24525.028884  12.332298  3.559466e-34
+3  statenisland   mamdani  oi_change           n_comments   10191.582197   1498.343784   6.801898  1.226465e-11
+4  statenisland   mamdani  oi_change  log_comments_change  -58103.132732   8733.473325  -6.652924  3.364807e-11","{'subreddit': 'statenisland', 'candidate': 'mamdani', 'y': 'oi_change', 'n': 3216, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.06289509825991357), 'adj_r_squared': np.float64(0.061727729961265076), 'aic': np.float64(80078.17480327339), 'bic': np.float64(80108.55427142489)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-24 17:00:00    10853.0         0.0000            0.9118         0.0            -0.693147
+2    2025-06-24 18:00:00      520.0         0.0000            0.0000         0.0             0.000000
+3    2025-06-24 19:00:00     3515.0         0.0000            0.0000         0.0             0.000000
+4    2025-06-24 20:00:00     8519.0         0.0000            0.0000         0.0             0.000000
+5    2025-06-24 21:00:00      236.0         0.0000            0.0000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3212 2025-11-05 12:00:00       16.0         0.0000            0.0000         0.0             0.000000
+3213 2025-11-05 13:00:00        1.0         0.0000            0.0000         0.0             0.000000
+3214 2025-11-05 14:00:00      915.0         0.4215            0.4215         1.0             0.693147
+3215 2025-11-05 15:00:00        0.0         0.0000           -0.4215         0.0            -0.693147
+3216 2025-11-05 16:00:00     2337.0         0.7351            0.7351         1.0             0.693147
+
+[3216 rows x 6 columns]",,,,,,
+"      subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  statenisland     cuomo  price_change                const -0.000002  0.000065 -0.024253  0.980652
+1  statenisland     cuomo  price_change        mean_compound  0.005838  0.004270  1.367187  0.171663
+2  statenisland     cuomo  price_change     sentiment_change -0.005274  0.002831 -1.862826  0.062578
+3  statenisland     cuomo  price_change           n_comments -0.000034  0.000212 -0.159793  0.873054
+4  statenisland     cuomo  price_change  log_comments_change  0.001807  0.000728  2.481788  0.013123","{'subreddit': 'statenisland', 'candidate': 'cuomo', 'y': 'price_change', 'n': 3209, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0035493650041080738), 'adj_r_squared': np.float64(0.002305356720717411), 'aic': np.float64(-26834.03886596636), 'bic': np.float64(-26803.67029276081)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.03         0.0000         -0.147633         0.0            -1.945910
+2    2025-06-25 06:00:00          0.00         0.0000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00          0.00        -0.3592         -0.359200         2.0             1.098612
+4    2025-06-25 08:00:00          0.00         0.0000          0.359200         0.0            -1.098612
+5    2025-06-25 09:00:00          0.00        -0.4542         -0.454200         2.0             1.098612
+...                  ...           ...            ...               ...         ...                  ...
+3205 2025-11-05 17:00:00          0.00         0.0000          0.000000         0.0             0.000000
+3206 2025-11-05 18:00:00          0.00         0.0000          0.000000         0.0             0.000000
+3207 2025-11-05 19:00:00          0.00         0.0000          0.000000         0.0             0.000000
+3208 2025-11-05 20:00:00          0.00         0.0000          0.000000         0.0             0.000000
+3209 2025-11-05 21:00:00          0.00         0.5574          0.557400         1.0             0.693147
+
+[3209 rows x 6 columns]",,,,,,
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  statenisland     cuomo  log_volume_change                const -0.001175  0.067578 -0.017389  0.986127
+1  statenisland     cuomo  log_volume_change        mean_compound  4.773760  4.416670  1.080851  0.279845
+2  statenisland     cuomo  log_volume_change     sentiment_change -6.522191  2.928464 -2.227172  0.026005
+3  statenisland     cuomo  log_volume_change           n_comments  0.081756  0.219781  0.371988  0.709926
+4  statenisland     cuomo  log_volume_change  log_comments_change -0.506859  0.753226 -0.672917  0.501049","{'subreddit': 'statenisland', 'candidate': 'cuomo', 'y': 'log_volume_change', 'n': 3209, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0021292235677468074), 'adj_r_squared': np.float64(0.0008834423237614741), 'aic': np.float64(17716.847166848853), 'bic': np.float64(17747.215740054402)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           3.694917         0.0000         -0.147633         0.0            -1.945910
+2    2025-06-25 06:00:00          -1.756668         0.0000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00          -2.886422        -0.3592         -0.359200         2.0             1.098612
+4    2025-06-25 08:00:00          -6.616065         0.0000          0.359200         0.0            -1.098612
+5    2025-06-25 09:00:00           0.000000        -0.4542         -0.454200         2.0             1.098612
+...                  ...                ...            ...               ...         ...                  ...
+3205 2025-11-05 17:00:00          -0.730888         0.0000          0.000000         0.0             0.000000
+3206 2025-11-05 18:00:00          -1.635216         0.0000          0.000000         0.0             0.000000
+3207 2025-11-05 19:00:00           0.857001         0.0000          0.000000         0.0             0.000000
+3208 2025-11-05 20:00:00          -0.457156         0.0000          0.000000         0.0             0.000000
+3209 2025-11-05 21:00:00          -0.049619         0.5574          0.557400         1.0             0.693147
+
+[3209 rows x 6 columns]",,,,,,
+"      subreddit candidate          y                 term           coef        stderr     tstat        pvalue
+0  statenisland     cuomo  oi_change                const    9162.103827   1402.372836  6.533287  7.456489e-11
+1  statenisland     cuomo  oi_change        mean_compound -419421.198021  91654.781698 -4.576097  4.917188e-06
+2  statenisland     cuomo  oi_change     sentiment_change  266820.775479  60771.508347  4.390557  1.167165e-05
+3  statenisland     cuomo  oi_change           n_comments   13797.299129   4560.889877  3.025133  2.504969e-03
+4  statenisland     cuomo  oi_change  log_comments_change  -66762.400543  15630.958877 -4.271165  2.001073e-05","{'subreddit': 'statenisland', 'candidate': 'cuomo', 'y': 'oi_change', 'n': 3209, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.013103367244470587), 'adj_r_squared': np.float64(0.011871286554388738), 'aic': np.float64(81514.32436585744), 'bic': np.float64(81544.69293906298)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    77566.0         0.0000         -0.147633         0.0            -1.945910
+2    2025-06-25 06:00:00    11761.0         0.0000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00      746.0        -0.3592         -0.359200         2.0             1.098612
+4    2025-06-25 08:00:00        0.0         0.0000          0.359200         0.0            -1.098612
+5    2025-06-25 09:00:00        0.0        -0.4542         -0.454200         2.0             1.098612
+...                  ...        ...            ...               ...         ...                  ...
+3205 2025-11-05 17:00:00     4582.0         0.0000          0.000000         0.0             0.000000
+3206 2025-11-05 18:00:00        0.0         0.0000          0.000000         0.0             0.000000
+3207 2025-11-05 19:00:00     2337.0         0.0000          0.000000         0.0             0.000000
+3208 2025-11-05 20:00:00     1000.0         0.0000          0.000000         0.0             0.000000
+3209 2025-11-05 21:00:00       11.0         0.5574          0.557400         1.0             0.693147
+
+[3209 rows x 6 columns]",,,,,,
+"      subreddit candidate             y                 term  coef  stderr  tstat  pvalue
+0  statenisland     sliwa  price_change                const   0.0     0.0    NaN     NaN
+1  statenisland     sliwa  price_change        mean_compound   0.0     0.0    NaN     NaN
+2  statenisland     sliwa  price_change     sentiment_change   0.0     0.0    NaN     NaN
+3  statenisland     sliwa  price_change           n_comments   0.0     0.0    NaN     NaN
+4  statenisland     sliwa  price_change  log_comments_change   0.0     0.0    NaN     NaN","{'subreddit': 'statenisland', 'candidate': 'sliwa', 'y': 'price_change', 'n': 77, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(nan), 'adj_r_squared': np.float64(nan), 'aic': np.float64(-inf), 'bic': np.float64(-inf)}","             timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1  2025-11-02 17:00:00           0.0         0.0000           -0.6808         0.0            -0.693147
+2  2025-11-02 18:00:00           0.0         0.0000            0.0000         0.0             0.000000
+3  2025-11-02 19:00:00           0.0         0.0000            0.0000         0.0             0.000000
+4  2025-11-02 20:00:00           0.0         0.0000            0.0000         0.0             0.000000
+5  2025-11-02 21:00:00           0.0         0.0000            0.0000         0.0             0.000000
+..                 ...           ...            ...               ...         ...                  ...
+73 2025-11-05 17:00:00           0.0         0.0000            0.0000         0.0             0.000000
+74 2025-11-05 18:00:00           0.0         0.0000            0.0000         0.0             0.000000
+75 2025-11-05 19:00:00           0.0         0.0000            0.0000         0.0             0.000000
+76 2025-11-05 20:00:00           0.0         0.0000            0.0000         0.0             0.000000
+77 2025-11-05 21:00:00           0.0         0.6542            0.6542         1.0             0.693147
+
+[77 rows x 6 columns]",,,,,,
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  statenisland     sliwa  log_volume_change                const -0.061955  0.379935 -0.163069  0.870921
+1  statenisland     sliwa  log_volume_change        mean_compound -1.522462  3.041179 -0.500616  0.618169
+2  statenisland     sliwa  log_volume_change     sentiment_change  1.120516  2.434273  0.460308  0.646682
+3  statenisland     sliwa  log_volume_change           n_comments -1.522295  2.597500 -0.586061  0.559667
+4  statenisland     sliwa  log_volume_change  log_comments_change -0.059930  2.679736 -0.022364  0.982219","{'subreddit': 'statenisland', 'candidate': 'sliwa', 'y': 'log_volume_change', 'n': 77, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.011695538931195681), 'adj_r_squared': np.float64(-0.04321026446151577), 'aic': np.float64(401.85610317920066), 'bic': np.float64(413.5751302884691)}","             timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1  2025-11-02 17:00:00          -0.333856         0.0000           -0.6808         0.0            -0.693147
+2  2025-11-02 18:00:00          -0.522684         0.0000            0.0000         0.0             0.000000
+3  2025-11-02 19:00:00           0.854967         0.0000            0.0000         0.0             0.000000
+4  2025-11-02 20:00:00           0.731166         0.0000            0.0000         0.0             0.000000
+5  2025-11-02 21:00:00          -1.527034         0.0000            0.0000         0.0             0.000000
+..                 ...                ...            ...               ...         ...                  ...
+73 2025-11-05 17:00:00          -7.554335         0.0000            0.0000         0.0             0.000000
+74 2025-11-05 18:00:00           7.534228         0.0000            0.0000         0.0             0.000000
+75 2025-11-05 19:00:00          -1.385760         0.0000            0.0000         0.0             0.000000
+76 2025-11-05 20:00:00          -3.750573         0.0000            0.0000         0.0             0.000000
+77 2025-11-05 21:00:00          -2.397895         0.6542            0.6542         1.0             0.693147
+
+[77 rows x 6 columns]",,,,,,
+"      subreddit candidate          y                 term          coef        stderr     tstat        pvalue
+0  statenisland     sliwa  oi_change                const  19108.794985   3131.373129  6.102369  4.754850e-08
+1  statenisland     sliwa  oi_change        mean_compound -29122.825992  25065.009893 -1.161892  2.491166e-01
+2  statenisland     sliwa  oi_change     sentiment_change  33415.065216  20062.970918  1.665509  1.001568e-01
+3  statenisland     sliwa  oi_change           n_comments   1719.364666  21408.267623  0.080313  9.362110e-01
+4  statenisland     sliwa  oi_change  log_comments_change  -7463.267470  22086.046165 -0.337918  7.364085e-01","{'subreddit': 'statenisland', 'candidate': 'sliwa', 'y': 'oi_change', 'n': 77, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.054193046352296714), 'adj_r_squared': np.float64(0.001648215594091007), 'aic': np.float64(1790.4714875037673), 'bic': np.float64(1802.1905146130357)}","             timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1  2025-11-02 17:00:00     4099.0         0.0000           -0.6808         0.0            -0.693147
+2  2025-11-02 18:00:00     2430.0         0.0000            0.0000         0.0             0.000000
+3  2025-11-02 19:00:00     5715.0         0.0000            0.0000         0.0             0.000000
+4  2025-11-02 20:00:00    11874.0         0.0000            0.0000         0.0             0.000000
+5  2025-11-02 21:00:00     2578.0         0.0000            0.0000         0.0             0.000000
+..                 ...        ...            ...               ...         ...                  ...
+73 2025-11-05 17:00:00        0.0         0.0000            0.0000         0.0             0.000000
+74 2025-11-05 18:00:00     1870.0         0.0000            0.0000         0.0             0.000000
+75 2025-11-05 19:00:00      467.0         0.0000            0.0000         0.0             0.000000
+76 2025-11-05 20:00:00        0.0         0.0000            0.0000         0.0             0.000000
+77 2025-11-05 21:00:00        0.0         0.6542            0.6542         1.0             0.693147
+
+[77 rows x 6 columns]",,,,,,
+,,,statenisland,sliwa,price_change,mean_compound,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,price_change,sentiment_change,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,price_change,n_comments,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,price_change,log_comments_change,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,log_volume_change,mean_compound,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,log_volume_change,sentiment_change,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,log_volume_change,n_comments,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,log_volume_change,log_comments_change,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,oi_change,mean_compound,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,oi_change,sentiment_change,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,oi_change,n_comments,77.0,Not enough rows (< 100)
+,,,statenisland,sliwa,oi_change,log_comments_change,77.0,Not enough rows (< 100)

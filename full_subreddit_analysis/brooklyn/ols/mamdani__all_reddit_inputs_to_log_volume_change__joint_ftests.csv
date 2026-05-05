@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+brooklyn,mamdani,log_volume_change,log_volume_change_autoregressive_lags,147.7631347133277,2.746891249357762e-116
+brooklyn,mamdani,log_volume_change,mean_compound,1.1066091173698749,0.3515585064976468
+brooklyn,mamdani,log_volume_change,sentiment_change,0.9257536010406374,0.44782797408546726
+brooklyn,mamdani,log_volume_change,n_comments,0.48893577803374594,0.743896384248725
+brooklyn,mamdani,log_volume_change,log_comments_change,1.2297565477636219,0.29593833364711986

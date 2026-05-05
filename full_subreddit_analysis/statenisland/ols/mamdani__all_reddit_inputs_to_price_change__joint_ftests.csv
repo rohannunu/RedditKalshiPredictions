@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+statenisland,mamdani,price_change,price_change_autoregressive_lags,2.1819409258697413,0.06853148476994128
+statenisland,mamdani,price_change,mean_compound,2.7748859668963273,0.025638514544595783
+statenisland,mamdani,price_change,sentiment_change,1.8940351562873237,0.10868177028073076
+statenisland,mamdani,price_change,n_comments,3.250176773661041,0.011381917559479718
+statenisland,mamdani,price_change,log_comments_change,2.071836240144483,0.0818697487115986

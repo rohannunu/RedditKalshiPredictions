@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskConservatives,cuomo,price_change,price_change_autoregressive_lags,3.206726291743323,0.012267350070824216
+AskConservatives,cuomo,price_change,mean_compound,1.296933752066516,0.2688211715509458
+AskConservatives,cuomo,price_change,sentiment_change,2.7094141467829536,0.0286299321074156
+AskConservatives,cuomo,price_change,n_comments,24.3261904734836,7.380135366640195e-20
+AskConservatives,cuomo,price_change,log_comments_change,9.737627378365396,7.928909811010796e-08

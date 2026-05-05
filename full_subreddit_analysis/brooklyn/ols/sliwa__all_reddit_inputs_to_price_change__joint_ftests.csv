@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+brooklyn,sliwa,price_change,price_change_autoregressive_lags,30.75003274276444,3.710174455744412e-25
+brooklyn,sliwa,price_change,mean_compound,0.06353151178005614,0.9925759342801227
+brooklyn,sliwa,price_change,sentiment_change,0.2230325567434859,0.9256651843315351
+brooklyn,sliwa,price_change,n_comments,0.00897410110539072,0.9998407486361741
+brooklyn,sliwa,price_change,log_comments_change,0.05286598271094588,0.9947863860991687

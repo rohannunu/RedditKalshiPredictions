@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskALiberal,mamdani,price_change,price_change_autoregressive_lags,5.083734544926816,0.00044012269093863675
+AskALiberal,mamdani,price_change,mean_compound,8.654604031367967,6.036597660169646e-07
+AskALiberal,mamdani,price_change,sentiment_change,6.189313385679687,5.8583004682770635e-05
+AskALiberal,mamdani,price_change,n_comments,13.59430456648141,5.407330837302667e-11
+AskALiberal,mamdani,price_change,log_comments_change,2.821337413855373,0.023698878059966767

@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskConservatives,cuomo,price_change,price_change_autoregressive_lags,3.206726291743323,0.012267350070824216
+AskConservatives,cuomo,price_change,mean_compound,1.296933752066516,0.2688211715509458
+AskConservatives,cuomo,price_change,sentiment_change,2.7094141467829536,0.0286299321074156
+AskConservatives,cuomo,price_change,n_comments,24.3261904734836,7.380135366640195e-20
+AskConservatives,cuomo,price_change,log_comments_change,9.737627378365396,7.928909811010796e-08
+AskConservatives,cuomo,log_volume_change,log_volume_change_autoregressive_lags,313.9902437610638,3.350111914313422e-228
+AskConservatives,cuomo,log_volume_change,mean_compound,1.1044825168719061,0.3525919987418309
+AskConservatives,cuomo,log_volume_change,sentiment_change,0.9478245379936575,0.43513743320273846
+AskConservatives,cuomo,log_volume_change,n_comments,0.6905645618443069,0.598421976039208
+AskConservatives,cuomo,log_volume_change,log_comments_change,0.2622481518046481,0.9022541887449708
+AskConservatives,cuomo,oi_change,oi_change_autoregressive_lags,300.93156752525897,5.1252437698083755e-220
+AskConservatives,cuomo,oi_change,mean_compound,20.08516305434725,2.362406359235036e-16
+AskConservatives,cuomo,oi_change,sentiment_change,20.614954636320576,8.616560421475634e-17
+AskConservatives,cuomo,oi_change,n_comments,545.134253502919,0.0
+AskConservatives,cuomo,oi_change,log_comments_change,223.46605496558695,2.16137035615538e-169

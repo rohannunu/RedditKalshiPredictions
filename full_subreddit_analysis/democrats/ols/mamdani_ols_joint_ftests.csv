@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+democrats,mamdani,price_change,price_change_autoregressive_lags,4.699311449721826,0.0008810834276446601
+democrats,mamdani,price_change,mean_compound,1.0301061411360237,0.39013562675948843
+democrats,mamdani,price_change,sentiment_change,0.5858666872753195,0.6728901327158902
+democrats,mamdani,price_change,n_comments,6.681606562448332,2.3701969537518187e-05
+democrats,mamdani,price_change,log_comments_change,2.2333365958619886,0.0630398530892302
+democrats,mamdani,log_volume_change,log_volume_change_autoregressive_lags,142.86787919579538,2.3068636822102197e-112
+democrats,mamdani,log_volume_change,mean_compound,0.12246161134771416,0.9744706001407246
+democrats,mamdani,log_volume_change,sentiment_change,0.5426238882797216,0.7044451762369175
+democrats,mamdani,log_volume_change,n_comments,0.10887803417252973,0.9794580458481037
+democrats,mamdani,log_volume_change,log_comments_change,0.11321854330373382,0.9779134796496366
+democrats,mamdani,oi_change,oi_change_autoregressive_lags,32.8043423365287,7.779263233798794e-27
+democrats,mamdani,oi_change,mean_compound,0.018268852462353102,0.9993481424708094
+democrats,mamdani,oi_change,sentiment_change,0.025021973060734337,0.998788085206045
+democrats,mamdani,oi_change,n_comments,0.04643972501688831,0.9959424380236082
+democrats,mamdani,oi_change,log_comments_change,0.01347886788703545,0.9996428860783418

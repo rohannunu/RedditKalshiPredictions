@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+nyc,mamdani,price_change,price_change_autoregressive_lags,5.356831526981049,0.00026817332689073206
+nyc,mamdani,price_change,mean_compound,11.529509420060933,2.698508262805239e-09
+nyc,mamdani,price_change,sentiment_change,11.419832533024769,3.3200647053310563e-09
+nyc,mamdani,price_change,n_comments,4.991659234340736,0.0005197973795304176
+nyc,mamdani,price_change,log_comments_change,9.378085982432356,1.5550462099613376e-07

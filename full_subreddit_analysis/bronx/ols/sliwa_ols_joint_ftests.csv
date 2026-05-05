@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+bronx,sliwa,price_change,price_change_autoregressive_lags,30.501623751499174,5.941501035977932e-25
+bronx,sliwa,price_change,mean_compound,0.0074433040808031935,0.9998902210507961
+bronx,sliwa,price_change,sentiment_change,0.013286604841941548,0.999652916751767
+bronx,sliwa,price_change,n_comments,0.0012287682302519398,0.9999969833290752
+bronx,sliwa,price_change,log_comments_change,0.002691294143013099,0.9999855568255532
+bronx,sliwa,log_volume_change,log_volume_change_autoregressive_lags,426.23899260399816,5.80449531274569e-295
+bronx,sliwa,log_volume_change,mean_compound,0.5322762728869914,0.7120351621998473
+bronx,sliwa,log_volume_change,sentiment_change,1.2374264462607512,0.29273360895127487
+bronx,sliwa,log_volume_change,n_comments,1.786953295932874,0.1285670553844648
+bronx,sliwa,log_volume_change,log_comments_change,1.6945984528697635,0.1483609814654815
+bronx,sliwa,oi_change,oi_change_autoregressive_lags,66.07199987572888,8.706994584588148e-54
+bronx,sliwa,oi_change,mean_compound,2.083323967342699,0.08036976993774853
+bronx,sliwa,oi_change,sentiment_change,6.806799202155156,1.8791014682630732e-05
+bronx,sliwa,oi_change,n_comments,25.031827938374654,1.926105746938167e-20
+bronx,sliwa,oi_change,log_comments_change,6.510698719312134,3.245016118851884e-05

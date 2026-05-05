@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Queens,sliwa,oi_change,oi_change_autoregressive_lags,295.6533550439064,9.028549576878782e-239
+Queens,sliwa,oi_change,mean_compound,,
+Queens,sliwa,oi_change,sentiment_change,,
+Queens,sliwa,oi_change,n_comments,,
+Queens,sliwa,oi_change,log_comments_change,,

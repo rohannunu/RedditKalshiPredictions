@@ -1,25 +1,130 @@
-subreddit,candidate,y,x,n,error
-democrats,sliwa,price_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,price_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,price_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,price_change,log_comments_change,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,log_comments_change,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,log_comments_change,0,Not enough rows (< 100)
-democrats,sliwa,price_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,price_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,price_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,price_change,log_comments_change,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,log_volume_change,log_comments_change,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,mean_compound,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,sentiment_change,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,n_comments,0,Not enough rows (< 100)
-democrats,sliwa,oi_change,log_comments_change,0,Not enough rows (< 100)
+coef_table,summary_row,model_input,subreddit,candidate,y,n,error,x
+"   subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  democrats   mamdani  price_change                const  0.000041  0.000056  0.740397  0.459114
+1  democrats   mamdani  price_change        mean_compound  0.014216  0.014497  0.980657  0.326837
+2  democrats   mamdani  price_change     sentiment_change -0.013509  0.004373 -3.089213  0.002024
+3  democrats   mamdani  price_change           n_comments -0.000594  0.000564 -1.052881  0.292476
+4  democrats   mamdani  price_change  log_comments_change  0.001473  0.001350  1.091298  0.275225","{'subreddit': 'democrats', 'candidate': 'mamdani', 'y': 'price_change', 'n': 3162, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0031294117911654373), 'adj_r_squared': np.float64(0.0018663511789274168), 'aic': np.float64(-27473.323451615463), 'bic': np.float64(-27443.028651526616)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.01         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00          0.00         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00          0.00         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00          0.00         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00          0.00         0.0000            0.0000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3158 2025-11-03 18:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3159 2025-11-03 19:00:00         -0.02         0.0000            0.0000         0.0             0.000000
+3160 2025-11-03 20:00:00         -0.01         0.0000            0.0000         0.0             0.000000
+3161 2025-11-03 21:00:00         -0.01         0.0000            0.0000         0.0             0.000000
+3162 2025-11-03 22:00:00          0.00         0.1779            0.1779         1.0             0.693147
+
+[3162 rows x 6 columns]",,,,,,
+"   subreddit candidate                  y                 term      coef     stderr     tstat    pvalue
+0  democrats   mamdani  log_volume_change                const  0.000458   0.050958  0.008986  0.992831
+1  democrats   mamdani  log_volume_change        mean_compound -1.337779  13.224789 -0.101157  0.919432
+2  democrats   mamdani  log_volume_change     sentiment_change -1.369356   3.989283 -0.343259  0.731427
+3  democrats   mamdani  log_volume_change           n_comments  0.053751   0.514440  0.104484  0.916792
+4  democrats   mamdani  log_volume_change  log_comments_change  0.149253   1.231461  0.121200  0.903541","{'subreddit': 'democrats', 'candidate': 'mamdani', 'y': 'log_volume_change', 'n': 3162, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(7.105529808992816e-05), 'adj_r_squared': np.float64(-0.0011958803302938303), 'aic': np.float64(15630.540965320433), 'bic': np.float64(15660.83576540928)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           1.083363         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00          -0.698398         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00          -2.132549         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00          -8.545781         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00           0.000000         0.0000            0.0000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3158 2025-11-03 18:00:00          -0.077139         0.0000            0.0000         0.0             0.000000
+3159 2025-11-03 19:00:00           1.200163         0.0000            0.0000         0.0             0.000000
+3160 2025-11-03 20:00:00          -0.571144         0.0000            0.0000         0.0             0.000000
+3161 2025-11-03 21:00:00           1.078746         0.0000            0.0000         0.0             0.000000
+3162 2025-11-03 22:00:00          -0.827704         0.1779            0.1779         1.0             0.693147
+
+[3162 rows x 6 columns]",,,,,,
+"   subreddit candidate          y                 term           coef         stderr     tstat        pvalue
+0  democrats   mamdani  oi_change                const    5469.462041     646.064047  8.465820  3.839833e-17
+1  democrats   mamdani  oi_change        mean_compound  560581.024824  167668.720410  3.343385  8.372823e-04
+2  democrats   mamdani  oi_change     sentiment_change  -78792.249580   50577.591475 -1.557849  1.193693e-01
+3  democrats   mamdani  oi_change           n_comments  -17942.041794    6522.261436 -2.750893  5.977214e-03
+4  democrats   mamdani  oi_change  log_comments_change   -4065.849442   15612.913352 -0.260416  7.945600e-01","{'subreddit': 'democrats', 'candidate': 'mamdani', 'y': 'oi_change', 'n': 3162, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0037912502481340926), 'adj_r_squared': np.float64(0.0025290282022020216), 'aic': np.float64(75377.49442230404), 'bic': np.float64(75407.78922239288)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    44225.0         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00    32123.0         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00     1083.0         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00        0.0         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00        0.0         0.0000            0.0000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3158 2025-11-03 18:00:00     7902.0         0.0000            0.0000         0.0             0.000000
+3159 2025-11-03 19:00:00   101874.0         0.0000            0.0000         0.0             0.000000
+3160 2025-11-03 20:00:00    90647.0         0.0000            0.0000         0.0             0.000000
+3161 2025-11-03 21:00:00   369105.0         0.0000            0.0000         0.0             0.000000
+3162 2025-11-03 22:00:00   214799.0         0.1779            0.1779         1.0             0.693147
+
+[3162 rows x 6 columns]",,,,,,
+"   subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  democrats     cuomo  price_change                const -0.000014  0.000065 -0.218726  0.826877
+1  democrats     cuomo  price_change        mean_compound  0.002780  0.003110  0.893795  0.371499
+2  democrats     cuomo  price_change     sentiment_change -0.005260  0.002264 -2.323425  0.020218
+3  democrats     cuomo  price_change           n_comments  0.001901  0.001131  1.680241  0.093007
+4  democrats     cuomo  price_change  log_comments_change -0.005766  0.001280 -4.506457  0.000007","{'subreddit': 'democrats', 'candidate': 'cuomo', 'y': 'price_change', 'n': 3226, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.009971495008328501), 'adj_r_squared': np.float64(0.008742027755932802), 'aic': np.float64(-27014.151676439393), 'bic': np.float64(-26983.756685145967)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.03         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00          0.00         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00          0.00         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00          0.00         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00          0.00         0.0000            0.0000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3222 2025-11-06 10:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3223 2025-11-06 11:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3224 2025-11-06 12:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3225 2025-11-06 13:00:00          0.00         0.7650            0.7650         1.0             0.693147
+3226 2025-11-06 14:00:00          0.00         0.5255           -0.2395         1.0             0.000000
+
+[3226 rows x 6 columns]",,,,,,
+"   subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  democrats     cuomo  log_volume_change                const -0.002254  0.067671 -0.033309  0.973430
+1  democrats     cuomo  log_volume_change        mean_compound  3.514067  3.242777  1.083660  0.278597
+2  democrats     cuomo  log_volume_change     sentiment_change -3.663865  2.360047 -1.552454  0.120652
+3  democrats     cuomo  log_volume_change           n_comments  0.225020  1.179219  0.190821  0.848678
+4  democrats     cuomo  log_volume_change  log_comments_change -0.226196  1.333932 -0.169571  0.865358","{'subreddit': 'democrats', 'candidate': 'cuomo', 'y': 'log_volume_change', 'n': 3226, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0008844622011234815), 'adj_r_squared': np.float64(-0.00035628978620816376), 'aic': np.float64(17823.420596258904), 'bic': np.float64(17853.81558755233)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           3.694917         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00          -1.756668         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00          -2.886422         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00          -6.616065         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00           0.000000         0.0000            0.0000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3222 2025-11-06 10:00:00           0.000000         0.0000            0.0000         0.0             0.000000
+3223 2025-11-06 11:00:00           7.507690         0.0000            0.0000         0.0             0.000000
+3224 2025-11-06 12:00:00          -7.507690         0.0000            0.0000         0.0             0.000000
+3225 2025-11-06 13:00:00           0.000000         0.7650            0.7650         1.0             0.693147
+3226 2025-11-06 14:00:00           6.985642         0.5255           -0.2395         1.0             0.000000
+
+[3226 rows x 6 columns]",,,,,,
+"   subreddit candidate          y                 term           coef        stderr      tstat        pvalue
+0  democrats     cuomo  oi_change                const    7546.018326   1338.839537   5.636238  1.887823e-08
+1  democrats     cuomo  oi_change        mean_compound -603085.105177  64156.748816  -9.400182  1.001090e-20
+2  democrats     cuomo  oi_change     sentiment_change  529776.383611  46692.377213  11.346100  2.768239e-29
+3  democrats     cuomo  oi_change           n_comments  393706.148319  23330.274052  16.875333  2.726045e-61
+4  democrats     cuomo  oi_change  log_comments_change -278039.547402  26391.190132 -10.535317  1.537983e-25","{'subreddit': 'democrats', 'candidate': 'cuomo', 'y': 'oi_change', 'n': 3226, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.09471653522274148), 'adj_r_squared': np.float64(0.09359230862879275), 'aic': np.float64(81650.82816835905), 'bic': np.float64(81681.22315965247)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    77566.0         0.0000           -0.8138         1.0            -0.405465
+2    2025-06-25 06:00:00    11761.0         0.0000            0.0000         0.0            -0.693147
+3    2025-06-25 07:00:00      746.0         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 08:00:00        0.0         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 09:00:00        0.0         0.0000            0.0000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3222 2025-11-06 10:00:00        0.0         0.0000            0.0000         0.0             0.000000
+3223 2025-11-06 11:00:00        0.0         0.0000            0.0000         0.0             0.000000
+3224 2025-11-06 12:00:00        0.0         0.0000            0.0000         0.0             0.000000
+3225 2025-11-06 13:00:00        0.0         0.7650            0.7650         1.0             0.693147
+3226 2025-11-06 14:00:00        0.0         0.5255           -0.2395         1.0             0.000000
+
+[3226 rows x 6 columns]",,,,,,
+,,,democrats,sliwa,price_change,0.0,Not enough rows (< 50),
+,,,democrats,sliwa,log_volume_change,0.0,Not enough rows (< 50),
+,,,democrats,sliwa,oi_change,0.0,Not enough rows (< 50),
+,,,democrats,sliwa,price_change,0.0,Not enough rows (< 100),mean_compound
+,,,democrats,sliwa,price_change,0.0,Not enough rows (< 100),sentiment_change
+,,,democrats,sliwa,price_change,0.0,Not enough rows (< 100),n_comments
+,,,democrats,sliwa,price_change,0.0,Not enough rows (< 100),log_comments_change
+,,,democrats,sliwa,log_volume_change,0.0,Not enough rows (< 100),mean_compound
+,,,democrats,sliwa,log_volume_change,0.0,Not enough rows (< 100),sentiment_change
+,,,democrats,sliwa,log_volume_change,0.0,Not enough rows (< 100),n_comments
+,,,democrats,sliwa,log_volume_change,0.0,Not enough rows (< 100),log_comments_change
+,,,democrats,sliwa,oi_change,0.0,Not enough rows (< 100),mean_compound
+,,,democrats,sliwa,oi_change,0.0,Not enough rows (< 100),sentiment_change
+,,,democrats,sliwa,oi_change,0.0,Not enough rows (< 100),n_comments
+,,,democrats,sliwa,oi_change,0.0,Not enough rows (< 100),log_comments_change

@@ -1,0 +1,172 @@
+coef_table,summary_row,model_input
+"  subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  boroughs   mamdani  price_change                const  0.000028  0.000065  0.440626  0.659513
+1  boroughs   mamdani  price_change        mean_compound -0.001987  0.001220 -1.628972  0.103415
+2  boroughs   mamdani  price_change     sentiment_change  0.002108  0.000949  2.222123  0.026343
+3  boroughs   mamdani  price_change           n_comments  0.000018  0.000009  1.891703  0.058619
+4  boroughs   mamdani  price_change  log_comments_change -0.000496  0.000342 -1.452344  0.146502","{'subreddit': 'boroughs', 'candidate': 'mamdani', 'y': 'price_change', 'n': 3286, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.00252604873557416), 'adj_r_squared': np.float64(0.0013099878379643215), 'aic': np.float64(-27538.041264126587), 'bic': np.float64(-27507.5541326336)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 02:00:00          0.00      -0.298100         -0.308200        11.0            -1.558145
+2    2025-06-23 03:00:00          0.00       0.000000          0.298100         0.0            -2.484907
+3    2025-06-23 04:00:00          0.00      -0.209167         -0.209167         3.0             1.386294
+4    2025-06-23 05:00:00          0.00       0.000000          0.209167         0.0            -1.386294
+5    2025-06-23 06:00:00          0.02       0.000000          0.000000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3282 2025-11-06 19:00:00          0.00       0.108965         -0.058519        31.0            -0.145182
+3283 2025-11-06 20:00:00          0.00       0.107486         -0.001479        35.0             0.117783
+3284 2025-11-06 21:00:00          0.00       0.022115         -0.085371        34.0            -0.028171
+3285 2025-11-06 22:00:00          0.00      -0.124924         -0.147039        25.0            -0.297252
+3286 2025-11-06 23:00:00          0.00       0.112015          0.236939        13.0            -0.619039
+
+[3286 rows x 6 columns]"
+"  subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  boroughs   mamdani  log_volume_change                const -0.000907  0.050187 -0.018070  0.985584
+1  boroughs   mamdani  log_volume_change        mean_compound  0.521931  0.947053  0.551111  0.581595
+2  boroughs   mamdani  log_volume_change     sentiment_change -0.347780  0.736603 -0.472141  0.636858
+3  boroughs   mamdani  log_volume_change           n_comments  0.000159  0.007210  0.022016  0.982436
+4  boroughs   mamdani  log_volume_change  log_comments_change  0.095971  0.265129  0.361980  0.717391","{'subreddit': 'boroughs', 'candidate': 'mamdani', 'y': 'log_volume_change', 'n': 3286, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.00015572137299657562), 'adj_r_squared': np.float64(-0.0010632292867134296), 'aic': np.float64(16195.703639512776), 'bic': np.float64(16226.190771005762)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 02:00:00           0.182322      -0.298100         -0.308200        11.0            -1.558145
+2    2025-06-23 03:00:00           3.036554       0.000000          0.298100         0.0            -2.484907
+3    2025-06-23 04:00:00           0.792087      -0.209167         -0.209167         3.0             1.386294
+4    2025-06-23 05:00:00          -5.620401       0.000000          0.209167         0.0            -1.386294
+5    2025-06-23 06:00:00           0.000000       0.000000          0.000000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3282 2025-11-06 19:00:00           0.030051       0.108965         -0.058519        31.0            -0.145182
+3283 2025-11-06 20:00:00          -0.048997       0.107486         -0.001479        35.0             0.117783
+3284 2025-11-06 21:00:00          -0.673821       0.022115         -0.085371        34.0            -0.028171
+3285 2025-11-06 22:00:00           0.380652      -0.124924         -0.147039        25.0            -0.297252
+3286 2025-11-06 23:00:00          -0.251574       0.112015          0.236939        13.0            -0.619039
+
+[3286 rows x 6 columns]"
+"  subreddit candidate          y                 term          coef        stderr      tstat        pvalue
+0  boroughs   mamdani  oi_change                const   5267.447859   1079.034000   4.881633  1.102325e-06
+1  boroughs   mamdani  oi_change        mean_compound  83330.824279  20361.846726   4.092498  4.370272e-05
+2  boroughs   mamdani  oi_change     sentiment_change -47601.156642  15837.134013  -3.005667  2.670053e-03
+3  boroughs   mamdani  oi_change           n_comments   1830.085664    155.024833  11.805113  1.581493e-31
+4  boroughs   mamdani  oi_change  log_comments_change   8120.387222   5700.329049   1.424547  1.543833e-01","{'subreddit': 'boroughs', 'candidate': 'mamdani', 'y': 'oi_change', 'n': 3286, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.06127294132915906), 'adj_r_squared': np.float64(0.06012850114790835), 'aic': np.float64(81756.78259480366), 'bic': np.float64(81787.26972629665)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 02:00:00        5.0      -0.298100         -0.308200        11.0            -1.558145
+2    2025-06-23 03:00:00      123.0       0.000000          0.298100         0.0            -2.484907
+3    2025-06-23 04:00:00      275.0      -0.209167         -0.209167         3.0             1.386294
+4    2025-06-23 05:00:00        0.0       0.000000          0.209167         0.0            -1.386294
+5    2025-06-23 06:00:00        0.0       0.000000          0.000000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3282 2025-11-06 19:00:00        0.0       0.108965         -0.058519        31.0            -0.145182
+3283 2025-11-06 20:00:00        0.0       0.107486         -0.001479        35.0             0.117783
+3284 2025-11-06 21:00:00     2617.0       0.022115         -0.085371        34.0            -0.028171
+3285 2025-11-06 22:00:00        0.0      -0.124924         -0.147039        25.0            -0.297252
+3286 2025-11-06 23:00:00        0.0       0.112015          0.236939        13.0            -0.619039
+
+[3286 rows x 6 columns]"
+"  subreddit candidate             y                 term          coef    stderr     tstat    pvalue
+0  boroughs     cuomo  price_change                const -1.243437e-05  0.000065 -0.191110  0.848452
+1  boroughs     cuomo  price_change        mean_compound  4.184557e-03  0.001516  2.760814  0.005798
+2  boroughs     cuomo  price_change     sentiment_change -2.159572e-03  0.001086 -1.987691  0.046930
+3  boroughs     cuomo  price_change           n_comments  7.354521e-07  0.000056  0.013033  0.989602
+4  boroughs     cuomo  price_change  log_comments_change  1.118844e-03  0.000441  2.539826  0.011137","{'subreddit': 'boroughs', 'candidate': 'cuomo', 'y': 'price_change', 'n': 3233, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.004336886814822805), 'adj_r_squared': np.float64(0.0031031035271087415), 'aic': np.float64(-27061.45014906358), 'bic': np.float64(-27031.044320174955)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.03       0.173906         -0.031686        16.0            -1.137079
+2    2025-06-25 06:00:00          0.00      -0.103554         -0.277460        13.0            -0.194156
+3    2025-06-25 07:00:00          0.00      -0.111800         -0.008246         4.0            -1.029619
+4    2025-06-25 08:00:00          0.00       0.183000          0.294800         7.0             0.470004
+5    2025-06-25 09:00:00          0.00       0.128257         -0.054743         7.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3229 2025-11-06 17:00:00          0.00       0.202300          0.920700         1.0             0.000000
+3230 2025-11-06 18:00:00          0.00       0.000000         -0.202300         0.0            -0.693147
+3231 2025-11-06 19:00:00          0.00       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00          0.00       0.000000          0.000000         0.0             0.000000
+3233 2025-11-06 21:00:00          0.00      -0.963500         -0.963500         1.0             0.693147
+
+[3233 rows x 6 columns]"
+"  subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  boroughs     cuomo  log_volume_change                const -0.005708  0.067664 -0.084352  0.932782
+1  boroughs     cuomo  log_volume_change        mean_compound -0.024826  1.576258 -0.015750  0.987435
+2  boroughs     cuomo  log_volume_change     sentiment_change -0.717609  1.129883 -0.635118  0.525397
+3  boroughs     cuomo  log_volume_change           n_comments  0.046955  0.058683  0.800148  0.423684
+4  boroughs     cuomo  log_volume_change  log_comments_change  0.364928  0.458121  0.796576  0.425756","{'subreddit': 'boroughs', 'candidate': 'cuomo', 'y': 'log_volume_change', 'n': 3233, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0007403692350930191), 'adj_r_squared': np.float64(-0.0004978707038969521), 'aic': np.float64(17857.421203496626), 'bic': np.float64(17887.827032385252)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           3.694917       0.173906         -0.031686        16.0            -1.137079
+2    2025-06-25 06:00:00          -1.756668      -0.103554         -0.277460        13.0            -0.194156
+3    2025-06-25 07:00:00          -2.886422      -0.111800         -0.008246         4.0            -1.029619
+4    2025-06-25 08:00:00          -6.616065       0.183000          0.294800         7.0             0.470004
+5    2025-06-25 09:00:00           0.000000       0.128257         -0.054743         7.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3229 2025-11-06 17:00:00          -3.458356       0.202300          0.920700         1.0             0.000000
+3230 2025-11-06 18:00:00           0.411980       0.000000         -0.202300         0.0            -0.693147
+3231 2025-11-06 19:00:00           0.167054       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00           3.557543       0.000000          0.000000         0.0             0.000000
+3233 2025-11-06 21:00:00          -1.654944      -0.963500         -0.963500         1.0             0.693147
+
+[3233 rows x 6 columns]"
+"  subreddit candidate          y                 term          coef        stderr     tstat        pvalue
+0  boroughs     cuomo  oi_change                const   8413.655042   1363.355157  6.171286  7.616373e-10
+1  boroughs     cuomo  oi_change        mean_compound  98772.170887  31759.995468  3.109955  1.887478e-03
+2  boroughs     cuomo  oi_change     sentiment_change  87221.486177  22766.003132  3.831216  1.299382e-04
+3  boroughs     cuomo  oi_change           n_comments   6967.341301   1182.407531  5.892504  4.195489e-09
+4  boroughs     cuomo  oi_change  log_comments_change  64421.834519   9230.679050  6.979100  3.590005e-12","{'subreddit': 'boroughs', 'candidate': 'cuomo', 'y': 'oi_change', 'n': 3233, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.06039857355161282), 'adj_r_squared': np.float64(0.05923425951636074), 'aic': np.float64(81941.36010524735), 'bic': np.float64(81971.76593413598)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    77566.0       0.173906         -0.031686        16.0            -1.137079
+2    2025-06-25 06:00:00    11761.0      -0.103554         -0.277460        13.0            -0.194156
+3    2025-06-25 07:00:00      746.0      -0.111800         -0.008246         4.0            -1.029619
+4    2025-06-25 08:00:00        0.0       0.183000          0.294800         7.0             0.470004
+5    2025-06-25 09:00:00        0.0       0.128257         -0.054743         7.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3229 2025-11-06 17:00:00        0.0       0.202300          0.920700         1.0             0.000000
+3230 2025-11-06 18:00:00        0.0       0.000000         -0.202300         0.0            -0.693147
+3231 2025-11-06 19:00:00        0.0       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00       43.0       0.000000          0.000000         0.0             0.000000
+3233 2025-11-06 21:00:00        0.0      -0.963500         -0.963500         1.0             0.693147
+
+[3233 rows x 6 columns]"
+"  subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  boroughs     sliwa  price_change                const -0.000007  0.000021 -0.314620  0.753070
+1  boroughs     sliwa  price_change        mean_compound -0.000626  0.000559 -1.120169  0.262725
+2  boroughs     sliwa  price_change     sentiment_change  0.000579  0.000392  1.477994  0.139507
+3  boroughs     sliwa  price_change           n_comments -0.000103  0.000106 -0.977197  0.328545
+4  boroughs     sliwa  price_change  log_comments_change  0.000337  0.000220  1.535047  0.124870","{'subreddit': 'boroughs', 'candidate': 'sliwa', 'y': 'price_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0019087678949534226), 'adj_r_squared': np.float64(0.000672358812135232), 'aic': np.float64(-34289.02961535652), 'bic': np.float64(-34258.62224015583)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 04:00:00         -0.01         0.0000           -0.7562         0.0            -1.386294
+2    2025-06-25 05:00:00         -0.01         0.0000            0.0000         0.0             0.000000
+3    2025-06-25 06:00:00          0.01         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 07:00:00         -0.01         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 08:00:00          0.00         0.0000            0.0000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3230 2025-11-06 17:00:00          0.00         0.0000            0.7184         0.0            -0.693147
+3231 2025-11-06 18:00:00          0.00         0.0000            0.0000         1.0             0.693147
+3232 2025-11-06 19:00:00          0.00         0.0000            0.0000         0.0            -0.693147
+3233 2025-11-06 20:00:00          0.00         0.0000            0.0000         0.0             0.000000
+3234 2025-11-06 21:00:00          0.00        -0.9346           -0.9346         2.0             1.098612
+
+[3234 rows x 6 columns]"
+"  subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  boroughs     sliwa  log_volume_change                const -0.004878  0.074322 -0.065636  0.947672
+1  boroughs     sliwa  log_volume_change        mean_compound  0.848192  1.953146  0.434270  0.664122
+2  boroughs     sliwa  log_volume_change     sentiment_change -1.295642  1.367715 -0.947304  0.343555
+3  boroughs     sliwa  log_volume_change           n_comments  0.040784  0.369317  0.110431  0.912074
+4  boroughs     sliwa  log_volume_change  log_comments_change -0.228727  0.766763 -0.298302  0.765492","{'subreddit': 'boroughs', 'candidate': 'sliwa', 'y': 'log_volume_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.00044227002874908106), 'adj_r_squared': np.float64(-0.0007959557129308958), 'aic': np.float64(18479.881960889317), 'bic': np.float64(18510.28933609)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 04:00:00           0.105029         0.0000           -0.7562         0.0            -1.386294
+2    2025-06-25 05:00:00           0.592989         0.0000            0.0000         0.0             0.000000
+3    2025-06-25 06:00:00          -0.300740         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 07:00:00          -0.773692         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 08:00:00          -8.943767         0.0000            0.0000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3230 2025-11-06 17:00:00          -1.032290         0.0000            0.7184         0.0            -0.693147
+3231 2025-11-06 18:00:00          -1.786426         0.0000            0.0000         1.0             0.693147
+3232 2025-11-06 19:00:00           1.605174         0.0000            0.0000         0.0            -0.693147
+3233 2025-11-06 20:00:00          -6.148468         0.0000            0.0000         0.0             0.000000
+3234 2025-11-06 21:00:00           0.000000        -0.9346           -0.9346         2.0             1.098612
+
+[3234 rows x 6 columns]"
+"  subreddit candidate          y                 term          coef       stderr      tstat        pvalue
+0  boroughs     sliwa  oi_change                const   2312.046516   191.680254  12.061996  8.415248e-33
+1  boroughs     sliwa  oi_change        mean_compound  -6827.492336  5037.279119  -1.355393  1.753872e-01
+2  boroughs     sliwa  oi_change     sentiment_change   3763.368109  3527.418748   1.066890  2.861012e-01
+3  boroughs     sliwa  oi_change           n_comments   8886.423912   952.490398   9.329673  1.914824e-20
+4  boroughs     sliwa  oi_change  log_comments_change -14978.053331  1977.526408  -7.574136  4.691380e-14","{'subreddit': 'boroughs', 'candidate': 'sliwa', 'y': 'oi_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.028406550793695806), 'adj_r_squared': np.float64(0.02720296646516529), 'aic': np.float64(69287.18661986805), 'bic': np.float64(69317.59399506873)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 04:00:00    12234.0         0.0000           -0.7562         0.0            -1.386294
+2    2025-06-25 05:00:00    22425.0         0.0000            0.0000         0.0             0.000000
+3    2025-06-25 06:00:00    15884.0         0.0000            0.0000         0.0             0.000000
+4    2025-06-25 07:00:00     5905.0         0.0000            0.0000         0.0             0.000000
+5    2025-06-25 08:00:00        0.0         0.0000            0.0000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3230 2025-11-06 17:00:00      560.0         0.0000            0.7184         0.0            -0.693147
+3231 2025-11-06 18:00:00       93.0         0.0000            0.0000         1.0             0.693147
+3232 2025-11-06 19:00:00      467.0         0.0000            0.0000         0.0            -0.693147
+3233 2025-11-06 20:00:00        0.0         0.0000            0.0000         0.0             0.000000
+3234 2025-11-06 21:00:00        0.0        -0.9346           -0.9346         2.0             1.098612
+
+[3234 rows x 6 columns]"

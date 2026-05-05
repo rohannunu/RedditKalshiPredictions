@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Manhattan,mamdani,oi_change,oi_change_autoregressive_lags,46.68786140160421,3.3741032396496637e-38
+Manhattan,mamdani,oi_change,mean_compound,60.35306747109577,3.1657117211660884e-49
+Manhattan,mamdani,oi_change,sentiment_change,40.634229847014566,2.882727498381801e-33
+Manhattan,mamdani,oi_change,n_comments,24.13278864948694,1.0615335234344278e-19
+Manhattan,mamdani,oi_change,log_comments_change,39.08296159524672,5.344195036974723e-32

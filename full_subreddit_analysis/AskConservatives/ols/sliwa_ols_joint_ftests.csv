@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskConservatives,sliwa,price_change,price_change_autoregressive_lags,30.032077199567976,1.4557003109412503e-24
+AskConservatives,sliwa,price_change,mean_compound,1.7127088162691386,0.14427376052711466
+AskConservatives,sliwa,price_change,sentiment_change,2.4603260437973575,0.04340431228259085
+AskConservatives,sliwa,price_change,n_comments,0.7208429434060022,0.5775966525856295
+AskConservatives,sliwa,price_change,log_comments_change,0.2476719295922562,0.9111811192634822
+AskConservatives,sliwa,log_volume_change,log_volume_change_autoregressive_lags,427.1124540699586,3.7959151417217177e-295
+AskConservatives,sliwa,log_volume_change,mean_compound,0.47920565844830454,0.7510494273157317
+AskConservatives,sliwa,log_volume_change,sentiment_change,0.6813121260267547,0.6048576802433023
+AskConservatives,sliwa,log_volume_change,n_comments,0.42716148693621653,0.7891323326546764
+AskConservatives,sliwa,log_volume_change,log_comments_change,0.9221308424401554,0.4499394303971622
+AskConservatives,sliwa,oi_change,oi_change_autoregressive_lags,62.958220526328255,2.7216202782297244e-51
+AskConservatives,sliwa,oi_change,mean_compound,2.323301433750709,0.0544108213634201
+AskConservatives,sliwa,oi_change,sentiment_change,0.29691022377227383,0.8801044924542517
+AskConservatives,sliwa,oi_change,n_comments,11.434842218369605,3.2374188992265223e-09
+AskConservatives,sliwa,oi_change,log_comments_change,5.005910481807194,0.0005068579146273636

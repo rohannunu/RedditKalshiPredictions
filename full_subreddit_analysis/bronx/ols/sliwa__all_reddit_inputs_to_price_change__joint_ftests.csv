@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+bronx,sliwa,price_change,price_change_autoregressive_lags,30.501623751499174,5.941501035977932e-25
+bronx,sliwa,price_change,mean_compound,0.0074433040808031935,0.9998902210507961
+bronx,sliwa,price_change,sentiment_change,0.013286604841941548,0.999652916751767
+bronx,sliwa,price_change,n_comments,0.0012287682302519398,0.9999969833290752
+bronx,sliwa,price_change,log_comments_change,0.002691294143013099,0.9999855568255532

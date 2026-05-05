@@ -1,0 +1,46 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           price_change   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.059
+Method:                 Least Squares   F-statistic:                     13.17
+Date:                Mon, 04 May 2026   Prob (F-statistic):           1.07e-36
+Time:                        23:25:13   Log-Likelihood:                 17144.
+No. Observations:                3279   AIC:                        -3.425e+04
+Df Residuals:                    3261   BIC:                        -3.414e+04
+Df Model:                          17                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                    -3.751e-06   2.29e-05     -0.164      0.870   -4.87e-05    4.12e-05
+price_change_lag1           -0.1710      0.017     -9.771      0.000      -0.205      -0.137
+price_change_lag2           -0.0606      0.018     -3.420      0.001      -0.095      -0.026
+price_change_lag3           -0.0773      0.018     -4.364      0.000      -0.112      -0.043
+price_change_lag4            0.0182      0.017      1.047      0.295      -0.016       0.052
+mean_compound_lag1        7.658e-05      0.000      0.454      0.650      -0.000       0.000
+mean_compound_lag2        2.043e-05      0.000      0.157      0.875      -0.000       0.000
+mean_compound_lag3          -0.0002      0.000     -1.502      0.133      -0.000    5.93e-05
+mean_compound_lag4          -0.0006      0.000     -3.103      0.002      -0.001      -0.000
+sentiment_change_lag1     5.615e-05      0.000      0.406      0.685      -0.000       0.000
+sentiment_change_lag2        0.0002      0.000      1.541      0.123   -5.84e-05       0.000
+sentiment_change_lag3        0.0005      0.000      2.537      0.011       0.000       0.001
+sentiment_change_lag4        0.0004      0.000      1.278      0.201      -0.000       0.001
+n_comments_lag1           1.911e-05   1.03e-05      1.848      0.065   -1.16e-06    3.94e-05
+n_comments_lag2          -2.375e-05   1.08e-05     -2.201      0.028   -4.49e-05   -2.59e-06
+n_comments_lag3           1.992e-05   1.08e-05      1.852      0.064   -1.17e-06     4.1e-05
+n_comments_lag4          -2.809e-05   1.03e-05     -2.715      0.007   -4.84e-05    -7.8e-06
+log_comments_change_lag1    -0.0012      0.000     -7.280      0.000      -0.001      -0.001
+log_comments_change_lag2    -0.0003      0.000     -1.726      0.084      -0.001     4.1e-05
+log_comments_change_lag3    -0.0008      0.000     -4.973      0.000      -0.001      -0.001
+log_comments_change_lag4    -0.0003      0.000     -2.224      0.026      -0.001   -3.66e-05
+==============================================================================
+Omnibus:                     1429.717   Durbin-Watson:                   1.998
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           451219.264
+Skew:                          -0.808   Prob(JB):                         0.00
+Kurtosis:                      60.446   Cond. No.                     3.16e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 5.59e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

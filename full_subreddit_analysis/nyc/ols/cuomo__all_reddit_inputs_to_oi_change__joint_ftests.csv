@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+nyc,cuomo,oi_change,oi_change_autoregressive_lags,179.18312780823754,9.468734258919518e-139
+nyc,cuomo,oi_change,mean_compound,7.23054282984875,8.576881789534178e-06
+nyc,cuomo,oi_change,sentiment_change,3.327533069544959,0.009956348946791876
+nyc,cuomo,oi_change,n_comments,25.869559220656765,3.9162271752368194e-21
+nyc,cuomo,oi_change,log_comments_change,3.265222301048458,0.011089347518982001

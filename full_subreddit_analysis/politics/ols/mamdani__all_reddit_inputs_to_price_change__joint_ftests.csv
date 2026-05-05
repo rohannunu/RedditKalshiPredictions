@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+politics,mamdani,price_change,price_change_autoregressive_lags,5.799297702713168,0.00011970308365588966
+politics,mamdani,price_change,mean_compound,2.373580775241056,0.050088604467541244
+politics,mamdani,price_change,sentiment_change,6.144043997217696,6.364992492096184e-05
+politics,mamdani,price_change,n_comments,9.053117439137019,2.8609474275910594e-07
+politics,mamdani,price_change,log_comments_change,10.146633255492914,3.666356983943474e-08

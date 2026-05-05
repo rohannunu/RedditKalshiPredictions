@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+newsrelated,sliwa,price_change,price_change_autoregressive_lags,29.395004031143767,4.773718538657876e-24
+newsrelated,sliwa,price_change,mean_compound,2.4164329654721133,0.04666966905968183
+newsrelated,sliwa,price_change,sentiment_change,2.0194643624900133,0.08903518920900867
+newsrelated,sliwa,price_change,n_comments,3.4495370771723466,0.0080550137473918
+newsrelated,sliwa,price_change,log_comments_change,18.911884370028478,2.1896625100544978e-15

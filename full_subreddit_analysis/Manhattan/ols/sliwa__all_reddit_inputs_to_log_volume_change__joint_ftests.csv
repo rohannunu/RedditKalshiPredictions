@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Manhattan,sliwa,log_volume_change,log_volume_change_autoregressive_lags,1165.1765251415818,0.0
+Manhattan,sliwa,log_volume_change,mean_compound,,
+Manhattan,sliwa,log_volume_change,sentiment_change,,
+Manhattan,sliwa,log_volume_change,n_comments,,
+Manhattan,sliwa,log_volume_change,log_comments_change,,

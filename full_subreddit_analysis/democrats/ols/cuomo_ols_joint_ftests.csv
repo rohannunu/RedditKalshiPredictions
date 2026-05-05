@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+democrats,cuomo,price_change,price_change_autoregressive_lags,1.7836594895901892,0.12922973873937552
+democrats,cuomo,price_change,mean_compound,14.150029416264447,1.8891359034064598e-11
+democrats,cuomo,price_change,sentiment_change,5.683813634545859,0.0001479109436171529
+democrats,cuomo,price_change,n_comments,5.741939445512714,0.00013301556878538533
+democrats,cuomo,price_change,log_comments_change,3.5727377217869174,0.006499517065572113
+democrats,cuomo,log_volume_change,log_volume_change_autoregressive_lags,315.1012966025142,7.15272513778884e-229
+democrats,cuomo,log_volume_change,mean_compound,0.48428662382745796,0.7473147251095641
+democrats,cuomo,log_volume_change,sentiment_change,0.2082731601065988,0.9339364555537611
+democrats,cuomo,log_volume_change,n_comments,0.04236479755887658,0.996605025232457
+democrats,cuomo,log_volume_change,log_comments_change,0.46128303422940065,0.7642074761726642
+democrats,cuomo,oi_change,oi_change_autoregressive_lags,253.46354923070186,2.0388526872269804e-189
+democrats,cuomo,oi_change,mean_compound,19.42398582787681,8.319945424068954e-16
+democrats,cuomo,oi_change,sentiment_change,17.98592579095926,1.2850713417287727e-14
+democrats,cuomo,oi_change,n_comments,12.647497803209305,3.263466023447581e-10
+democrats,cuomo,oi_change,log_comments_change,10.46628476026298,2.0122949545949072e-08

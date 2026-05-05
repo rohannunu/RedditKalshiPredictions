@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+newyork,cuomo,price_change,price_change_autoregressive_lags,4.280851453151553,0.0018638309587667384
+newyork,cuomo,price_change,mean_compound,1.79599496529811,0.12677931712452747
+newyork,cuomo,price_change,sentiment_change,1.5428898409831515,0.1869927435967557
+newyork,cuomo,price_change,n_comments,2.5534720162825097,0.0371862606964436
+newyork,cuomo,price_change,log_comments_change,0.3119815205990444,0.8701210705239226
+newyork,cuomo,log_volume_change,log_volume_change_autoregressive_lags,311.2650430636972,5.1416741614324706e-225
+newyork,cuomo,log_volume_change,mean_compound,2.5147548040800296,0.03966253295091394
+newyork,cuomo,log_volume_change,sentiment_change,3.8010519337502804,0.004358208168418709
+newyork,cuomo,log_volume_change,n_comments,0.5941939745926651,0.6668546592257318
+newyork,cuomo,log_volume_change,log_comments_change,5.380809097515829,0.00025721236267096714
+newyork,cuomo,oi_change,oi_change_autoregressive_lags,90.78263917999269,4.866391722285888e-73
+newyork,cuomo,oi_change,mean_compound,4.200753337645832,0.0021493306279756156
+newyork,cuomo,oi_change,sentiment_change,3.8436778242654093,0.004043210599967882
+newyork,cuomo,oi_change,n_comments,4.14413174989223,0.0023767674136349858
+newyork,cuomo,oi_change,log_comments_change,1.213167937507977,0.3029926352291704

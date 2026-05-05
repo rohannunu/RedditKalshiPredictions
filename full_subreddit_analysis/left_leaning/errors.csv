@@ -1,0 +1,172 @@
+coef_table,summary_row,model_input
+"      subreddit candidate             y                 term      coef    stderr     tstat        pvalue
+0  left_leaning   mamdani  price_change                const  0.000062  0.000063  0.988664  3.229009e-01
+1  left_leaning   mamdani  price_change        mean_compound  0.002739  0.000875  3.129363  1.767313e-03
+2  left_leaning   mamdani  price_change     sentiment_change -0.003095  0.000668 -4.634187  3.723601e-06
+3  left_leaning   mamdani  price_change           n_comments -0.000107  0.000018 -5.867387  4.869685e-09
+4  left_leaning   mamdani  price_change  log_comments_change -0.000205  0.000303 -0.676784  4.985907e-01","{'subreddit': 'left_leaning', 'candidate': 'mamdani', 'y': 'price_change', 'n': 3271, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.01593906709330961), 'adj_r_squared': np.float64(0.01473384855943738), 'aic': np.float64(-27617.152577519842), 'bic': np.float64(-27586.68832238215)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 17:00:00         -0.02       0.116736         -0.492114        11.0             1.386294
+2    2025-06-23 18:00:00          0.01       0.761100          0.644364         1.0            -1.791759
+3    2025-06-23 19:00:00          0.00      -0.056667         -0.817767         3.0             0.693147
+4    2025-06-23 20:00:00         -0.02       0.000000          0.056667         1.0            -0.693147
+5    2025-06-23 21:00:00          0.00       0.000000          0.000000         0.0            -0.693147
+...                  ...           ...            ...               ...         ...                  ...
+3267 2025-11-06 19:00:00          0.00       0.000000         -0.856800         0.0            -1.098612
+3268 2025-11-06 20:00:00          0.00       0.151025          0.151025         4.0             1.609438
+3269 2025-11-06 21:00:00          0.00      -0.988500         -1.139525         1.0            -0.916291
+3270 2025-11-06 22:00:00          0.00       0.000000          0.988500         0.0            -0.693147
+3271 2025-11-06 23:00:00          0.00      -0.238200         -0.238200         1.0             0.693147
+
+[3271 rows x 6 columns]"
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  left_leaning   mamdani  log_volume_change                const  0.000605  0.050065  0.012076  0.990366
+1  left_leaning   mamdani  log_volume_change        mean_compound -0.186635  0.700119 -0.266576  0.789812
+2  left_leaning   mamdani  log_volume_change     sentiment_change -0.195618  0.534254 -0.366151  0.714276
+3  left_leaning   mamdani  log_volume_change           n_comments  0.005226  0.014525  0.359800  0.719020
+4  left_leaning   mamdani  log_volume_change  log_comments_change -0.061628  0.242711 -0.253916  0.799576","{'subreddit': 'left_leaning', 'candidate': 'mamdani', 'y': 'log_volume_change', 'n': 3271, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.00022001151180162104), 'adj_r_squared': np.float64(-0.0010044587741606659), 'aic': np.float64(16112.510174918716), 'bic': np.float64(16142.974430056409)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 17:00:00           1.390871       0.116736         -0.492114        11.0             1.386294
+2    2025-06-23 18:00:00          -0.803376       0.761100          0.644364         1.0            -1.791759
+3    2025-06-23 19:00:00          -3.759018      -0.056667         -0.817767         3.0             0.693147
+4    2025-06-23 20:00:00           3.456908       0.000000          0.056667         1.0            -0.693147
+5    2025-06-23 21:00:00           0.611050       0.000000          0.000000         0.0            -0.693147
+...                  ...                ...            ...               ...         ...                  ...
+3267 2025-11-06 19:00:00           0.030051       0.000000         -0.856800         0.0            -1.098612
+3268 2025-11-06 20:00:00          -0.048997       0.151025          0.151025         4.0             1.609438
+3269 2025-11-06 21:00:00          -0.673821      -0.988500         -1.139525         1.0            -0.916291
+3270 2025-11-06 22:00:00           0.380652       0.000000          0.988500         0.0            -0.693147
+3271 2025-11-06 23:00:00          -0.251574      -0.238200         -0.238200         1.0             0.693147
+
+[3271 rows x 6 columns]"
+"      subreddit candidate          y                 term          coef        stderr     tstat        pvalue
+0  left_leaning   mamdani  oi_change                const   6790.204462   1109.246618  6.121456  1.037452e-09
+1  left_leaning   mamdani  oi_change        mean_compound  70854.550158  15511.926978  4.567746  5.112253e-06
+2  left_leaning   mamdani  oi_change     sentiment_change -37042.154230  11837.007640 -3.129351  1.767382e-03
+3  left_leaning   mamdani  oi_change           n_comments    612.338485    321.809524  1.902798  5.715478e-02
+4  left_leaning   mamdani  oi_change  log_comments_change   6263.330627   5377.535529  1.164721  2.442169e-01","{'subreddit': 'left_leaning', 'candidate': 'mamdani', 'y': 'oi_change', 'n': 3271, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.010433239542600226), 'adj_r_squared': np.float64(0.0092212778029096), 'aic': np.float64(81570.90692208635), 'bic': np.float64(81601.37117722403)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 17:00:00     1871.0       0.116736         -0.492114        11.0             1.386294
+2    2025-06-23 18:00:00     1141.0       0.761100          0.644364         1.0            -1.791759
+3    2025-06-23 19:00:00       31.0      -0.056667         -0.817767         3.0             0.693147
+4    2025-06-23 20:00:00      362.0       0.000000          0.056667         1.0            -0.693147
+5    2025-06-23 21:00:00      959.0       0.000000          0.000000         0.0            -0.693147
+...                  ...        ...            ...               ...         ...                  ...
+3267 2025-11-06 19:00:00        0.0       0.000000         -0.856800         0.0            -1.098612
+3268 2025-11-06 20:00:00        0.0       0.151025          0.151025         4.0             1.609438
+3269 2025-11-06 21:00:00     2617.0      -0.988500         -1.139525         1.0            -0.916291
+3270 2025-11-06 22:00:00        0.0       0.000000          0.988500         0.0            -0.693147
+3271 2025-11-06 23:00:00        0.0      -0.238200         -0.238200         1.0             0.693147
+
+[3271 rows x 6 columns]"
+"      subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  left_leaning     cuomo  price_change                const -0.000013  0.000065 -0.207718  0.835462
+1  left_leaning     cuomo  price_change        mean_compound -0.001394  0.001329 -1.049107  0.294208
+2  left_leaning     cuomo  price_change     sentiment_change  0.004304  0.000951  4.526345  0.000006
+3  left_leaning     cuomo  price_change           n_comments  0.000126  0.000048  2.639942  0.008332
+4  left_leaning     cuomo  price_change  log_comments_change  0.000308  0.000434  0.708991  0.478381","{'subreddit': 'left_leaning', 'candidate': 'cuomo', 'y': 'price_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.011907575096191558), 'adj_r_squared': np.float64(0.010683552271906982), 'aic': np.float64(-27095.507995358457), 'bic': np.float64(-27065.100620157773)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.03       0.371026          0.059289        19.0            -1.064711
+2    2025-06-25 06:00:00          0.00       0.353894         -0.017132        33.0             0.530628
+3    2025-06-25 07:00:00          0.00       0.364809          0.010915        11.0            -1.041454
+4    2025-06-25 08:00:00          0.00       0.143578         -0.221231         9.0            -0.182322
+5    2025-06-25 09:00:00          0.00       0.804700          0.661122         1.0            -1.609438
+...                  ...           ...            ...               ...         ...                  ...
+3230 2025-11-06 18:00:00          0.00       0.000000          0.000000         0.0             0.000000
+3231 2025-11-06 19:00:00          0.00       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00          0.00       0.984300          0.984300         1.0             0.693147
+3233 2025-11-06 21:00:00          0.00       0.000000         -0.984300         0.0            -0.693147
+3234 2025-11-06 22:00:00          0.00       0.416267          0.416267         3.0             1.386294
+
+[3234 rows x 6 columns]"
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  left_leaning     cuomo  log_volume_change                const -0.005247  0.067658 -0.077556  0.938186
+1  left_leaning     cuomo  log_volume_change        mean_compound  1.119656  1.387678  0.806856  0.419809
+2  left_leaning     cuomo  log_volume_change     sentiment_change -0.649105  0.993000 -0.653680  0.513364
+3  left_leaning     cuomo  log_volume_change           n_comments  0.013812  0.049825  0.277212  0.781635
+4  left_leaning     cuomo  log_volume_change  log_comments_change  0.251963  0.453558  0.555526  0.578574","{'subreddit': 'left_leaning', 'candidate': 'cuomo', 'y': 'log_volume_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0004007830396806078), 'adj_r_squared': np.float64(-0.0008374940949869014), 'aic': np.float64(17863.568596018304), 'bic': np.float64(17893.975971218988)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           3.694917       0.371026          0.059289        19.0            -1.064711
+2    2025-06-25 06:00:00          -1.756668       0.353894         -0.017132        33.0             0.530628
+3    2025-06-25 07:00:00          -2.886422       0.364809          0.010915        11.0            -1.041454
+4    2025-06-25 08:00:00          -6.616065       0.143578         -0.221231         9.0            -0.182322
+5    2025-06-25 09:00:00           0.000000       0.804700          0.661122         1.0            -1.609438
+...                  ...                ...            ...               ...         ...                  ...
+3230 2025-11-06 18:00:00           0.411980       0.000000          0.000000         0.0             0.000000
+3231 2025-11-06 19:00:00           0.167054       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00           3.557543       0.984300          0.984300         1.0             0.693147
+3233 2025-11-06 21:00:00          -1.654944       0.000000         -0.984300         0.0            -0.693147
+3234 2025-11-06 22:00:00           2.780142       0.416267          0.416267         3.0             1.386294
+
+[3234 rows x 6 columns]"
+"      subreddit candidate          y                 term          coef        stderr     tstat        pvalue
+0  left_leaning     cuomo  oi_change                const   8904.577994   1394.872524  6.383793  1.974703e-10
+1  left_leaning     cuomo  oi_change        mean_compound -89395.414626  28609.192451 -3.124709  1.795601e-03
+2  left_leaning     cuomo  oi_change     sentiment_change  95781.205139  20472.272879  4.678582  3.007301e-06
+3  left_leaning     cuomo  oi_change           n_comments   6136.507509   1027.227891  5.973852  2.569360e-09
+4  left_leaning     cuomo  oi_change  log_comments_change -27641.784383   9350.818716 -2.956082  3.138304e-03","{'subreddit': 'left_leaning', 'candidate': 'cuomo', 'y': 'oi_change', 'n': 3234, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.01579073228051775), 'adj_r_squared': np.float64(0.014571519808892597), 'aic': np.float64(82115.71792474894), 'bic': np.float64(82146.12529994962)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    77566.0       0.371026          0.059289        19.0            -1.064711
+2    2025-06-25 06:00:00    11761.0       0.353894         -0.017132        33.0             0.530628
+3    2025-06-25 07:00:00      746.0       0.364809          0.010915        11.0            -1.041454
+4    2025-06-25 08:00:00        0.0       0.143578         -0.221231         9.0            -0.182322
+5    2025-06-25 09:00:00        0.0       0.804700          0.661122         1.0            -1.609438
+...                  ...        ...            ...               ...         ...                  ...
+3230 2025-11-06 18:00:00        0.0       0.000000          0.000000         0.0             0.000000
+3231 2025-11-06 19:00:00        0.0       0.000000          0.000000         0.0             0.000000
+3232 2025-11-06 20:00:00       43.0       0.984300          0.984300         1.0             0.693147
+3233 2025-11-06 21:00:00        0.0       0.000000         -0.984300         0.0            -0.693147
+3234 2025-11-06 22:00:00        0.0       0.416267          0.416267         3.0             1.386294
+
+[3234 rows x 6 columns]"
+"      subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  left_leaning     sliwa  price_change                const -0.000007  0.000022 -0.321605  0.747773
+1  left_leaning     sliwa  price_change        mean_compound -0.000278  0.000700 -0.396907  0.691462
+2  left_leaning     sliwa  price_change     sentiment_change -0.001132  0.000505 -2.240375  0.025135
+3  left_leaning     sliwa  price_change           n_comments -0.000463  0.000170 -2.727272  0.006421
+4  left_leaning     sliwa  price_change  log_comments_change  0.000381  0.000316  1.205589  0.228065","{'subreddit': 'left_leaning', 'candidate': 'sliwa', 'y': 'price_change', 'n': 3212, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.006147559805418257), 'adj_r_squared': np.float64(0.00490795588874271), 'aic': np.float64(-33979.96757692813), 'bic': np.float64(-33949.5943315528)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 03:00:00         -0.01        0.00000           0.49680         0.0            -0.693147
+2    2025-06-25 04:00:00         -0.01        0.45740           0.45740         2.0             1.098612
+3    2025-06-25 05:00:00         -0.01        0.45520          -0.00220         1.0            -0.405465
+4    2025-06-25 06:00:00          0.01        0.00000          -0.45520         0.0            -0.693147
+5    2025-06-25 07:00:00         -0.01        0.00000           0.00000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3208 2025-11-05 18:00:00          0.00        0.14740          -0.15970         3.0             0.287682
+3209 2025-11-05 19:00:00          0.00        0.00000          -0.14740         0.0            -1.386294
+3210 2025-11-05 20:00:00          0.00        0.00000           0.00000         0.0             0.000000
+3211 2025-11-05 21:00:00          0.00       -0.01660          -0.01660         3.0             1.386294
+3212 2025-11-05 22:00:00          0.00        0.31725           0.33385         2.0            -0.287682
+
+[3212 rows x 6 columns]"
+"      subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  left_leaning     sliwa  log_volume_change                const -0.003714  0.074502 -0.049848  0.960247
+1  left_leaning     sliwa  log_volume_change        mean_compound  1.034542  2.416429  0.428128  0.668586
+2  left_leaning     sliwa  log_volume_change     sentiment_change -1.476060  1.742897 -0.846900  0.397114
+3  left_leaning     sliwa  log_volume_change           n_comments -0.031589  0.586050 -0.053901  0.957017
+4  left_leaning     sliwa  log_volume_change  log_comments_change -1.021017  1.089108 -0.937480  0.348582","{'subreddit': 'left_leaning', 'candidate': 'sliwa', 'y': 'log_volume_change', 'n': 3212, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0007979042659306268), 'adj_r_squared': np.float64(-0.0004483721241337335), 'aic': np.float64(18350.488131184095), 'bic': np.float64(18380.861376559427)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 03:00:00          -0.934949        0.00000           0.49680         0.0            -0.693147
+2    2025-06-25 04:00:00           0.105029        0.45740           0.45740         2.0             1.098612
+3    2025-06-25 05:00:00           0.592989        0.45520          -0.00220         1.0            -0.405465
+4    2025-06-25 06:00:00          -0.300740        0.00000          -0.45520         0.0            -0.693147
+5    2025-06-25 07:00:00          -0.773692        0.00000           0.00000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3208 2025-11-05 18:00:00           7.534228        0.14740          -0.15970         3.0             0.287682
+3209 2025-11-05 19:00:00          -1.385760        0.00000          -0.14740         0.0            -1.386294
+3210 2025-11-05 20:00:00          -3.750573        0.00000           0.00000         0.0             0.000000
+3211 2025-11-05 21:00:00          -2.397895       -0.01660          -0.01660         3.0             1.386294
+3212 2025-11-05 22:00:00           0.000000        0.31725           0.33385         2.0            -0.287682
+
+[3212 rows x 6 columns]"
+"      subreddit candidate          y                 term          coef       stderr      tstat        pvalue
+0  left_leaning     sliwa  oi_change                const   2366.561988   193.950309  12.201899  1.660486e-33
+1  left_leaning     sliwa  oi_change        mean_compound  24779.841157  6290.684731   3.939133  8.351816e-05
+2  left_leaning     sliwa  oi_change     sentiment_change -15164.327949  4537.280192  -3.342163  8.408129e-04
+3  left_leaning     sliwa  oi_change           n_comments   8230.142082  1525.662513   5.394471  7.371431e-08
+4  left_leaning     sliwa  oi_change  log_comments_change  -6253.116749  2835.272583  -2.205473  2.749163e-02","{'subreddit': 'left_leaning', 'candidate': 'sliwa', 'y': 'oi_change', 'n': 3212, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.01781896987300291), 'adj_r_squared': np.float64(0.01659392337455945), 'aic': np.float64(68872.25678801176), 'bic': np.float64(68902.63003338709)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 03:00:00    10922.0        0.00000           0.49680         0.0            -0.693147
+2    2025-06-25 04:00:00    12234.0        0.45740           0.45740         2.0             1.098612
+3    2025-06-25 05:00:00    22425.0        0.45520          -0.00220         1.0            -0.405465
+4    2025-06-25 06:00:00    15884.0        0.00000          -0.45520         0.0            -0.693147
+5    2025-06-25 07:00:00     5905.0        0.00000           0.00000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3208 2025-11-05 18:00:00     1870.0        0.14740          -0.15970         3.0             0.287682
+3209 2025-11-05 19:00:00      467.0        0.00000          -0.14740         0.0            -1.386294
+3210 2025-11-05 20:00:00        0.0        0.00000           0.00000         0.0             0.000000
+3211 2025-11-05 21:00:00        0.0       -0.01660          -0.01660         3.0             1.386294
+3212 2025-11-05 22:00:00        0.0        0.31725           0.33385         2.0            -0.287682
+
+[3212 rows x 6 columns]"

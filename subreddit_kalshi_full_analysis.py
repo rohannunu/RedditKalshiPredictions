@@ -1,32 +1,9 @@
-# subreddit_kalshi_full_analysis.py
-#
-# For each subreddit folder inside sentiment_hourly_subreddit/:
-#   - merges candidate-specific sentiment with candidate-specific Kalshi data
-#   - runs correlations for every Reddit input vs every Kalshi output
-#   - runs lagged OLS for every Reddit input -> Kalshi output pair
-#   - runs Granger causality for every Reddit input -> Kalshi output pair
-#   - saves all outputs inside that subreddit's own folder
-#
-# Outputs:
-#   full_subreddit_analysis/
-#       all/
-#           correlations/
-#           ols/
-#           granger/
-#       AskALiberal/
-#           ...
-#
-# Install:
-#   pip install pandas numpy matplotlib statsmodels
-#
-# Run:
-#   python3 subreddit_kalshi_full_analysis.py
+# subreddit_full_analysis_multivar_ols.py
 
 import warnings
 warnings.filterwarnings("ignore")
 
 from pathlib import Path
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -47,8 +24,8 @@ SENTIMENT_ROOT = Path("sentiment_hourly_subreddit")
 OUTPUT_ROOT = Path("full_subreddit_analysis")
 
 MAX_GRANGER_LAG = 12
-MAX_OLS_LAG = 12
 MIN_ROWS_FOR_TEST = 100
+MIN_ROWS_FOR_OLS = 50
 
 SIGNIFICANCE_LEVEL = 0.05
 FILL_MISSING_SENTIMENT_WITH_ZERO = True
@@ -77,7 +54,6 @@ LABEL_MAP = {
     "log_comments_change": "Change in Comment Volume",
 }
 
-
 # ============================================================
 # HELPERS
 # ============================================================
@@ -85,14 +61,11 @@ LABEL_MAP = {
 def ensure_dir(path: Path):
     path.mkdir(parents=True, exist_ok=True)
 
-
 def pretty_label(name: str) -> str:
     return LABEL_MAP.get(name, name)
 
-
 def safe_log_diff(series: pd.Series) -> pd.Series:
     return np.log1p(series).diff()
-
 
 def adf_test(series, name):
     s = pd.Series(series).dropna()
@@ -114,14 +87,12 @@ def adf_test(series, name):
         "stationary_5pct": result[1] < 0.05,
     }
 
-
 def get_sentiment_files_for_subreddit(subreddit_dir: Path):
     return {
         "mamdani": subreddit_dir / "sentiment_hourly_mamdani.csv",
         "cuomo": subreddit_dir / "sentiment_hourly_cuomo.csv",
         "sliwa": subreddit_dir / "sentiment_hourly_sliwa.csv",
     }
-
 
 def load_and_prepare_candidate(candidate_name: str, sentiment_file: Path, kalshi_file: str) -> pd.DataFrame:
     kalshi = pd.read_csv(kalshi_file)
@@ -177,7 +148,7 @@ def load_and_prepare_candidate(candidate_name: str, sentiment_file: Path, kalshi
         })
     )
 
-    # Overlap only
+    # Keep overlapping time only
     start_time = max(kalshi["timestamp"].min(), sent["timestamp"].min())
     end_time = min(kalshi["timestamp"].max(), sent["timestamp"].max())
 
@@ -196,6 +167,7 @@ def load_and_prepare_candidate(candidate_name: str, sentiment_file: Path, kalshi
         .reset_index(drop=True)
     )
 
+    # Fill missing values
     if FFILL_KALSHI_LEVELS:
         df["yes_bid.close_dollars"] = df["yes_bid.close_dollars"].ffill()
         df["open_interest"] = df["open_interest"].ffill()
@@ -219,7 +191,6 @@ def load_and_prepare_candidate(candidate_name: str, sentiment_file: Path, kalshi
 
     df["candidate"] = candidate_name
     return df
-
 
 # ============================================================
 # CORRELATIONS
@@ -250,77 +221,67 @@ def run_correlations(df: pd.DataFrame, subreddit: str, candidate: str) -> pd.Dat
             })
     return pd.DataFrame(rows)
 
-
 # ============================================================
-# OLS
+# MULTIVARIATE OLS: ONE MODEL PER OUTPUT, ALL INPUTS TOGETHER
 # ============================================================
 
-def build_lagged_regression_data(df, y_col, x_col, max_lag):
-    temp = df[["timestamp", y_col, x_col]].copy()
+def fit_multivariate_ols(df: pd.DataFrame, subreddit: str, candidate: str, y_col: str, x_cols: list[str]):
+    temp = df[["timestamp", y_col] + x_cols].dropna().copy()
 
-    for lag in range(1, max_lag + 1):
-        temp[f"{y_col}_lag{lag}"] = temp[y_col].shift(lag)
-        temp[f"{x_col}_lag{lag}"] = temp[x_col].shift(lag)
-
-    temp = temp.dropna().copy()
-    return temp
-
-
-def fit_ols_with_lags(df, subreddit, candidate, y_col, x_col, max_lag):
-    temp = build_lagged_regression_data(df, y_col, x_col, max_lag)
-
-    if len(temp) < MIN_ROWS_FOR_TEST:
+    if len(temp) < MIN_ROWS_FOR_OLS:
         return None, {
             "subreddit": subreddit,
             "candidate": candidate,
             "y": y_col,
-            "x": x_col,
             "n": len(temp),
-            "error": f"Not enough rows (< {MIN_ROWS_FOR_TEST})"
+            "error": f"Not enough rows (< {MIN_ROWS_FOR_OLS})"
         }
 
-    y = temp[y_col]
-    x_cols = (
-        [f"{y_col}_lag{i}" for i in range(1, max_lag + 1)] +
-        [f"{x_col}_lag{i}" for i in range(1, max_lag + 1)]
-    )
-    X = sm.add_constant(temp[x_cols])
+    usable_x_cols = [c for c in x_cols if temp[c].nunique() > 1]
 
-    model = sm.OLS(y, X).fit()
-
-    restriction = " = 0, ".join([f"{x_col}_lag{i}" for i in range(1, max_lag + 1)]) + " = 0"
-    ftest = model.f_test(restriction)
-
-    coef_rows = []
-    for term in model.params.index:
-        coef_rows.append({
+    if not usable_x_cols:
+        return None, {
             "subreddit": subreddit,
             "candidate": candidate,
             "y": y_col,
-            "x": x_col,
-            "term": term,
-            "coef": model.params[term],
-            "stderr": model.bse[term],
-            "tstat": model.tvalues[term],
-            "pvalue": model.pvalues[term],
-        })
+            "n": len(temp),
+            "error": "All input variables have no variation"
+        }
+
+    y = temp[y_col]
+    X = sm.add_constant(temp[usable_x_cols])
+
+    model = sm.OLS(y, X).fit()
+
+    coef_table = pd.DataFrame({
+        "subreddit": subreddit,
+        "candidate": candidate,
+        "y": y_col,
+        "term": model.params.index,
+        "coef": model.params.values,
+        "stderr": model.bse.values,
+        "tstat": model.tvalues.values,
+        "pvalue": model.pvalues.values,
+    })
 
     summary_row = {
         "subreddit": subreddit,
         "candidate": candidate,
         "y": y_col,
-        "x": x_col,
         "n": int(model.nobs),
+        "used_inputs": ",".join(usable_x_cols),
+        "num_inputs_used": len(usable_x_cols),
         "r_squared": model.rsquared,
         "adj_r_squared": model.rsquared_adj,
         "aic": model.aic,
         "bic": model.bic,
-        "joint_f_stat": float(np.asarray(ftest.fvalue).squeeze()),
-        "joint_f_pvalue": float(np.asarray(ftest.pvalue).squeeze()),
     }
 
-    return model, pd.DataFrame(coef_rows), summary_row, temp
-
+    return model, {
+        "coef_table": coef_table,
+        "summary_row": summary_row,
+        "model_input": temp,
+    }
 
 # ============================================================
 # GRANGER
@@ -386,7 +347,6 @@ def run_granger_pair(df, subreddit, candidate, y_col, x_col, maxlag=12):
             "error": str(e)
         }
 
-
 def make_granger_heatmap(granger_df: pd.DataFrame, outpath: Path, subreddit: str, candidate: str):
     if granger_df.empty:
         return
@@ -415,7 +375,6 @@ def make_granger_heatmap(granger_df: pd.DataFrame, outpath: Path, subreddit: str
     plt.tight_layout()
     plt.savefig(outpath, dpi=200, bbox_inches="tight")
     plt.close()
-
 
 # ============================================================
 # MAIN PER SUBREDDIT
@@ -461,9 +420,11 @@ def process_subreddit(subreddit_dir: Path):
             df.to_csv(debug_dir / f"{candidate}_merged_transformed_hourly.csv", index=False)
 
             # ADF
-            for var in ["yes_bid.close_dollars", "mean_compound", "n_comments",
-                        "price_change", "log_volume_change", "oi_change",
-                        "sentiment_change", "log_comments_change"]:
+            for var in [
+                "yes_bid.close_dollars", "mean_compound", "n_comments",
+                "price_change", "log_volume_change", "oi_change",
+                "sentiment_change", "log_comments_change"
+            ]:
                 row = adf_test(df[var], var)
                 row["subreddit"] = subreddit
                 row["candidate"] = candidate
@@ -474,30 +435,34 @@ def process_subreddit(subreddit_dir: Path):
             corr_df.to_csv(corr_dir / f"{candidate}_correlations.csv", index=False)
             corr_all.append(corr_df)
 
-            # OLS
+            # OLS: one multivariate model per output
             candidate_ols_summaries = []
             candidate_ols_coefs = []
 
             for y_col in KALSHI_OUTPUTS:
-                for x_col in REDDIT_INPUTS:
-                    result = fit_ols_with_lags(df, subreddit, candidate, y_col, x_col, MAX_OLS_LAG)
+                result = fit_multivariate_ols(df, subreddit, candidate, y_col, REDDIT_INPUTS)
 
-                    if result is None:
-                        continue
+                if result is None:
+                    continue
 
-                    if len(result) == 2:
-                        errors.append(result[1])
-                        continue
+                if len(result) == 2:
+                    errors.append(result[1])
+                    continue
 
-                    model, coef_df, summary_row, model_input = result
-                    candidate_ols_summaries.append(summary_row)
-                    candidate_ols_coefs.append(coef_df)
+                model, payload = result
+                coef_table = payload["coef_table"]
+                summary_row = payload["summary_row"]
+                model_input = payload["model_input"]
 
-                    base = f"{candidate}__{x_col}_to_{y_col}"
-                    coef_df.to_csv(ols_dir / f"{base}__coefficients.csv", index=False)
-                    model_input.to_csv(ols_dir / f"{base}__model_input.csv", index=False)
-                    with open(ols_dir / f"{base}__summary.txt", "w") as f:
-                        f.write(model.summary().as_text())
+                candidate_ols_summaries.append(summary_row)
+                candidate_ols_coefs.append(coef_table)
+
+                base = f"{candidate}__all_inputs_to_{y_col}"
+                coef_table.to_csv(ols_dir / f"{base}__coefficients.csv", index=False)
+                model_input.to_csv(ols_dir / f"{base}__model_input.csv", index=False)
+
+                with open(ols_dir / f"{base}__summary.txt", "w") as f:
+                    f.write(model.summary().as_text())
 
             if candidate_ols_summaries:
                 cand_ols_sum_df = pd.DataFrame(candidate_ols_summaries)
@@ -528,9 +493,11 @@ def process_subreddit(subreddit_dir: Path):
 
                 best_df = (
                     cand_granger_df
-                    .groupby(["subreddit", "candidate", "y", "x"], as_index=False)["p_ssr_ftest"]
-                    .min()
-                    .rename(columns={"p_ssr_ftest": "best_p_value"})
+                    .groupby(["subreddit", "candidate", "y", "x"], as_index=False)
+                    .agg(
+                        best_p_value=("p_ssr_ftest", "min"),
+                        max_ssr_f_stat=("ssr_f_stat", "max"),
+                    )
                 )
                 best_df.to_csv(granger_dir / f"{candidate}_granger_best_pvalues.csv", index=False)
 
@@ -550,7 +517,7 @@ def process_subreddit(subreddit_dir: Path):
                 "error": str(e),
             })
 
-    # Save subreddit-wide combined outputs
+    # Combined subreddit-wide outputs
     if corr_all:
         pd.concat(corr_all, ignore_index=True).to_csv(subreddit_out / "all_correlations.csv", index=False)
 
@@ -570,7 +537,6 @@ def process_subreddit(subreddit_dir: Path):
         pd.DataFrame(errors).to_csv(subreddit_out / "errors.csv", index=False)
 
     print(f"Saved outputs for subreddit: {subreddit}")
-
 
 # ============================================================
 # MAIN
@@ -596,7 +562,6 @@ def main():
 
     print("\nDone. Outputs saved in:")
     print(OUTPUT_ROOT)
-
 
 if __name__ == "__main__":
     main()

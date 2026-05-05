@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Manhattan,sliwa,price_change,price_change_autoregressive_lags,15.646662602711274,9.210791312485242e-13
+Manhattan,sliwa,price_change,mean_compound,,
+Manhattan,sliwa,price_change,sentiment_change,,
+Manhattan,sliwa,price_change,n_comments,,
+Manhattan,sliwa,price_change,log_comments_change,,
+Manhattan,sliwa,log_volume_change,log_volume_change_autoregressive_lags,1165.1765251415818,0.0
+Manhattan,sliwa,log_volume_change,mean_compound,,
+Manhattan,sliwa,log_volume_change,sentiment_change,,
+Manhattan,sliwa,log_volume_change,n_comments,,
+Manhattan,sliwa,log_volume_change,log_comments_change,,
+Manhattan,sliwa,oi_change,oi_change_autoregressive_lags,295.6533550439064,9.028549576878782e-239
+Manhattan,sliwa,oi_change,mean_compound,,
+Manhattan,sliwa,oi_change,sentiment_change,,
+Manhattan,sliwa,oi_change,n_comments,,
+Manhattan,sliwa,oi_change,log_comments_change,,

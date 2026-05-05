@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+statenisland,cuomo,oi_change,oi_change_autoregressive_lags,387.99434656310166,1.4263772890025335e-272
+statenisland,cuomo,oi_change,mean_compound,70.77183035960758,1.6755030601413353e-57
+statenisland,cuomo,oi_change,sentiment_change,72.66438420489956,5.326941936852711e-59
+statenisland,cuomo,oi_change,n_comments,139.48412278732533,5.406219337097529e-110
+statenisland,cuomo,oi_change,log_comments_change,160.32666581132622,3.5167862067969524e-125

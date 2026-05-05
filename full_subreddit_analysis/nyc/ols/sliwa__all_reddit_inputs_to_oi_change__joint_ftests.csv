@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+nyc,sliwa,oi_change,oi_change_autoregressive_lags,58.346182206240094,1.2360032851318767e-47
+nyc,sliwa,oi_change,mean_compound,18.866431842150433,2.3867561125028356e-15
+nyc,sliwa,oi_change,sentiment_change,0.47827552871359885,0.7517330485749767
+nyc,sliwa,oi_change,n_comments,1.1504873410530807,0.33084072031244444
+nyc,sliwa,oi_change,log_comments_change,2.212318969781507,0.06522532542962622

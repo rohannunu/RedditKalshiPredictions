@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+republican,mamdani,oi_change,oi_change_autoregressive_lags,62.193278089186165,1.1425461408643516e-50
+republican,mamdani,oi_change,mean_compound,7.308502640982017,7.427513659813638e-06
+republican,mamdani,oi_change,sentiment_change,5.102377914153026,0.0004257816091987801
+republican,mamdani,oi_change,n_comments,1.8377555501005414,0.11874926555347731
+republican,mamdani,oi_change,log_comments_change,3.3665288808412486,0.009306930843696402

@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+republican,cuomo,price_change,price_change_autoregressive_lags,1.466487395693625,0.20966307982093083
+republican,cuomo,price_change,mean_compound,2.5785095005378356,0.03565723344080185
+republican,cuomo,price_change,sentiment_change,2.2246864823347514,0.06393124921665462
+republican,cuomo,price_change,n_comments,0.8118324551963773,0.5174221634245051
+republican,cuomo,price_change,log_comments_change,1.2280848440769354,0.29664717590794654

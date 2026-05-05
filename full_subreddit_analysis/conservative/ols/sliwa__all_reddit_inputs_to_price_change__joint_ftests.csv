@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+conservative,sliwa,price_change,price_change_autoregressive_lags,31.480662837045436,9.185268146944311e-26
+conservative,sliwa,price_change,mean_compound,1.6984651459682003,0.1474762634453229
+conservative,sliwa,price_change,sentiment_change,1.6568630245863136,0.15721961484505045
+conservative,sliwa,price_change,n_comments,1.6332546503704353,0.16300587806721867
+conservative,sliwa,price_change,log_comments_change,5.827008861263529,0.00011381025320199855

@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+conservative,mamdani,price_change,price_change_autoregressive_lags,4.781495030143992,0.0007594398053109082
+conservative,mamdani,price_change,mean_compound,12.307688786492577,6.194698351985312e-10
+conservative,mamdani,price_change,sentiment_change,12.307929877690153,6.191871368209338e-10
+conservative,mamdani,price_change,n_comments,3.2812615050592213,0.010784936871479198
+conservative,mamdani,price_change,log_comments_change,5.393390086483128,0.0002509569864252308

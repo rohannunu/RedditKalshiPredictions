@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+left_leaning,mamdani,price_change,price_change_autoregressive_lags,5.15722705669991,0.0003852822320214076
+left_leaning,mamdani,price_change,mean_compound,8.323554095674375,1.1208384445405885e-06
+left_leaning,mamdani,price_change,sentiment_change,5.948078327085383,9.118593994638302e-05
+left_leaning,mamdani,price_change,n_comments,12.956584796566421,1.812249233040649e-10
+left_leaning,mamdani,price_change,log_comments_change,2.874233498978445,0.021665959888386356
+left_leaning,mamdani,log_volume_change,log_volume_change_autoregressive_lags,146.59667532137289,2.1690450665178984e-115
+left_leaning,mamdani,log_volume_change,mean_compound,0.6503426000582768,0.6266230138173363
+left_leaning,mamdani,log_volume_change,sentiment_change,0.39088405123508607,0.8153115770014197
+left_leaning,mamdani,log_volume_change,n_comments,0.8143492226388775,0.5158112081704397
+left_leaning,mamdani,log_volume_change,log_comments_change,1.045347156739223,0.3821950499787029
+left_leaning,mamdani,oi_change,oi_change_autoregressive_lags,51.92340454398767,1.8910479578632746e-42
+left_leaning,mamdani,oi_change,mean_compound,40.335099394918444,4.997743946168699e-33
+left_leaning,mamdani,oi_change,sentiment_change,33.71380220962539,1.3360274823525894e-27
+left_leaning,mamdani,oi_change,n_comments,2.6664664230009087,0.030770643163961744
+left_leaning,mamdani,oi_change,log_comments_change,9.355556128252882,1.6229338104154407e-07

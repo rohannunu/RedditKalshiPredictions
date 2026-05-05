@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Queens,cuomo,log_volume_change,log_volume_change_autoregressive_lags,317.2704944664399,1.6435650662147517e-230
+Queens,cuomo,log_volume_change,mean_compound,,
+Queens,cuomo,log_volume_change,sentiment_change,,
+Queens,cuomo,log_volume_change,n_comments,,
+Queens,cuomo,log_volume_change,log_comments_change,,

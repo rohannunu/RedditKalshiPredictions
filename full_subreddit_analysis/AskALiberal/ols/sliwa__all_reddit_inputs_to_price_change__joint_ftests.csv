@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskALiberal,sliwa,price_change,price_change_autoregressive_lags,31.33998003148423,1.222449507448465e-25
+AskALiberal,sliwa,price_change,mean_compound,1.7916824160540274,0.1276240735711405
+AskALiberal,sliwa,price_change,sentiment_change,2.8538214958741213,0.022432463457490857
+AskALiberal,sliwa,price_change,n_comments,1.1225511646347113,0.3439187739939033
+AskALiberal,sliwa,price_change,log_comments_change,2.3157649986895636,0.05508810718650873

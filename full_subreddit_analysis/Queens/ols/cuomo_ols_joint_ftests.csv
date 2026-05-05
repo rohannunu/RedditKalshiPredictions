@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Queens,cuomo,price_change,price_change_autoregressive_lags,1.4632873794752683,0.21066031827122075
+Queens,cuomo,price_change,mean_compound,,
+Queens,cuomo,price_change,sentiment_change,,
+Queens,cuomo,price_change,n_comments,,
+Queens,cuomo,price_change,log_comments_change,,
+Queens,cuomo,log_volume_change,log_volume_change_autoregressive_lags,317.2704944664399,1.6435650662147517e-230
+Queens,cuomo,log_volume_change,mean_compound,,
+Queens,cuomo,log_volume_change,sentiment_change,,
+Queens,cuomo,log_volume_change,n_comments,,
+Queens,cuomo,log_volume_change,log_comments_change,,
+Queens,cuomo,oi_change,oi_change_autoregressive_lags,303.5980417949417,6.037544475979197e-222
+Queens,cuomo,oi_change,mean_compound,,
+Queens,cuomo,oi_change,sentiment_change,,
+Queens,cuomo,oi_change,n_comments,,
+Queens,cuomo,oi_change,log_comments_change,,

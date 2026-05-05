@@ -1,49 +1,46 @@
-subreddit,candidate,y,x,n,error
-Queens,mamdani,price_change,mean_compound,0,Not enough rows (< 100)
-Queens,mamdani,price_change,sentiment_change,0,Not enough rows (< 100)
-Queens,mamdani,price_change,n_comments,0,Not enough rows (< 100)
-Queens,mamdani,price_change,log_comments_change,0,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,mean_compound,0,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,sentiment_change,0,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,n_comments,0,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,log_comments_change,0,Not enough rows (< 100)
-Queens,mamdani,oi_change,mean_compound,0,Not enough rows (< 100)
-Queens,mamdani,oi_change,sentiment_change,0,Not enough rows (< 100)
-Queens,mamdani,oi_change,n_comments,0,Not enough rows (< 100)
-Queens,mamdani,oi_change,log_comments_change,0,Not enough rows (< 100)
-Queens,mamdani,price_change,mean_compound,12,Not enough rows (< 100)
-Queens,mamdani,price_change,sentiment_change,12,Not enough rows (< 100)
-Queens,mamdani,price_change,n_comments,12,Not enough rows (< 100)
-Queens,mamdani,price_change,log_comments_change,12,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,mean_compound,12,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,sentiment_change,12,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,n_comments,12,Not enough rows (< 100)
-Queens,mamdani,log_volume_change,log_comments_change,12,Not enough rows (< 100)
-Queens,mamdani,oi_change,mean_compound,12,Not enough rows (< 100)
-Queens,mamdani,oi_change,sentiment_change,12,Not enough rows (< 100)
-Queens,mamdani,oi_change,n_comments,12,Not enough rows (< 100)
-Queens,mamdani,oi_change,log_comments_change,12,Not enough rows (< 100)
-Queens,cuomo,price_change,mean_compound,3240,One series has no variation
-Queens,cuomo,price_change,sentiment_change,3240,One series has no variation
-Queens,cuomo,price_change,n_comments,3240,One series has no variation
-Queens,cuomo,price_change,log_comments_change,3240,One series has no variation
-Queens,cuomo,log_volume_change,mean_compound,3240,One series has no variation
-Queens,cuomo,log_volume_change,sentiment_change,3240,One series has no variation
-Queens,cuomo,log_volume_change,n_comments,3240,One series has no variation
-Queens,cuomo,log_volume_change,log_comments_change,3240,One series has no variation
-Queens,cuomo,oi_change,mean_compound,3240,One series has no variation
-Queens,cuomo,oi_change,sentiment_change,3240,One series has no variation
-Queens,cuomo,oi_change,n_comments,3240,One series has no variation
-Queens,cuomo,oi_change,log_comments_change,3240,One series has no variation
-Queens,sliwa,price_change,mean_compound,8696,One series has no variation
-Queens,sliwa,price_change,sentiment_change,8696,One series has no variation
-Queens,sliwa,price_change,n_comments,8696,One series has no variation
-Queens,sliwa,price_change,log_comments_change,8696,One series has no variation
-Queens,sliwa,log_volume_change,mean_compound,8696,One series has no variation
-Queens,sliwa,log_volume_change,sentiment_change,8696,One series has no variation
-Queens,sliwa,log_volume_change,n_comments,8696,One series has no variation
-Queens,sliwa,log_volume_change,log_comments_change,8696,One series has no variation
-Queens,sliwa,oi_change,mean_compound,8696,One series has no variation
-Queens,sliwa,oi_change,sentiment_change,8696,One series has no variation
-Queens,sliwa,oi_change,n_comments,8696,One series has no variation
-Queens,sliwa,oi_change,log_comments_change,8696,One series has no variation
+subreddit,candidate,y,n,error,x
+Queens,mamdani,price_change,12,Not enough rows (< 50),
+Queens,mamdani,log_volume_change,12,Not enough rows (< 50),
+Queens,mamdani,oi_change,12,Not enough rows (< 50),
+Queens,mamdani,price_change,12,Not enough rows (< 100),mean_compound
+Queens,mamdani,price_change,12,Not enough rows (< 100),sentiment_change
+Queens,mamdani,price_change,12,Not enough rows (< 100),n_comments
+Queens,mamdani,price_change,12,Not enough rows (< 100),log_comments_change
+Queens,mamdani,log_volume_change,12,Not enough rows (< 100),mean_compound
+Queens,mamdani,log_volume_change,12,Not enough rows (< 100),sentiment_change
+Queens,mamdani,log_volume_change,12,Not enough rows (< 100),n_comments
+Queens,mamdani,log_volume_change,12,Not enough rows (< 100),log_comments_change
+Queens,mamdani,oi_change,12,Not enough rows (< 100),mean_compound
+Queens,mamdani,oi_change,12,Not enough rows (< 100),sentiment_change
+Queens,mamdani,oi_change,12,Not enough rows (< 100),n_comments
+Queens,mamdani,oi_change,12,Not enough rows (< 100),log_comments_change
+Queens,cuomo,price_change,3240,All input variables have no variation,
+Queens,cuomo,log_volume_change,3240,All input variables have no variation,
+Queens,cuomo,oi_change,3240,All input variables have no variation,
+Queens,cuomo,price_change,3240,One series has no variation,mean_compound
+Queens,cuomo,price_change,3240,One series has no variation,sentiment_change
+Queens,cuomo,price_change,3240,One series has no variation,n_comments
+Queens,cuomo,price_change,3240,One series has no variation,log_comments_change
+Queens,cuomo,log_volume_change,3240,One series has no variation,mean_compound
+Queens,cuomo,log_volume_change,3240,One series has no variation,sentiment_change
+Queens,cuomo,log_volume_change,3240,One series has no variation,n_comments
+Queens,cuomo,log_volume_change,3240,One series has no variation,log_comments_change
+Queens,cuomo,oi_change,3240,One series has no variation,mean_compound
+Queens,cuomo,oi_change,3240,One series has no variation,sentiment_change
+Queens,cuomo,oi_change,3240,One series has no variation,n_comments
+Queens,cuomo,oi_change,3240,One series has no variation,log_comments_change
+Queens,sliwa,price_change,8696,All input variables have no variation,
+Queens,sliwa,log_volume_change,8696,All input variables have no variation,
+Queens,sliwa,oi_change,8696,All input variables have no variation,
+Queens,sliwa,price_change,8696,One series has no variation,mean_compound
+Queens,sliwa,price_change,8696,One series has no variation,sentiment_change
+Queens,sliwa,price_change,8696,One series has no variation,n_comments
+Queens,sliwa,price_change,8696,One series has no variation,log_comments_change
+Queens,sliwa,log_volume_change,8696,One series has no variation,mean_compound
+Queens,sliwa,log_volume_change,8696,One series has no variation,sentiment_change
+Queens,sliwa,log_volume_change,8696,One series has no variation,n_comments
+Queens,sliwa,log_volume_change,8696,One series has no variation,log_comments_change
+Queens,sliwa,oi_change,8696,One series has no variation,mean_compound
+Queens,sliwa,oi_change,8696,One series has no variation,sentiment_change
+Queens,sliwa,oi_change,8696,One series has no variation,n_comments
+Queens,sliwa,oi_change,8696,One series has no variation,log_comments_change

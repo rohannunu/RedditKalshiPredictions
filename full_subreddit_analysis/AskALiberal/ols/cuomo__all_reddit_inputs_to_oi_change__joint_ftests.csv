@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+AskALiberal,cuomo,oi_change,oi_change_autoregressive_lags,318.29904066516565,6.030135619704914e-231
+AskALiberal,cuomo,oi_change,mean_compound,4.699866908886103,0.0008797912637859549
+AskALiberal,cuomo,oi_change,sentiment_change,12.279206014408075,6.551569068501597e-10
+AskALiberal,cuomo,oi_change,n_comments,2.2919975424111585,0.057274476527043726
+AskALiberal,cuomo,oi_change,log_comments_change,20.58578306782883,9.100332181057291e-17

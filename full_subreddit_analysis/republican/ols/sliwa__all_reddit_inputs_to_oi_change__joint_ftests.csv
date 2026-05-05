@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+republican,sliwa,oi_change,oi_change_autoregressive_lags,218.94187548302523,3.0485271152284363e-179
+republican,sliwa,oi_change,mean_compound,0.48887432662179175,0.7439430855809812
+republican,sliwa,oi_change,sentiment_change,0.38494375527256314,0.819565908450895
+republican,sliwa,oi_change,n_comments,2.068632439186425,0.08212342730173242
+republican,sliwa,oi_change,log_comments_change,0.9057889984684007,0.45945135254440694

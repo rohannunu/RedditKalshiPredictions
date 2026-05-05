@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+boroughs,sliwa,price_change,price_change_autoregressive_lags,30.51202761439258,5.825464308576058e-25
+boroughs,sliwa,price_change,mean_compound,0.0054147146322105,0.9999417476353637
+boroughs,sliwa,price_change,sentiment_change,0.01110867827598946,0.9997566728752687
+boroughs,sliwa,price_change,n_comments,0.0015512822847757767,0.9999951940116747
+boroughs,sliwa,price_change,log_comments_change,0.013721081466319828,0.9996300602726462
+boroughs,sliwa,log_volume_change,log_volume_change_autoregressive_lags,427.0644130263673,1.977521748012393e-295
+boroughs,sliwa,log_volume_change,mean_compound,0.2889400206503792,0.8853027152568579
+boroughs,sliwa,log_volume_change,sentiment_change,0.33657322347706237,0.8534502437487917
+boroughs,sliwa,log_volume_change,n_comments,0.21343571367704978,0.9310800972000585
+boroughs,sliwa,log_volume_change,log_comments_change,0.4213609995657843,0.7933450558457001
+boroughs,sliwa,oi_change,oi_change_autoregressive_lags,59.20257159347361,2.6977706614735223e-48
+boroughs,sliwa,oi_change,mean_compound,2.77063176259946,0.025822410599260708
+boroughs,sliwa,oi_change,sentiment_change,4.059524889497134,0.002759463940122769
+boroughs,sliwa,oi_change,n_comments,33.78107994504456,1.1939495243979376e-27
+boroughs,sliwa,oi_change,log_comments_change,6.275832272621178,4.99959216046402e-05

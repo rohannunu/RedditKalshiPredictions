@@ -1,0 +1,16 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+republican,mamdani,price_change,price_change_autoregressive_lags,4.889114339124234,0.0006259308781570773
+republican,mamdani,price_change,mean_compound,4.366063833514644,0.0016001121752208046
+republican,mamdani,price_change,sentiment_change,2.0962359063990244,0.07871956235436052
+republican,mamdani,price_change,n_comments,0.11312225303657088,0.9779483437911042
+republican,mamdani,price_change,log_comments_change,1.737859165632826,0.138768332094499
+republican,mamdani,log_volume_change,log_volume_change_autoregressive_lags,148.7351560169006,9.788702865823943e-117
+republican,mamdani,log_volume_change,mean_compound,0.2456873124917587,0.9123767272070176
+republican,mamdani,log_volume_change,sentiment_change,0.3846897744255295,0.8197344033821737
+republican,mamdani,log_volume_change,n_comments,0.2648215933565122,0.9006524315790456
+republican,mamdani,log_volume_change,log_comments_change,0.7596478863068438,0.5514707165935158
+republican,mamdani,oi_change,oi_change_autoregressive_lags,62.193278089186165,1.1425461408643516e-50
+republican,mamdani,oi_change,mean_compound,7.308502640982017,7.427513659813638e-06
+republican,mamdani,oi_change,sentiment_change,5.102377914153026,0.0004257816091987801
+republican,mamdani,oi_change,n_comments,1.8377555501005414,0.11874926555347731
+republican,mamdani,oi_change,log_comments_change,3.3665288808412486,0.009306930843696402

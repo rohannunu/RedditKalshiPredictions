@@ -1,0 +1,46 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_volume_change   R-squared:                       0.153
+Model:                            OLS   Adj. R-squared:                  0.149
+Method:                 Least Squares   F-statistic:                     33.98
+Date:                Mon, 04 May 2026   Prob (F-statistic):          2.97e-102
+Time:                        23:25:29   Log-Likelihood:                -7646.4
+No. Observations:                3212   AIC:                         1.533e+04
+Df Residuals:                    3194   BIC:                         1.544e+04
+Df Model:                          17                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        0.0048      0.047      0.104      0.917      -0.086       0.096
+log_volume_change_lag1      -0.4230      0.018    -23.927      0.000      -0.458      -0.388
+log_volume_change_lag2      -0.1686      0.019     -8.797      0.000      -0.206      -0.131
+log_volume_change_lag3      -0.0683      0.019     -3.562      0.000      -0.106      -0.031
+log_volume_change_lag4      -0.0301      0.018     -1.702      0.089      -0.065       0.005
+mean_compound_lag1           0.4846      0.817      0.593      0.553      -1.117       2.086
+mean_compound_lag2           0.5823      0.735      0.792      0.428      -0.859       2.024
+mean_compound_lag3           0.2730      0.808      0.338      0.735      -1.311       1.857
+mean_compound_lag4          -0.1149      1.144     -0.100      0.920      -2.357       2.128
+sentiment_change_lag1       -0.0977      0.527     -0.186      0.853      -1.130       0.935
+sentiment_change_lag2        0.3093      0.549      0.564      0.573      -0.766       1.385
+sentiment_change_lag3        0.3879      0.701      0.553      0.580      -0.987       1.762
+sentiment_change_lag4        0.2382      1.117      0.213      0.831      -1.952       2.428
+n_comments_lag1             -0.0368      0.131     -0.282      0.778      -0.293       0.219
+n_comments_lag2             -0.0447      0.135     -0.332      0.740      -0.309       0.219
+n_comments_lag3              0.0455      0.135      0.337      0.736      -0.219       0.310
+n_comments_lag4             -0.0435      0.125     -0.347      0.729      -0.289       0.202
+log_comments_change_lag1     0.3533      0.784      0.451      0.652      -1.183       1.890
+log_comments_change_lag2     0.7479      0.859      0.870      0.384      -0.937       2.432
+log_comments_change_lag3     0.2396      0.760      0.315      0.753      -1.250       1.729
+log_comments_change_lag4     0.7025      0.386      1.822      0.069      -0.053       1.458
+==============================================================================
+Omnibus:                       84.756   Durbin-Watson:                   2.005
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              182.955
+Skew:                           0.126   Prob(JB):                     1.87e-40
+Kurtosis:                       4.142   Cond. No.                     1.04e+17
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 3.83e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

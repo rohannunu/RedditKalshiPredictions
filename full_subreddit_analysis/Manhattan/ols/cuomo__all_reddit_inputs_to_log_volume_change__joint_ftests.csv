@@ -1,0 +1,6 @@
+subreddit,candidate,y,variable_group,joint_f_stat,joint_f_pvalue
+Manhattan,cuomo,log_volume_change,log_volume_change_autoregressive_lags,313.07748439614204,3.32005676226663e-227
+Manhattan,cuomo,log_volume_change,mean_compound,0.16579960409402533,0.9557718885735537
+Manhattan,cuomo,log_volume_change,sentiment_change,0.22380000199735117,0.9252261108486712
+Manhattan,cuomo,log_volume_change,n_comments,0.16579960409402525,0.9557718885735537
+Manhattan,cuomo,log_volume_change,log_comments_change,0.22380000199735117,0.9252261108486712

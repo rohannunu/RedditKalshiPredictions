@@ -1,13 +1,172 @@
-subreddit,candidate,y,x,n,error
-worldnews,mamdani,price_change,mean_compound,99,Not enough rows (< 100)
-worldnews,mamdani,price_change,sentiment_change,99,Not enough rows (< 100)
-worldnews,mamdani,price_change,n_comments,99,Not enough rows (< 100)
-worldnews,mamdani,price_change,log_comments_change,99,Not enough rows (< 100)
-worldnews,mamdani,log_volume_change,mean_compound,99,Not enough rows (< 100)
-worldnews,mamdani,log_volume_change,sentiment_change,99,Not enough rows (< 100)
-worldnews,mamdani,log_volume_change,n_comments,99,Not enough rows (< 100)
-worldnews,mamdani,log_volume_change,log_comments_change,99,Not enough rows (< 100)
-worldnews,mamdani,oi_change,mean_compound,99,Not enough rows (< 100)
-worldnews,mamdani,oi_change,sentiment_change,99,Not enough rows (< 100)
-worldnews,mamdani,oi_change,n_comments,99,Not enough rows (< 100)
-worldnews,mamdani,oi_change,log_comments_change,99,Not enough rows (< 100)
+coef_table,summary_row,model_input
+"   subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  worldnews   mamdani  price_change                const  0.000560  0.000597  0.938479  0.350132
+1  worldnews   mamdani  price_change        mean_compound -0.006736  0.005177 -1.301065  0.196057
+2  worldnews   mamdani  price_change     sentiment_change  0.000001  0.003550  0.000332  0.999736
+3  worldnews   mamdani  price_change           n_comments  0.001901  0.002710  0.701444  0.484563
+4  worldnews   mamdani  price_change  log_comments_change  0.000741  0.003180  0.233135  0.816106","{'subreddit': 'worldnews', 'candidate': 'mamdani', 'y': 'price_change', 'n': 111, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.03537211257290862), 'adj_r_squared': np.float64(-0.0010289397828306956), 'aic': np.float64(-818.7069391364857), 'bic': np.float64(-805.1592881299241)}","              timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1   2025-11-02 03:00:00          0.00            0.0           -0.8386         0.0            -0.693147
+2   2025-11-02 04:00:00         -0.01            0.0            0.0000         0.0             0.000000
+3   2025-11-02 05:00:00          0.00            0.0            0.0000         0.0             0.000000
+4   2025-11-02 06:00:00          0.01            0.0            0.0000         0.0             0.000000
+5   2025-11-02 07:00:00          0.00            0.0            0.0000         0.0             0.000000
+..                  ...           ...            ...               ...         ...                  ...
+107 2025-11-06 13:00:00          0.00            0.0            0.0000         0.0             0.000000
+108 2025-11-06 14:00:00          0.00            0.0            0.0000         0.0             0.000000
+109 2025-11-06 15:00:00          0.00            0.0            0.0000         0.0             0.000000
+110 2025-11-06 16:00:00          0.00            0.0            0.0000         0.0             0.000000
+111 2025-11-06 17:00:00          0.00            0.0            0.0000         1.0             0.693147
+
+[111 rows x 6 columns]"
+"   subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  worldnews   mamdani  log_volume_change                const -0.010815  0.169821 -0.063687  0.949339
+1  worldnews   mamdani  log_volume_change        mean_compound  0.846944  1.473741  0.574690  0.566719
+2  worldnews   mamdani  log_volume_change     sentiment_change -0.776717  1.010575 -0.768590  0.443846
+3  worldnews   mamdani  log_volume_change           n_comments -0.162740  0.771556 -0.210925  0.833351
+4  worldnews   mamdani  log_volume_change  log_comments_change  0.262433  0.905263  0.289896  0.772462","{'subreddit': 'worldnews', 'candidate': 'mamdani', 'y': 'log_volume_change', 'n': 111, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.005667396489970611), 'adj_r_squared': np.float64(-0.0318545885481436), 'aic': np.float64(435.88830012304), 'bic': np.float64(449.4359511296017)}","              timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1   2025-11-02 03:00:00          -0.810395            0.0           -0.8386         0.0            -0.693147
+2   2025-11-02 04:00:00           1.720687            0.0            0.0000         0.0             0.000000
+3   2025-11-02 05:00:00          -2.119875            0.0            0.0000         0.0             0.000000
+4   2025-11-02 06:00:00           0.711160            0.0            0.0000         0.0             0.000000
+5   2025-11-02 07:00:00          -0.593785            0.0            0.0000         0.0             0.000000
+..                  ...                ...            ...               ...         ...                  ...
+107 2025-11-06 13:00:00           2.051098            0.0            0.0000         0.0             0.000000
+108 2025-11-06 14:00:00           1.661319            0.0            0.0000         0.0             0.000000
+109 2025-11-06 15:00:00          -2.300839            0.0            0.0000         0.0             0.000000
+110 2025-11-06 16:00:00           0.622187            0.0            0.0000         0.0             0.000000
+111 2025-11-06 17:00:00          -0.083668            0.0            0.0000         1.0             0.693147
+
+[111 rows x 6 columns]"
+"   subreddit candidate          y                 term           coef         stderr     tstat    pvalue
+0  worldnews   mamdani  oi_change                const   69843.681254   23742.523495  2.941713  0.004009
+1  worldnews   mamdani  oi_change        mean_compound -896002.035720  206043.026957 -4.348616  0.000032
+2  worldnews   mamdani  oi_change     sentiment_change  -40106.760229  141287.945754 -0.283865  0.777067
+3  worldnews   mamdani  oi_change           n_comments  290657.405358  107870.842901  2.694495  0.008198
+4  worldnews   mamdani  oi_change  log_comments_change   64915.937357  126564.387318  0.512908  0.609083","{'subreddit': 'worldnews', 'candidate': 'mamdani', 'y': 'oi_change', 'n': 111, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.3056811490515773), 'adj_r_squared': np.float64(0.27948043769503306), 'aic': np.float64(3066.152308696735), 'bic': np.float64(3079.699959703297)}","              timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1   2025-11-02 03:00:00    18445.0            0.0           -0.8386         0.0            -0.693147
+2   2025-11-02 04:00:00    95533.0            0.0            0.0000         0.0             0.000000
+3   2025-11-02 05:00:00     2226.0            0.0            0.0000         0.0             0.000000
+4   2025-11-02 06:00:00     8430.0            0.0            0.0000         0.0             0.000000
+5   2025-11-02 07:00:00    13304.0            0.0            0.0000         0.0             0.000000
+..                  ...        ...            ...               ...         ...                  ...
+107 2025-11-06 13:00:00        9.0            0.0            0.0000         0.0             0.000000
+108 2025-11-06 14:00:00        0.0            0.0            0.0000         0.0             0.000000
+109 2025-11-06 15:00:00        0.0            0.0            0.0000         0.0             0.000000
+110 2025-11-06 16:00:00      186.0            0.0            0.0000         0.0             0.000000
+111 2025-11-06 17:00:00       93.0            0.0            0.0000         1.0             0.693147
+
+[111 rows x 6 columns]"
+"   subreddit candidate             y                 term          coef    stderr     tstat    pvalue
+0  worldnews     cuomo  price_change                const -1.578817e-06  0.000065 -0.024328  0.980592
+1  worldnews     cuomo  price_change        mean_compound  4.697148e-03  0.001615  2.907806  0.003665
+2  worldnews     cuomo  price_change     sentiment_change -1.321560e-03  0.001224 -1.079718  0.280348
+3  worldnews     cuomo  price_change           n_comments  8.102284e-07  0.000006  0.141374  0.887583
+4  worldnews     cuomo  price_change  log_comments_change -5.188198e-04  0.000375 -1.381987  0.167071","{'subreddit': 'worldnews', 'candidate': 'cuomo', 'y': 'price_change', 'n': 3235, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.003692229701183547), 'adj_r_squared': np.float64(0.0024584120289868894), 'aic': np.float64(-27078.103847727958), 'bic': np.float64(-27047.694926693282)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00          0.03       0.000000          0.000000         0.0             0.000000
+2    2025-06-25 06:00:00          0.00       0.000000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00          0.00       0.000000          0.000000         0.0             0.000000
+4    2025-06-25 08:00:00          0.00       0.000000          0.000000         0.0             0.000000
+5    2025-06-25 09:00:00          0.00       0.000000          0.000000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3231 2025-11-06 19:00:00          0.00      -0.007354         -0.036625       140.0             0.941427
+3232 2025-11-06 20:00:00          0.00      -0.098336         -0.090982       125.0            -0.112478
+3233 2025-11-06 21:00:00          0.00      -0.040249          0.058087       151.0             0.187599
+3234 2025-11-06 22:00:00          0.00       0.108419          0.148668       113.0            -0.287682
+3235 2025-11-06 23:00:00          0.00       0.029614         -0.078805       100.0            -0.121078
+
+[3235 rows x 6 columns]"
+"   subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  worldnews     cuomo  log_volume_change                const -0.001088  0.067500 -0.016112  0.987146
+1  worldnews     cuomo  log_volume_change        mean_compound  0.925229  1.680168  0.550677  0.581893
+2  worldnews     cuomo  log_volume_change     sentiment_change -1.029159  1.273094 -0.808392  0.418924
+3  worldnews     cuomo  log_volume_change           n_comments  0.000130  0.005961  0.021866  0.982557
+4  worldnews     cuomo  log_volume_change  log_comments_change  0.281178  0.390478  0.720088  0.471523","{'subreddit': 'worldnews', 'candidate': 'cuomo', 'y': 'log_volume_change', 'n': 3235, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0003566768247065255), 'adj_r_squared': np.float64(-0.0008812715631265622), 'aic': np.float64(17869.58448593315), 'bic': np.float64(17899.993406967824)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00           3.694917       0.000000          0.000000         0.0             0.000000
+2    2025-06-25 06:00:00          -1.756668       0.000000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00          -2.886422       0.000000          0.000000         0.0             0.000000
+4    2025-06-25 08:00:00          -6.616065       0.000000          0.000000         0.0             0.000000
+5    2025-06-25 09:00:00           0.000000       0.000000          0.000000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3231 2025-11-06 19:00:00           0.167054      -0.007354         -0.036625       140.0             0.941427
+3232 2025-11-06 20:00:00           3.557543      -0.098336         -0.090982       125.0            -0.112478
+3233 2025-11-06 21:00:00          -1.654944      -0.040249          0.058087       151.0             0.187599
+3234 2025-11-06 22:00:00           2.780142       0.108419          0.148668       113.0            -0.287682
+3235 2025-11-06 23:00:00          -4.448669       0.029614         -0.078805       100.0            -0.121078
+
+[3235 rows x 6 columns]"
+"   subreddit candidate          y                 term           coef        stderr     tstat        pvalue
+0  worldnews     cuomo  oi_change                const    9087.494227   1366.766414  6.648901  3.453601e-11
+1  worldnews     cuomo  oi_change        mean_compound -308796.626819  34020.856372 -9.076686  1.899931e-19
+2  worldnews     cuomo  oi_change     sentiment_change  -13582.233946  25778.216507 -0.526888  5.983075e-01
+3  worldnews     cuomo  oi_change           n_comments     156.313970    120.701918  1.295041  1.953985e-01
+4  worldnews     cuomo  oi_change  log_comments_change   23704.734647   7906.588297  2.998099  2.737398e-03","{'subreddit': 'worldnews', 'candidate': 'cuomo', 'y': 'oi_change', 'n': 3235, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.05018734675779979), 'adj_r_squared': np.float64(0.049011108177933305), 'aic': np.float64(82025.03845202152), 'bic': np.float64(82055.44737305619)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-25 05:00:00    77566.0       0.000000          0.000000         0.0             0.000000
+2    2025-06-25 06:00:00    11761.0       0.000000          0.000000         0.0             0.000000
+3    2025-06-25 07:00:00      746.0       0.000000          0.000000         0.0             0.000000
+4    2025-06-25 08:00:00        0.0       0.000000          0.000000         0.0             0.000000
+5    2025-06-25 09:00:00        0.0       0.000000          0.000000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3231 2025-11-06 19:00:00        0.0      -0.007354         -0.036625       140.0             0.941427
+3232 2025-11-06 20:00:00       43.0      -0.098336         -0.090982       125.0            -0.112478
+3233 2025-11-06 21:00:00        0.0      -0.040249          0.058087       151.0             0.187599
+3234 2025-11-06 22:00:00        0.0       0.108419          0.148668       113.0            -0.287682
+3235 2025-11-06 23:00:00       93.0       0.029614         -0.078805       100.0            -0.121078
+
+[3235 rows x 6 columns]"
+"   subreddit candidate             y                 term      coef    stderr     tstat    pvalue
+0  worldnews     sliwa  price_change                const -0.000013  0.000023 -0.553518  0.579947
+1  worldnews     sliwa  price_change        mean_compound -0.010442  0.002149 -4.860150  0.000001
+2  worldnews     sliwa  price_change     sentiment_change -0.000030  0.001286 -0.023007  0.981646
+3  worldnews     sliwa  price_change           n_comments  0.002835  0.000745  3.802579  0.000146
+4  worldnews     sliwa  price_change  log_comments_change -0.001521  0.001037 -1.467015  0.142469","{'subreddit': 'worldnews', 'candidate': 'sliwa', 'y': 'price_change', 'n': 3253, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.01454927889973845), 'adj_r_squared': np.float64(0.013335669637299707), 'aic': np.float64(-33811.31686441312), 'bic': np.float64(-33780.88019978075)}","               timestamp  price_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 05:00:00           0.0            0.0           -0.6929         0.0            -0.693147
+2    2025-06-23 06:00:00           0.0            0.0            0.0000         0.0             0.000000
+3    2025-06-23 07:00:00           0.0            0.0            0.0000         0.0             0.000000
+4    2025-06-23 08:00:00           0.0            0.0            0.0000         0.0             0.000000
+5    2025-06-23 09:00:00           0.0            0.0            0.0000         0.0             0.000000
+...                  ...           ...            ...               ...         ...                  ...
+3249 2025-11-05 13:00:00           0.0            0.0            0.0000         0.0             0.000000
+3250 2025-11-05 14:00:00           0.0            0.0            0.0000         0.0             0.000000
+3251 2025-11-05 15:00:00           0.0            0.0            0.0000         0.0             0.000000
+3252 2025-11-05 16:00:00           0.0            0.0            0.0000         0.0             0.000000
+3253 2025-11-05 17:00:00           0.0            0.0            0.0000         1.0             0.693147
+
+[3253 rows x 6 columns]"
+"   subreddit candidate                  y                 term      coef    stderr     tstat    pvalue
+0  worldnews     sliwa  log_volume_change                const  0.001318  0.073803  0.017854  0.985757
+1  worldnews     sliwa  log_volume_change        mean_compound -2.926341  6.753014 -0.433339  0.664798
+2  worldnews     sliwa  log_volume_change     sentiment_change -0.306619  4.043243 -0.075835  0.939555
+3  worldnews     sliwa  log_volume_change           n_comments -2.082578  2.343100 -0.888813  0.374169
+4  worldnews     sliwa  log_volume_change  log_comments_change -0.796352  3.259385 -0.244326  0.806994","{'subreddit': 'worldnews', 'candidate': 'sliwa', 'y': 'log_volume_change', 'n': 3253, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0009716565477787542), 'adj_r_squared': np.float64(-0.0002586739244530012), 'aic': np.float64(18581.167206493432), 'bic': np.float64(18611.603871125797)}","               timestamp  log_volume_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 05:00:00          -6.450470            0.0           -0.6929         0.0            -0.693147
+2    2025-06-23 06:00:00           0.000000            0.0            0.0000         0.0             0.000000
+3    2025-06-23 07:00:00           0.000000            0.0            0.0000         0.0             0.000000
+4    2025-06-23 08:00:00           0.000000            0.0            0.0000         0.0             0.000000
+5    2025-06-23 09:00:00           0.000000            0.0            0.0000         0.0             0.000000
+...                  ...                ...            ...               ...         ...                  ...
+3249 2025-11-05 13:00:00          -3.465736            0.0            0.0000         0.0             0.000000
+3250 2025-11-05 14:00:00           0.000000            0.0            0.0000         0.0             0.000000
+3251 2025-11-05 15:00:00           0.000000            0.0            0.0000         0.0             0.000000
+3252 2025-11-05 16:00:00           7.554335            0.0            0.0000         0.0             0.000000
+3253 2025-11-05 17:00:00          -7.554335            0.0            0.0000         1.0             0.693147
+
+[3253 rows x 6 columns]"
+"   subreddit candidate          y                 term          coef        stderr      tstat        pvalue
+0  worldnews     sliwa  oi_change                const   2467.347168    192.821650  12.796007  1.302771e-36
+1  worldnews     sliwa  oi_change        mean_compound -35371.314195  17643.297152  -2.004802  4.506708e-02
+2  worldnews     sliwa  oi_change     sentiment_change   3551.769179  10563.599573   0.336227  7.367213e-01
+3  worldnews     sliwa  oi_change           n_comments   7088.049044   6121.712876   1.157854  2.470088e-01
+4  worldnews     sliwa  oi_change  log_comments_change  -4438.573011   8515.649871  -0.521225  6.022453e-01","{'subreddit': 'worldnews', 'candidate': 'sliwa', 'y': 'oi_change', 'n': 3253, 'used_inputs': 'mean_compound,sentiment_change,n_comments,log_comments_change', 'num_inputs_used': 4, 'r_squared': np.float64(0.0018901764689982503), 'adj_r_squared': np.float64(0.0006609771789354291), 'aic': np.float64(69771.1711371533), 'bic': np.float64(69801.60780178566)}","               timestamp  oi_change  mean_compound  sentiment_change  n_comments  log_comments_change
+1    2025-06-23 05:00:00        0.0            0.0           -0.6929         0.0            -0.693147
+2    2025-06-23 06:00:00        0.0            0.0            0.0000         0.0             0.000000
+3    2025-06-23 07:00:00        0.0            0.0            0.0000         0.0             0.000000
+4    2025-06-23 08:00:00        0.0            0.0            0.0000         0.0             0.000000
+5    2025-06-23 09:00:00        0.0            0.0            0.0000         0.0             0.000000
+...                  ...        ...            ...               ...         ...                  ...
+3249 2025-11-05 13:00:00        0.0            0.0            0.0000         0.0             0.000000
+3250 2025-11-05 14:00:00        0.0            0.0            0.0000         0.0             0.000000
+3251 2025-11-05 15:00:00        0.0            0.0            0.0000         0.0             0.000000
+3252 2025-11-05 16:00:00      187.0            0.0            0.0000         0.0             0.000000
+3253 2025-11-05 17:00:00        0.0            0.0            0.0000         1.0             0.693147
+
+[3253 rows x 6 columns]"
